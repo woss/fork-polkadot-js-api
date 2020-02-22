@@ -1,0 +1,345 @@
+[Polkadot JS API](../README.md) › [Globals](../globals.md) › ["base/Init"](../modules/_base_init_.md) › [Init](_base_init_.init.md)
+
+# Class: Init <**ApiType**>
+
+## Type parameters
+
+▪ **ApiType**: *[ApiTypes](../modules/_types_base_.md#apitypes)*
+
+## Hierarchy
+
+  ↳ [Decorate](_base_decorate_.decorate.md)‹ApiType›
+
+  ↳ **Init**
+
+## Index
+
+### Constructors
+
+* [constructor](_base_init_.init.md#constructor)
+
+### Properties
+
+* [#eventemitter](_base_init_.init.md##eventemitter)
+* [#healthTimer](_base_init_.init.md##healthtimer)
+* [#updateSub](_base_init_.init.md#optional-#updatesub)
+* [registry](_base_init_.init.md#registry)
+
+### Accessors
+
+* [hasSubscriptions](_base_init_.init.md#hassubscriptions)
+
+### Methods
+
+* [#onProviderConnect](_base_init_.init.md##onproviderconnect)
+* [#onProviderDisconnect](_base_init_.init.md##onproviderdisconnect)
+* [#onProviderError](_base_init_.init.md##onprovidererror)
+* [createType](_base_init_.init.md#abstract-createtype)
+* [injectMetadata](_base_init_.init.md#injectmetadata)
+* [off](_base_init_.init.md#off)
+* [on](_base_init_.init.md#on)
+* [once](_base_init_.init.md#once)
+* [registerTypes](_base_init_.init.md#abstract-registertypes)
+
+## Constructors
+
+###  constructor
+
+\+ **new Init**(`options`: ApiOptions, `type`: [ApiTypes](../modules/_types_base_.md#apitypes), `decorateMethod`: [DecorateMethod](../modules/_types_base_.md#decoratemethod)‹ApiType›): *[Init](_base_init_.init.md)*
+
+*Overrides [Decorate](_base_decorate_.decorate.md).[constructor](_base_decorate_.decorate.md#constructor)*
+
+*Defined in [api/src/base/Init.ts:25](https://github.com/polkadot-js/api/blob/790deca695/packages/api/src/base/Init.ts#L25)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`options` | ApiOptions |
+`type` | [ApiTypes](../modules/_types_base_.md#apitypes) |
+`decorateMethod` | [DecorateMethod](../modules/_types_base_.md#decoratemethod)‹ApiType› |
+
+**Returns:** *[Init](_base_init_.init.md)*
+
+## Properties
+
+###  #eventemitter
+
+• **#eventemitter**: *EventEmitter‹string | symbol›* = new EventEmitter()
+
+*Inherited from [Init](_base_init_.init.md).[#eventemitter](_base_init_.init.md##eventemitter)*
+
+*Defined in [api/src/base/Events.ts:10](https://github.com/polkadot-js/api/blob/790deca695/packages/api/src/base/Events.ts#L10)*
+
+___
+
+###  #healthTimer
+
+• **#healthTimer**: *Timeout | null* = null
+
+*Defined in [api/src/base/Init.ts:23](https://github.com/polkadot-js/api/blob/790deca695/packages/api/src/base/Init.ts#L23)*
+
+___
+
+### `Optional` #updateSub
+
+• **#updateSub**? : *Subscription*
+
+*Defined in [api/src/base/Init.ts:25](https://github.com/polkadot-js/api/blob/790deca695/packages/api/src/base/Init.ts#L25)*
+
+___
+
+###  registry
+
+• **registry**: *Registry*
+
+*Inherited from [Init](_base_init_.init.md).[registry](_base_init_.init.md#registry)*
+
+*Defined in [api/src/base/Decorate.ts:43](https://github.com/polkadot-js/api/blob/790deca695/packages/api/src/base/Decorate.ts#L43)*
+
+## Accessors
+
+###  hasSubscriptions
+
+• **get hasSubscriptions**(): *boolean*
+
+*Inherited from [Init](_base_init_.init.md).[hasSubscriptions](_base_init_.init.md#hassubscriptions)*
+
+*Defined in [api/src/base/Decorate.ts:147](https://github.com/polkadot-js/api/blob/790deca695/packages/api/src/base/Decorate.ts#L147)*
+
+**Returns:** *boolean*
+
+`true` if the API operates with subscriptions
+
+## Methods
+
+###  #onProviderConnect
+
+▸ **#onProviderConnect**(): *Promise‹void›*
+
+*Defined in [api/src/base/Init.ts:204](https://github.com/polkadot-js/api/blob/790deca695/packages/api/src/base/Init.ts#L204)*
+
+**Returns:** *Promise‹void›*
+
+___
+
+###  #onProviderDisconnect
+
+▸ **#onProviderDisconnect**(): *void*
+
+*Defined in [api/src/base/Init.ts:234](https://github.com/polkadot-js/api/blob/790deca695/packages/api/src/base/Init.ts#L234)*
+
+**Returns:** *void*
+
+___
+
+###  #onProviderError
+
+▸ **#onProviderError**(`error`: Error): *void*
+
+*Defined in [api/src/base/Init.ts:244](https://github.com/polkadot-js/api/blob/790deca695/packages/api/src/base/Init.ts#L244)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`error` | Error |
+
+**Returns:** *void*
+
+___
+
+### `Abstract` createType
+
+▸ **createType**<**K**>(`type`: K, ...`params`: any[]): *InterfaceRegistry[K]*
+
+*Inherited from [Init](_base_init_.init.md).[createType](_base_init_.init.md#abstract-createtype)*
+
+*Defined in [api/src/base/Decorate.ts:140](https://github.com/polkadot-js/api/blob/790deca695/packages/api/src/base/Decorate.ts#L140)*
+
+**Type parameters:**
+
+▪ **K**: *InterfaceTypes*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`type` | K |
+`...params` | any[] |
+
+**Returns:** *InterfaceRegistry[K]*
+
+___
+
+###  injectMetadata
+
+▸ **injectMetadata**(`metadata`: Metadata, `fromEmpty?`: undefined | false | true): *void*
+
+*Inherited from [Init](_base_init_.init.md).[injectMetadata](_base_init_.init.md#injectmetadata)*
+
+*Defined in [api/src/base/Decorate.ts:151](https://github.com/polkadot-js/api/blob/790deca695/packages/api/src/base/Decorate.ts#L151)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`metadata` | Metadata |
+`fromEmpty?` | undefined &#124; false &#124; true |
+
+**Returns:** *void*
+
+___
+
+###  off
+
+▸ **off**(`type`: ApiInterfaceEvents, `handler`: function): *this*
+
+*Inherited from [Init](_base_init_.init.md).[off](_base_init_.init.md#off)*
+
+*Defined in [api/src/base/Events.ts:62](https://github.com/polkadot-js/api/blob/790deca695/packages/api/src/base/Events.ts#L62)*
+
+**`description`** Remove the given eventemitter handler
+
+**`example`** 
+<BR>
+
+```javascript
+const handler = (): void => {
+ console.log('Connected !);
+};
+
+// Start listening
+api.on('connected', handler);
+
+// Stop listening
+api.off('connected', handler);
+```
+
+**Parameters:**
+
+▪ **type**: *ApiInterfaceEvents*
+
+The type of event the callback was attached to. Available events are `connected`, `disconnected`, `ready` and `error`
+
+▪ **handler**: *function*
+
+The callback to unregister.
+
+▸ (...`args`: any[]): *any*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
+
+___
+
+###  on
+
+▸ **on**(`type`: ApiInterfaceEvents, `handler`: function): *this*
+
+*Inherited from [Init](_base_init_.init.md).[on](_base_init_.init.md#on)*
+
+*Defined in [api/src/base/Events.ts:35](https://github.com/polkadot-js/api/blob/790deca695/packages/api/src/base/Events.ts#L35)*
+
+**`description`** Attach an eventemitter handler to listen to a specific event
+
+**`example`** 
+<BR>
+
+```javascript
+api.on('connected', (): void => {
+  console.log('API has been connected to the endpoint');
+});
+
+api.on('disconnected', (): void => {
+  console.log('API has been disconnected from the endpoint');
+});
+```
+
+**Parameters:**
+
+▪ **type**: *ApiInterfaceEvents*
+
+The type of event to listen to. Available events are `connected`, `disconnected`, `ready` and `error`
+
+▪ **handler**: *function*
+
+The callback to be called when the event fires. Depending on the event type, it could fire with additional arguments.
+
+▸ (...`args`: any[]): *any*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
+
+___
+
+###  once
+
+▸ **once**(`type`: ApiInterfaceEvents, `handler`: function): *this*
+
+*Inherited from [Init](_base_init_.init.md).[once](_base_init_.init.md#once)*
+
+*Defined in [api/src/base/Events.ts:87](https://github.com/polkadot-js/api/blob/790deca695/packages/api/src/base/Events.ts#L87)*
+
+**`description`** Attach an one-time eventemitter handler to listen to a specific event
+
+**`example`** 
+<BR>
+
+```javascript
+api.once('connected', (): void => {
+  console.log('API has been connected to the endpoint');
+});
+
+api.once('disconnected', (): void => {
+  console.log('API has been disconnected from the endpoint');
+});
+```
+
+**Parameters:**
+
+▪ **type**: *ApiInterfaceEvents*
+
+The type of event to listen to. Available events are `connected`, `disconnected`, `ready` and `error`
+
+▪ **handler**: *function*
+
+The callback to be called when the event fires. Depending on the event type, it could fire with additional arguments.
+
+▸ (...`args`: any[]): *any*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...args` | any[] |
+
+**Returns:** *this*
+
+___
+
+### `Abstract` registerTypes
+
+▸ **registerTypes**(`types?`: RegistryTypes): *void*
+
+*Inherited from [Init](_base_init_.init.md).[registerTypes](_base_init_.init.md#abstract-registertypes)*
+
+*Defined in [api/src/base/Decorate.ts:142](https://github.com/polkadot-js/api/blob/790deca695/packages/api/src/base/Decorate.ts#L142)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`types?` | RegistryTypes |
+
+**Returns:** *void*
