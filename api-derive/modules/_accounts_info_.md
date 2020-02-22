@@ -14,7 +14,7 @@
 
 ▸ **info**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/accounts/info.ts:106](https://github.com/polkadot-js/api/blob/790deca695/packages/api-derive/src/accounts/info.ts#L106)*
+*Defined in [packages/api-derive/src/accounts/info.ts:106](https://github.com/polkadot-js/api/blob/196a0891b/packages/api-derive/src/accounts/info.ts#L106)*
 
 **`name`** info
 

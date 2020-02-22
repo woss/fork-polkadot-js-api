@@ -12,17 +12,13 @@
 
 * [DEFAULT_UINT_BITS](_codec_abstractint_.md#const-default_uint_bits)
 
-### Functions
-
-* [isBigInt](_codec_abstractint_.md#isbigint)
-
 ## Type aliases
 
 ###  UIntBitLength
 
 Ƭ **UIntBitLength**: *8 | 16 | 32 | 64 | 128 | 256*
 
-*Defined in [packages/types/src/codec/AbstractInt.ts:14](https://github.com/polkadot-js/api/blob/790deca695/packages/types/src/codec/AbstractInt.ts#L14)*
+*Defined in [packages/types/src/codec/AbstractInt.ts:14](https://github.com/polkadot-js/api/blob/196a0891b/packages/types/src/codec/AbstractInt.ts#L14)*
 
 ## Variables
 
@@ -30,20 +26,4 @@
 
 • **DEFAULT_UINT_BITS**: *64* = 64
 
-*Defined in [packages/types/src/codec/AbstractInt.ts:16](https://github.com/polkadot-js/api/blob/790deca695/packages/types/src/codec/AbstractInt.ts#L16)*
-
-## Functions
-
-###  isBigInt
-
-▸ **isBigInt**(`value`: any): *value is BigInt*
-
-*Defined in [packages/types/src/codec/AbstractInt.ts:19](https://github.com/polkadot-js/api/blob/790deca695/packages/types/src/codec/AbstractInt.ts#L19)*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`value` | any |
-
-**Returns:** *value is BigInt*
+*Defined in [packages/types/src/codec/AbstractInt.ts:16](https://github.com/polkadot-js/api/blob/196a0891b/packages/types/src/codec/AbstractInt.ts#L16)*
