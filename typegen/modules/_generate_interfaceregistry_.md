@@ -6,14 +6,14 @@
 
 ### Functions
 
-* [generateDefaultInterfaceRegistry](_generate_interfaceregistry_.md#generatedefaultinterfaceregistry)
+* [generateDefaultInterfaceTypes](_generate_interfaceregistry_.md#generatedefaultinterfacetypes)
 
 ## Functions
 
-###  generateDefaultInterfaceRegistry
+###  generateDefaultInterfaceTypes
 
-▸ **generateDefaultInterfaceRegistry**(): *void*
+▸ **generateDefaultInterfaceTypes**(): *void*
 
-*Defined in [generate/interfaceRegistry.ts:67](https://github.com/polkadot-js/api/blob/553b3df0b/packages/typegen/src/generate/interfaceRegistry.ts#L67)*
+*Defined in [generate/interfaceRegistry.ts:67](https://github.com/polkadot-js/api/blob/869f9b7af/packages/typegen/src/generate/interfaceRegistry.ts#L67)*
 
 **Returns:** *void*

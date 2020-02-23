@@ -15,13 +15,13 @@
 
 ###  ClassOf
 
-▸ **ClassOf**<**K**>(`registry`: [Registry](../interfaces/_types_registry_.registry.md), `name`: K): *[Constructor](../interfaces/_types_codec_.constructor.md)‹InterfaceRegistry[K]›*
+▸ **ClassOf**<**K**>(`registry`: [Registry](../interfaces/_types_registry_.registry.md), `name`: K): *[Constructor](../interfaces/_types_codec_.constructor.md)‹InterfaceTypes[K]›*
 
-*Defined in [packages/types/src/create/createClass.ts:41](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/create/createClass.ts#L41)*
+*Defined in [packages/types/src/create/createClass.ts:40](https://github.com/polkadot-js/api/blob/869f9b7af/packages/types/src/create/createClass.ts#L40)*
 
 **Type parameters:**
 
-▪ **K**: *[InterfaceTypes](_types_helpers_.md#interfacetypes)*
+▪ **K**: *keyof InterfaceTypes*
 
 **Parameters:**
 
@@ -30,7 +30,7 @@ Name | Type |
 `registry` | [Registry](../interfaces/_types_registry_.registry.md) |
 `name` | K |
 
-**Returns:** *[Constructor](../interfaces/_types_codec_.constructor.md)‹InterfaceRegistry[K]›*
+**Returns:** *[Constructor](../interfaces/_types_codec_.constructor.md)‹InterfaceTypes[K]›*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 ▸ **ClassOfUnsafe**<**T**, **K**>(`registry`: [Registry](../interfaces/_types_registry_.registry.md), `name`: K): *[Constructor](../interfaces/_types_codec_.constructor.md)‹FromReg‹T, K››*
 
-*Defined in [packages/types/src/create/createClass.ts:36](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/create/createClass.ts#L36)*
+*Defined in [packages/types/src/create/createClass.ts:35](https://github.com/polkadot-js/api/blob/869f9b7af/packages/types/src/create/createClass.ts#L35)*
 
 **Type parameters:**
 
@@ -61,7 +61,7 @@ ___
 
 ▸ **createClass**<**T**, **K**>(`registry`: [Registry](../interfaces/_types_registry_.registry.md), `type`: K): *[Constructor](../interfaces/_types_codec_.constructor.md)‹FromReg‹T, K››*
 
-*Defined in [packages/types/src/create/createClass.ts:28](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/create/createClass.ts#L28)*
+*Defined in [packages/types/src/create/createClass.ts:27](https://github.com/polkadot-js/api/blob/869f9b7af/packages/types/src/create/createClass.ts#L27)*
 
 **Type parameters:**
 
@@ -84,7 +84,7 @@ ___
 
 ▸ **getTypeClass**<**T**>(`registry`: [Registry](../interfaces/_types_registry_.registry.md), `value`: TypeDef): *[Constructor](../interfaces/_types_codec_.constructor.md)‹T›*
 
-*Defined in [packages/types/src/create/createClass.ts:171](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/create/createClass.ts#L171)*
+*Defined in [packages/types/src/create/createClass.ts:170](https://github.com/polkadot-js/api/blob/869f9b7af/packages/types/src/create/createClass.ts#L170)*
 
 **Type parameters:**
 

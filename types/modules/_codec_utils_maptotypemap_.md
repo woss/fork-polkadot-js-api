@@ -13,9 +13,9 @@
 
 ###  mapToTypeMap
 
-▸ **mapToTypeMap**(`registry`: [Registry](../interfaces/_types_registry_.registry.md), `input`: Record‹string, [InterfaceTypes](_types_helpers_.md#interfacetypes) | [Constructor](../interfaces/_types_codec_.constructor.md)›): *Record‹string, [Constructor](../interfaces/_types_codec_.constructor.md)›*
+▸ **mapToTypeMap**(`registry`: [Registry](../interfaces/_types_registry_.registry.md), `input`: Record‹string, keyof InterfaceTypes | [Constructor](../interfaces/_types_codec_.constructor.md)›): *Record‹string, [Constructor](../interfaces/_types_codec_.constructor.md)›*
 
-*Defined in [packages/types/src/codec/utils/mapToTypeMap.ts:22](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/utils/mapToTypeMap.ts#L22)*
+*Defined in [packages/types/src/codec/utils/mapToTypeMap.ts:22](https://github.com/polkadot-js/api/blob/869f9b7af/packages/types/src/codec/utils/mapToTypeMap.ts#L22)*
 
 **`description`** takes an input map of the form `{ [string]: string | Constructor }` and returns a map of `{ [string]: Constructor }`
 
@@ -24,7 +24,7 @@
 Name | Type |
 ------ | ------ |
 `registry` | [Registry](../interfaces/_types_registry_.registry.md) |
-`input` | Record‹string, [InterfaceTypes](_types_helpers_.md#interfacetypes) &#124; [Constructor](../interfaces/_types_codec_.constructor.md)› |
+`input` | Record‹string, keyof InterfaceTypes &#124; [Constructor](../interfaces/_types_codec_.constructor.md)› |
 
 **Returns:** *Record‹string, [Constructor](../interfaces/_types_codec_.constructor.md)›*
 
@@ -32,9 +32,9 @@ ___
 
 ###  typeToConstructor
 
-▸ **typeToConstructor**<**T**>(`registry`: [Registry](../interfaces/_types_registry_.registry.md), `type`: [InterfaceTypes](_types_helpers_.md#interfacetypes) | [Constructor](../interfaces/_types_codec_.constructor.md)‹T›): *[Constructor](../interfaces/_types_codec_.constructor.md)‹T›*
+▸ **typeToConstructor**<**T**>(`registry`: [Registry](../interfaces/_types_registry_.registry.md), `type`: keyof InterfaceTypes | [Constructor](../interfaces/_types_codec_.constructor.md)‹T›): *[Constructor](../interfaces/_types_codec_.constructor.md)‹T›*
 
-*Defined in [packages/types/src/codec/utils/mapToTypeMap.ts:11](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/utils/mapToTypeMap.ts#L11)*
+*Defined in [packages/types/src/codec/utils/mapToTypeMap.ts:11](https://github.com/polkadot-js/api/blob/869f9b7af/packages/types/src/codec/utils/mapToTypeMap.ts#L11)*
 
 **Type parameters:**
 
@@ -45,6 +45,6 @@ ___
 Name | Type |
 ------ | ------ |
 `registry` | [Registry](../interfaces/_types_registry_.registry.md) |
-`type` | [InterfaceTypes](_types_helpers_.md#interfacetypes) &#124; [Constructor](../interfaces/_types_codec_.constructor.md)‹T› |
+`type` | keyof InterfaceTypes &#124; [Constructor](../interfaces/_types_codec_.constructor.md)‹T› |
 
 **Returns:** *[Constructor](../interfaces/_types_codec_.constructor.md)‹T›*
