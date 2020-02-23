@@ -92,7 +92,7 @@ The versioned runtime metadata as a decoded structure
 
 *Overrides [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[constructor](_metadata_metadataversioned_.metadataversioned.md#constructor)*
 
-*Defined in [packages/metadata/src/Metadata/Metadata.ts:43](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/Metadata.ts#L43)*
+*Defined in [packages/metadata/src/Metadata/Metadata.ts:43](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/Metadata.ts#L43)*
 
 **Parameters:**
 
@@ -111,7 +111,7 @@ Name | Type |
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[#converted](_metadata_metadataversioned_.metadataversioned.md##converted)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:37](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L37)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:37](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L37)*
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[registry](_metadata_metadataversioned_.metadataversioned.md#registry)*
 
-*Defined in [packages/types/src/codec/Struct.ts:106](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L106)*
+*Defined in [packages/types/src/codec/Struct.ts:106](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L106)*
 
 ___
 
@@ -141,7 +141,7 @@ Defined in node_modules/typescript/lib/lib.es2015.collection.d.ts:28
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[Type](_metadata_metadataversioned_.metadataversioned.md#type)*
 
-*Defined in [packages/types/src/codec/Struct.ts:168](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L168)*
+*Defined in [packages/types/src/codec/Struct.ts:168](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L168)*
 
 **`description`** Returns the Type description to sthe structure
 
@@ -155,7 +155,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[asCallsOnly](_metadata_metadataversioned_.metadataversioned.md#ascallsonly)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:72](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L72)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:72](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L72)*
 
 **`description`** Returns the wrapped metadata as a limited calls-only (latest) version
 
@@ -169,7 +169,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[asLatest](_metadata_metadataversioned_.metadataversioned.md#aslatest)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:168](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L168)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:168](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L168)*
 
 **`description`** Returns the wrapped values as a latest version object
 
@@ -183,7 +183,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[asV0](_metadata_metadataversioned_.metadataversioned.md#asv0)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:82](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L82)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:82](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L82)*
 
 **`description`** Returns the wrapped metadata as a V0 object
 
@@ -197,7 +197,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[asV1](_metadata_metadataversioned_.metadataversioned.md#asv1)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:91](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L91)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:91](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L91)*
 
 **`description`** Returns the wrapped values as a V1 object
 
@@ -211,7 +211,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[asV10](_metadata_metadataversioned_.metadataversioned.md#asv10)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:154](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L154)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:154](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L154)*
 
 **`description`** Returns the wrapped values as a V10 object
 
@@ -225,7 +225,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[asV11](_metadata_metadataversioned_.metadataversioned.md#asv11)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:161](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L161)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:161](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L161)*
 
 **`description`** Returns the wrapped values as a V10 object
 
@@ -239,7 +239,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[asV2](_metadata_metadataversioned_.metadataversioned.md#asv2)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:98](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L98)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:98](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L98)*
 
 **`description`** Returns the wrapped values as a V2 object
 
@@ -253,7 +253,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[asV3](_metadata_metadataversioned_.metadataversioned.md#asv3)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:105](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L105)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:105](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L105)*
 
 **`description`** Returns the wrapped values as a V3 object
 
@@ -267,7 +267,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[asV4](_metadata_metadataversioned_.metadataversioned.md#asv4)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:112](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L112)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:112](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L112)*
 
 **`description`** Returns the wrapped values as a V4 object
 
@@ -281,7 +281,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[asV5](_metadata_metadataversioned_.metadataversioned.md#asv5)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:119](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L119)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:119](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L119)*
 
 **`description`** Returns the wrapped values as a V5 object
 
@@ -295,7 +295,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[asV6](_metadata_metadataversioned_.metadataversioned.md#asv6)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:126](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L126)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:126](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L126)*
 
 **`description`** Returns the wrapped values as a V6 object
 
@@ -309,7 +309,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[asV7](_metadata_metadataversioned_.metadataversioned.md#asv7)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:133](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L133)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:133](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L133)*
 
 **`description`** Returns the wrapped values as a V7 object
 
@@ -323,7 +323,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[asV8](_metadata_metadataversioned_.metadataversioned.md#asv8)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:140](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L140)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:140](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L140)*
 
 **`description`** Returns the wrapped values as a V8 object
 
@@ -337,7 +337,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[asV9](_metadata_metadataversioned_.metadataversioned.md#asv9)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:147](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L147)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:147](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L147)*
 
 **`description`** Returns the wrapped values as a V9 object
 
@@ -351,7 +351,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[defKeys](_metadata_metadataversioned_.metadataversioned.md#defkeys)*
 
-*Defined in [packages/types/src/codec/Struct.ts:146](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L146)*
+*Defined in [packages/types/src/codec/Struct.ts:146](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L146)*
 
 **`description`** The available keys for this enum
 
@@ -365,7 +365,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[encodedLength](_metadata_metadataversioned_.metadataversioned.md#encodedlength)*
 
-*Defined in [packages/types/src/codec/Struct.ts:181](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L181)*
+*Defined in [packages/types/src/codec/Struct.ts:181](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L181)*
 
 **`description`** The length of the value when encoded as a Uint8Array
 
@@ -379,7 +379,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[hash](_metadata_metadataversioned_.metadataversioned.md#hash)*
 
-*Defined in [packages/types/src/codec/Struct.ts:192](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L192)*
+*Defined in [packages/types/src/codec/Struct.ts:192](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L192)*
 
 **`description`** returns a hash of the contents
 
@@ -393,7 +393,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[isEmpty](_metadata_metadataversioned_.metadataversioned.md#isempty)*
 
-*Defined in [packages/types/src/codec/Struct.ts:153](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L153)*
+*Defined in [packages/types/src/codec/Struct.ts:153](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L153)*
 
 **`description`** Checks if the value is an empty value
 
@@ -407,7 +407,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[magicNumber](_metadata_metadataversioned_.metadataversioned.md#magicnumber)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:176](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L176)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:176](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L176)*
 
 **`description`** 
 
@@ -421,7 +421,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[version](_metadata_metadataversioned_.metadataversioned.md#version)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:190](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L190)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:190](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L190)*
 
 **`description`** the metadata version this structure represents
 
@@ -465,7 +465,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[eq](_metadata_metadataversioned_.metadataversioned.md#eq)*
 
-*Defined in [packages/types/src/codec/Struct.ts:199](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L199)*
+*Defined in [packages/types/src/codec/Struct.ts:199](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L199)*
 
 **`description`** Compares the value of the input to see if there is a match
 
@@ -515,7 +515,7 @@ ___
 
 *Overrides void*
 
-*Defined in [packages/types/src/codec/Struct.ts:207](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L207)*
+*Defined in [packages/types/src/codec/Struct.ts:207](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L207)*
 
 **`description`** Returns a specific names entry in the structure
 
@@ -535,7 +535,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[getAtIndex](_metadata_metadataversioned_.metadataversioned.md#getatindex)*
 
-*Defined in [packages/types/src/codec/Struct.ts:214](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L214)*
+*Defined in [packages/types/src/codec/Struct.ts:214](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L214)*
 
 **`description`** Returns the values of a member at a specific index (Rather use get(name) for performance)
 
@@ -555,7 +555,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[getUniqTypes](_metadata_metadataversioned_.metadataversioned.md#getuniqtypes)*
 
-*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:194](https://github.com/polkadot-js/api/blob/443706a6e/packages/metadata/src/Metadata/MetadataVersioned.ts#L194)*
+*Defined in [packages/metadata/src/Metadata/MetadataVersioned.ts:194](https://github.com/polkadot-js/api/blob/553b3df0b/packages/metadata/src/Metadata/MetadataVersioned.ts#L194)*
 
 **Parameters:**
 
@@ -610,7 +610,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[toArray](_metadata_metadataversioned_.metadataversioned.md#toarray)*
 
-*Defined in [packages/types/src/codec/Struct.ts:221](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L221)*
+*Defined in [packages/types/src/codec/Struct.ts:221](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L221)*
 
 **`description`** Converts the Object to an standard JavaScript Array
 
@@ -624,7 +624,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[toHex](_metadata_metadataversioned_.metadataversioned.md#tohex)*
 
-*Defined in [packages/types/src/codec/Struct.ts:228](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L228)*
+*Defined in [packages/types/src/codec/Struct.ts:228](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L228)*
 
 **`description`** Returns a hex string representation of the value
 
@@ -638,7 +638,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[toHuman](_metadata_metadataversioned_.metadataversioned.md#tohuman)*
 
-*Defined in [packages/types/src/codec/Struct.ts:235](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L235)*
+*Defined in [packages/types/src/codec/Struct.ts:235](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L235)*
 
 **`description`** Converts the Object to to a human-friendly JSON, with additional fields, expansion and formatting of information
 
@@ -658,7 +658,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[toJSON](_metadata_metadataversioned_.metadataversioned.md#tojson)*
 
-*Defined in [packages/types/src/codec/Struct.ts:249](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L249)*
+*Defined in [packages/types/src/codec/Struct.ts:249](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L249)*
 
 **`description`** Converts the Object to JSON, typically used for RPC transfers
 
@@ -672,7 +672,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[toRawType](_metadata_metadataversioned_.metadataversioned.md#torawtype)*
 
-*Defined in [packages/types/src/codec/Struct.ts:273](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L273)*
+*Defined in [packages/types/src/codec/Struct.ts:273](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L273)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -686,7 +686,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[toString](_metadata_metadataversioned_.metadataversioned.md#tostring)*
 
-*Defined in [packages/types/src/codec/Struct.ts:282](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L282)*
+*Defined in [packages/types/src/codec/Struct.ts:282](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L282)*
 
 **`description`** Returns the string representation of the value
 
@@ -700,7 +700,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[toU8a](_metadata_metadataversioned_.metadataversioned.md#tou8a)*
 
-*Defined in [packages/types/src/codec/Struct.ts:290](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L290)*
+*Defined in [packages/types/src/codec/Struct.ts:290](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L290)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 
@@ -720,7 +720,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[typesToMap](_metadata_metadataversioned_.metadataversioned.md#static-typestomap)*
 
-*Defined in [packages/types/src/codec/Struct.ts:262](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L262)*
+*Defined in [packages/types/src/codec/Struct.ts:262](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L262)*
 
 **Parameters:**
 
@@ -739,7 +739,7 @@ ___
 
 *Inherited from [MetadataVersioned](_metadata_metadataversioned_.metadataversioned.md).[with](_metadata_metadataversioned_.metadataversioned.md#static-with)*
 
-*Defined in [packages/types/src/codec/Struct.ts:123](https://github.com/polkadot-js/api/blob/443706a6e/packages/types/src/codec/Struct.ts#L123)*
+*Defined in [packages/types/src/codec/Struct.ts:123](https://github.com/polkadot-js/api/blob/553b3df0b/packages/types/src/codec/Struct.ts#L123)*
 
 **Type parameters:**
 
