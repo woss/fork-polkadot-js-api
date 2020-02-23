@@ -23,3 +23,4 @@
 * ["util/file"](modules/_util_file_.md)
 * ["util/formatting"](modules/_util_formatting_.md)
 * ["util/imports"](modules/_util_imports_.md)
+* ["util/register"](modules/_util_register_.md)
