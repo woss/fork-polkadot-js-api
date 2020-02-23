@@ -6,6 +6,7 @@
 
 ### External modules
 
+* ["augment/interfaceRegistry"](modules/_augment_interfaceregistry_.md)
 * ["classes"](modules/_classes_.md)
 * ["codec/AbstractArray"](modules/_codec_abstractarray_.md)
 * ["codec/AbstractInt"](modules/_codec_abstractint_.md)
@@ -73,7 +74,6 @@
 * ["generic/Event"](modules/_generic_event_.md)
 * ["generic/Origin"](modules/_generic_origin_.md)
 * ["generic/Vote"](modules/_generic_vote_.md)
-* ["interfaceAugment"](modules/_interfaceaugment_.md)
 * ["interfaceRegistry"](modules/_interfaceregistry_.md)
 * ["interfaces/attestations/definitions"](modules/_interfaces_attestations_definitions_.md)
 * ["interfaces/aura/definitions"](modules/_interfaces_aura_definitions_.md)
