@@ -17,7 +17,7 @@
 "* = "
 "
 
-*Defined in [util/formatting.ts:13](https://github.com/polkadot-js/api/blob/af643401b/packages/typegen/src/util/formatting.ts#L13)*
+*Defined in [util/formatting.ts:13](https://github.com/polkadot-js/api/blob/c6355fb14/packages/typegen/src/util/formatting.ts#L13)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 "
 
-*Defined in [util/formatting.ts:12](https://github.com/polkadot-js/api/blob/af643401b/packages/typegen/src/util/formatting.ts#L12)*
+*Defined in [util/formatting.ts:12](https://github.com/polkadot-js/api/blob/c6355fb14/packages/typegen/src/util/formatting.ts#L12)*
