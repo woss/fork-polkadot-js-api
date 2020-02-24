@@ -60,7 +60,7 @@ i.e. we remove the `T::` prefixes found in some types for consistency across imp
 
 *Overrides [Text](_primitive_text_.text.md).[constructor](_primitive_text_.text.md#constructor)*
 
-*Defined in [packages/types/src/primitive/Type.ts:17](https://github.com/polkadot-js/api/blob/51cb64ade/packages/types/src/primitive/Type.ts#L17)*
+*Defined in [packages/types/src/primitive/Type.ts:17](https://github.com/polkadot-js/api/blob/bab79b647/packages/types/src/primitive/Type.ts#L17)*
 
 **Parameters:**
 
@@ -79,7 +79,7 @@ Name | Type | Default |
 
 *Inherited from [Text](_primitive_text_.text.md).[#override](_primitive_text_.text.md##override)*
 
-*Defined in [packages/types/src/primitive/Text.ts:54](https://github.com/polkadot-js/api/blob/51cb64ade/packages/types/src/primitive/Text.ts#L54)*
+*Defined in [packages/types/src/primitive/Text.ts:54](https://github.com/polkadot-js/api/blob/bab79b647/packages/types/src/primitive/Text.ts#L54)*
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 *Inherited from [Text](_primitive_text_.text.md).[registry](_primitive_text_.text.md#registry)*
 
-*Defined in [packages/types/src/primitive/Text.ts:52](https://github.com/polkadot-js/api/blob/51cb64ade/packages/types/src/primitive/Text.ts#L52)*
+*Defined in [packages/types/src/primitive/Text.ts:52](https://github.com/polkadot-js/api/blob/bab79b647/packages/types/src/primitive/Text.ts#L52)*
 
 ## Accessors
 
@@ -101,7 +101,7 @@ ___
 
 *Inherited from [Text](_primitive_text_.text.md).[encodedLength](_primitive_text_.text.md#encodedlength)*
 
-*Defined in [packages/types/src/primitive/Text.ts:65](https://github.com/polkadot-js/api/blob/51cb64ade/packages/types/src/primitive/Text.ts#L65)*
+*Defined in [packages/types/src/primitive/Text.ts:65](https://github.com/polkadot-js/api/blob/bab79b647/packages/types/src/primitive/Text.ts#L65)*
 
 **`description`** The length of the value when encoded as a Uint8Array
 
@@ -115,7 +115,7 @@ ___
 
 *Inherited from [Text](_primitive_text_.text.md).[hash](_primitive_text_.text.md#hash)*
 
-*Defined in [packages/types/src/primitive/Text.ts:72](https://github.com/polkadot-js/api/blob/51cb64ade/packages/types/src/primitive/Text.ts#L72)*
+*Defined in [packages/types/src/primitive/Text.ts:72](https://github.com/polkadot-js/api/blob/bab79b647/packages/types/src/primitive/Text.ts#L72)*
 
 **`description`** returns a hash of the contents
 
@@ -129,7 +129,7 @@ ___
 
 *Inherited from [Text](_primitive_text_.text.md).[isEmpty](_primitive_text_.text.md#isempty)*
 
-*Defined in [packages/types/src/primitive/Text.ts:79](https://github.com/polkadot-js/api/blob/51cb64ade/packages/types/src/primitive/Text.ts#L79)*
+*Defined in [packages/types/src/primitive/Text.ts:79](https://github.com/polkadot-js/api/blob/bab79b647/packages/types/src/primitive/Text.ts#L79)*
 
 **`description`** Checks if the value is an empty value
 
@@ -145,7 +145,7 @@ ___
 
 *Overrides [RegistryMetadataText](../interfaces/_types_registry_.registrymetadatatext.md).[length](../interfaces/_types_registry_.registrymetadatatext.md#length)*
 
-*Defined in [packages/types/src/primitive/Text.ts:86](https://github.com/polkadot-js/api/blob/51cb64ade/packages/types/src/primitive/Text.ts#L86)*
+*Defined in [packages/types/src/primitive/Text.ts:86](https://github.com/polkadot-js/api/blob/bab79b647/packages/types/src/primitive/Text.ts#L86)*
 
 **`description`** The length of the value
 
@@ -161,7 +161,7 @@ ___
 
 *Inherited from [Text](_primitive_text_.text.md).[eq](_primitive_text_.text.md#eq)*
 
-*Defined in [packages/types/src/primitive/Text.ts:94](https://github.com/polkadot-js/api/blob/51cb64ade/packages/types/src/primitive/Text.ts#L94)*
+*Defined in [packages/types/src/primitive/Text.ts:94](https://github.com/polkadot-js/api/blob/bab79b647/packages/types/src/primitive/Text.ts#L94)*
 
 **`description`** Compares the value of the input to see if there is a match
 
@@ -181,7 +181,7 @@ ___
 
 *Inherited from [Text](_primitive_text_.text.md).[setOverride](_primitive_text_.text.md#setoverride)*
 
-*Defined in [packages/types/src/primitive/Text.ts:103](https://github.com/polkadot-js/api/blob/51cb64ade/packages/types/src/primitive/Text.ts#L103)*
+*Defined in [packages/types/src/primitive/Text.ts:103](https://github.com/polkadot-js/api/blob/bab79b647/packages/types/src/primitive/Text.ts#L103)*
 
 **`description`** Set an override value for this
 
@@ -201,7 +201,7 @@ ___
 
 *Inherited from [Text](_primitive_text_.text.md).[toHex](_primitive_text_.text.md#tohex)*
 
-*Defined in [packages/types/src/primitive/Text.ts:110](https://github.com/polkadot-js/api/blob/51cb64ade/packages/types/src/primitive/Text.ts#L110)*
+*Defined in [packages/types/src/primitive/Text.ts:110](https://github.com/polkadot-js/api/blob/bab79b647/packages/types/src/primitive/Text.ts#L110)*
 
 **`description`** Returns a hex string representation of the value
 
@@ -215,7 +215,7 @@ ___
 
 *Inherited from [Text](_primitive_text_.text.md).[toHuman](_primitive_text_.text.md#tohuman)*
 
-*Defined in [packages/types/src/primitive/Text.ts:119](https://github.com/polkadot-js/api/blob/51cb64ade/packages/types/src/primitive/Text.ts#L119)*
+*Defined in [packages/types/src/primitive/Text.ts:119](https://github.com/polkadot-js/api/blob/bab79b647/packages/types/src/primitive/Text.ts#L119)*
 
 **`description`** Converts the Object to to a human-friendly JSON, with additional fields, expansion and formatting of information
 
@@ -231,7 +231,7 @@ ___
 
 *Inherited from [Text](_primitive_text_.text.md).[toJSON](_primitive_text_.text.md#tojson)*
 
-*Defined in [packages/types/src/primitive/Text.ts:126](https://github.com/polkadot-js/api/blob/51cb64ade/packages/types/src/primitive/Text.ts#L126)*
+*Defined in [packages/types/src/primitive/Text.ts:126](https://github.com/polkadot-js/api/blob/bab79b647/packages/types/src/primitive/Text.ts#L126)*
 
 **`description`** Converts the Object to JSON, typically used for RPC transfers
 
@@ -247,7 +247,7 @@ ___
 
 *Overrides [Text](_primitive_text_.text.md).[toRawType](_primitive_text_.text.md#torawtype)*
 
-*Defined in [packages/types/src/primitive/Type.ts:27](https://github.com/polkadot-js/api/blob/51cb64ade/packages/types/src/primitive/Type.ts#L27)*
+*Defined in [packages/types/src/primitive/Type.ts:27](https://github.com/polkadot-js/api/blob/bab79b647/packages/types/src/primitive/Type.ts#L27)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -265,7 +265,7 @@ ___
 
 *Overrides [RegistryMetadataText](../interfaces/_types_registry_.registrymetadatatext.md).[toString](../interfaces/_types_registry_.registrymetadatatext.md#tostring)*
 
-*Defined in [packages/types/src/primitive/Text.ts:140](https://github.com/polkadot-js/api/blob/51cb64ade/packages/types/src/primitive/Text.ts#L140)*
+*Defined in [packages/types/src/primitive/Text.ts:140](https://github.com/polkadot-js/api/blob/bab79b647/packages/types/src/primitive/Text.ts#L140)*
 
 **`description`** Returns the string representation of the value
 
@@ -279,7 +279,7 @@ ___
 
 *Inherited from [Text](_primitive_text_.text.md).[toU8a](_primitive_text_.text.md#tou8a)*
 
-*Defined in [packages/types/src/primitive/Text.ts:148](https://github.com/polkadot-js/api/blob/51cb64ade/packages/types/src/primitive/Text.ts#L148)*
+*Defined in [packages/types/src/primitive/Text.ts:148](https://github.com/polkadot-js/api/blob/bab79b647/packages/types/src/primitive/Text.ts#L148)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 
