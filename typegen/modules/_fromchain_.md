@@ -14,6 +14,6 @@
 
 ▸ **main**(): *void*
 
-*Defined in [fromChain.ts:61](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/typegen/src/fromChain.ts#L61)*
+*Defined in [fromChain.ts:61](https://github.com/polkadot-js/api/blob/253e48f7b/packages/typegen/src/fromChain.ts#L61)*
 
 **Returns:** *void*

@@ -57,7 +57,7 @@ and has all the methods available that are applicable to any `Date`
 
 \+ **new CodecDate**(`registry`: [Registry](../interfaces/_types_registry_.registry.md), `value`: [CodecDate](_codec_date_.codecdate.md) | [Date](_codec_date_.codecdate.md#static-date) | [AnyNumber](../modules/_types_helpers_.md#anynumber)): *[CodecDate](_codec_date_.codecdate.md)*
 
-*Defined in [packages/types/src/codec/Date.ts:28](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/types/src/codec/Date.ts#L28)*
+*Defined in [packages/types/src/codec/Date.ts:28](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/codec/Date.ts#L28)*
 
 **Parameters:**
 
@@ -76,7 +76,7 @@ Name | Type | Default |
 
 *Implementation of [Codec](../interfaces/_types_codec_.codec.md).[registry](../interfaces/_types_codec_.codec.md#registry)*
 
-*Defined in [packages/types/src/codec/Date.ts:28](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/types/src/codec/Date.ts#L28)*
+*Defined in [packages/types/src/codec/Date.ts:28](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/codec/Date.ts#L28)*
 
 ___
 
@@ -92,7 +92,7 @@ Defined in node_modules/typescript/lib/lib.es5.d.ts:907
 
 • **get encodedLength**(): *number*
 
-*Defined in [packages/types/src/codec/Date.ts:54](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/types/src/codec/Date.ts#L54)*
+*Defined in [packages/types/src/codec/Date.ts:54](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/codec/Date.ts#L54)*
 
 **`description`** The length of the value when encoded as a Uint8Array
 
@@ -104,7 +104,7 @@ ___
 
 • **get hash**(): *H256*
 
-*Defined in [packages/types/src/codec/Date.ts:61](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/types/src/codec/Date.ts#L61)*
+*Defined in [packages/types/src/codec/Date.ts:61](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/codec/Date.ts#L61)*
 
 **`description`** returns a hash of the contents
 
@@ -116,7 +116,7 @@ ___
 
 • **get isEmpty**(): *boolean*
 
-*Defined in [packages/types/src/codec/Date.ts:68](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/types/src/codec/Date.ts#L68)*
+*Defined in [packages/types/src/codec/Date.ts:68](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/codec/Date.ts#L68)*
 
 **`description`** Checks if the value is an empty value
 
@@ -128,7 +128,7 @@ ___
 
 ▸ **bitLength**(): *[UIntBitLength](../modules/_codec_abstractint_.md#uintbitlength)*
 
-*Defined in [packages/types/src/codec/Date.ts:82](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/types/src/codec/Date.ts#L82)*
+*Defined in [packages/types/src/codec/Date.ts:82](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/codec/Date.ts#L82)*
 
 **`description`** Returns the number of bits in the value
 
@@ -142,7 +142,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_codec_.codec.md)*
 
-*Defined in [packages/types/src/codec/Date.ts:75](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/types/src/codec/Date.ts#L75)*
+*Defined in [packages/types/src/codec/Date.ts:75](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/codec/Date.ts#L75)*
 
 **`description`** Compares the value of the input to see if there is a match
 
@@ -160,7 +160,7 @@ ___
 
 ▸ **toBn**(): *BN*
 
-*Defined in [packages/types/src/codec/Date.ts:89](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/types/src/codec/Date.ts#L89)*
+*Defined in [packages/types/src/codec/Date.ts:89](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/codec/Date.ts#L89)*
 
 **`description`** Returns the BN representation of the timestamp
 
@@ -172,7 +172,7 @@ ___
 
 ▸ **toHex**(`isLe`: boolean): *string*
 
-*Defined in [packages/types/src/codec/Date.ts:96](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/types/src/codec/Date.ts#L96)*
+*Defined in [packages/types/src/codec/Date.ts:96](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/codec/Date.ts#L96)*
 
 **`description`** Returns a hex string representation of the value
 
@@ -190,7 +190,7 @@ ___
 
 ▸ **toHuman**(): *string*
 
-*Defined in [packages/types/src/codec/Date.ts:107](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/types/src/codec/Date.ts#L107)*
+*Defined in [packages/types/src/codec/Date.ts:107](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/codec/Date.ts#L107)*
 
 **`description`** Converts the Object to to a human-friendly JSON, with additional fields, expansion and formatting of information
 
@@ -206,7 +206,7 @@ ___
 
 *Overrides void*
 
-*Defined in [packages/types/src/codec/Date.ts:114](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/types/src/codec/Date.ts#L114)*
+*Defined in [packages/types/src/codec/Date.ts:114](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/codec/Date.ts#L114)*
 
 **`description`** Converts the Object to JSON, typically used for RPC transfers
 
@@ -218,7 +218,7 @@ ___
 
 ▸ **toNumber**(): *number*
 
-*Defined in [packages/types/src/codec/Date.ts:123](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/types/src/codec/Date.ts#L123)*
+*Defined in [packages/types/src/codec/Date.ts:123](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/codec/Date.ts#L123)*
 
 **`description`** Returns the number representation for the timestamp
 
@@ -232,7 +232,7 @@ ___
 
 *Implementation of [Codec](../interfaces/_types_codec_.codec.md)*
 
-*Defined in [packages/types/src/codec/Date.ts:130](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/types/src/codec/Date.ts#L130)*
+*Defined in [packages/types/src/codec/Date.ts:130](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/codec/Date.ts#L130)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -248,7 +248,7 @@ ___
 
 *Overrides void*
 
-*Defined in [packages/types/src/codec/Date.ts:137](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/types/src/codec/Date.ts#L137)*
+*Defined in [packages/types/src/codec/Date.ts:137](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/codec/Date.ts#L137)*
 
 **`description`** Returns the string representation of the value
 
@@ -260,7 +260,7 @@ ___
 
 ▸ **toU8a**(`isBare?`: undefined | false | true): *[Uint8Array](_codec_raw_.raw.md#static-uint8array)*
 
-*Defined in [packages/types/src/codec/Date.ts:147](https://github.com/polkadot-js/api/blob/c3c77ffe4/packages/types/src/codec/Date.ts#L147)*
+*Defined in [packages/types/src/codec/Date.ts:147](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/codec/Date.ts#L147)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 
