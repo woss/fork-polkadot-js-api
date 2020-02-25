@@ -85,7 +85,6 @@
 * ["interfaces/contracts/definitions"](modules/_interfaces_contracts_definitions_.md)
 * ["interfaces/definitions"](modules/_interfaces_definitions_.md)
 * ["interfaces/democracy/definitions"](modules/_interfaces_democracy_definitions_.md)
-* ["interfaces/deprecated/definitions"](modules/_interfaces_deprecated_definitions_.md)
 * ["interfaces/elections/definitions"](modules/_interfaces_elections_definitions_.md)
 * ["interfaces/engine/definitions"](modules/_interfaces_engine_definitions_.md)
 * ["interfaces/evm/definitions"](modules/_interfaces_evm_definitions_.md)

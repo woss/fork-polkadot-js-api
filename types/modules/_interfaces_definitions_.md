@@ -16,7 +16,6 @@
 * [consensus](_interfaces_definitions_.md#consensus)
 * [contracts](_interfaces_definitions_.md#contracts)
 * [democracy](_interfaces_definitions_.md#democracy)
-* [deprecated](_interfaces_definitions_.md#deprecated)
 * [elections](_interfaces_definitions_.md#elections)
 * [engine](_interfaces_definitions_.md#engine)
 * [evm](_interfaces_definitions_.md#evm)
@@ -99,12 +98,6 @@ ___
 ###  democracy
 
 • **democracy**:
-
-___
-
-###  deprecated
-
-• **deprecated**:
 
 ___
 
