@@ -18,4 +18,4 @@
 
 • **ENUMSET_SIZE**: *BN‹›* = new BN(64)
 
-*Defined in [packages/types/src/generic/AccountIndex.ts:14](https://github.com/polkadot-js/api/blob/253e48f7b/packages/types/src/generic/AccountIndex.ts#L14)*
+*Defined in [packages/types/src/generic/AccountIndex.ts:14](https://github.com/polkadot-js/api/blob/6be6b027c/packages/types/src/generic/AccountIndex.ts#L14)*
