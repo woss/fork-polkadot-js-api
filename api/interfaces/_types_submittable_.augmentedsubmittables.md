@@ -9,5 +9,3 @@
 ## Hierarchy
 
 * **AugmentedSubmittables**
-
-  ↳ [SubmittableExtrinsics](_types_submittable_.submittableextrinsics.md)

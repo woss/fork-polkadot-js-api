@@ -19,7 +19,7 @@
 
 • **method**? : *[Call](../classes/_generic_call_.call.md)*
 
-*Defined in [packages/types/src/extrinsic/v1/Extrinsic.ts:16](https://github.com/polkadot-js/api/blob/9690777ac/packages/types/src/extrinsic/v1/Extrinsic.ts#L16)*
+*Defined in [packages/types/src/extrinsic/v1/Extrinsic.ts:16](https://github.com/polkadot-js/api/blob/2d0ce2ddf/packages/types/src/extrinsic/v1/Extrinsic.ts#L16)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **signature**? : *[ExtrinsicSignatureV1](../classes/_extrinsic_v1_extrinsicsignature_.extrinsicsignaturev1.md)*
 
-*Defined in [packages/types/src/extrinsic/v1/Extrinsic.ts:17](https://github.com/polkadot-js/api/blob/9690777ac/packages/types/src/extrinsic/v1/Extrinsic.ts#L17)*
+*Defined in [packages/types/src/extrinsic/v1/Extrinsic.ts:17](https://github.com/polkadot-js/api/blob/2d0ce2ddf/packages/types/src/extrinsic/v1/Extrinsic.ts#L17)*
