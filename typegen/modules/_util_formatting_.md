@@ -7,6 +7,9 @@
 ### Variables
 
 * [FOOTER](_util_formatting_.md#const-footer)
+
+### Functions
+
 * [HEADER](_util_formatting_.md#const-header)
 
 ## Variables
@@ -17,18 +20,20 @@
 "* = "
 "
 
-*Defined in [util/formatting.ts:13](https://github.com/polkadot-js/api/blob/a4f56d3d3/packages/typegen/src/util/formatting.ts#L13)*
+*Defined in [util/formatting.ts:13](https://github.com/polkadot-js/api/blob/dcf053633/packages/typegen/src/util/formatting.ts#L13)*
 
-___
+## Functions
 
 ### `Const` HEADER
 
-• **HEADER**: *"// Auto-generated via `yarn polkadot-types-from-defs`, do not edit
-/* eslint-disable @typescript-eslint/no-empty-interface */
+▸ **HEADER**(`type`: "chain" | "defs"): *string*
 
-"* = "// Auto-generated via `yarn polkadot-types-from-defs`, do not edit
-/* eslint-disable @typescript-eslint/no-empty-interface */
+*Defined in [util/formatting.ts:12](https://github.com/polkadot-js/api/blob/dcf053633/packages/typegen/src/util/formatting.ts#L12)*
 
-"
+**Parameters:**
 
-*Defined in [util/formatting.ts:12](https://github.com/polkadot-js/api/blob/a4f56d3d3/packages/typegen/src/util/formatting.ts#L12)*
+Name | Type |
+------ | ------ |
+`type` | "chain" &#124; "defs" |
+
+**Returns:** *string*
