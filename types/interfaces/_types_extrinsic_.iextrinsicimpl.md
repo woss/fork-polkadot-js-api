@@ -48,9 +48,9 @@
 
 • **encodedLength**: *number*
 
-*Inherited from [CompactEncodable](_codec_compact_.compactencodable.md).[encodedLength](_codec_compact_.compactencodable.md#encodedlength)*
+*Inherited from [SignerPayloadType](_extrinsic_signerpayload_.signerpayloadtype.md).[encodedLength](_extrinsic_signerpayload_.signerpayloadtype.md#encodedlength)*
 
-*Defined in [packages/types/src/types/codec.ts:40](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/codec.ts#L40)*
+*Defined in [packages/types/src/types/codec.ts:40](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/codec.ts#L40)*
 
 **`description`** The length of the value when encoded as a Uint8Array
 
@@ -60,9 +60,9 @@ ___
 
 • **hash**: *H256*
 
-*Inherited from [CompactEncodable](_codec_compact_.compactencodable.md).[hash](_codec_compact_.compactencodable.md#hash)*
+*Inherited from [SignerPayloadType](_extrinsic_signerpayload_.signerpayloadtype.md).[hash](_extrinsic_signerpayload_.signerpayloadtype.md#hash)*
 
-*Defined in [packages/types/src/types/codec.ts:45](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/codec.ts#L45)*
+*Defined in [packages/types/src/types/codec.ts:45](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/codec.ts#L45)*
 
 **`description`** Returns a hash of the value
 
@@ -72,9 +72,9 @@ ___
 
 • **isEmpty**: *boolean*
 
-*Inherited from [CompactEncodable](_codec_compact_.compactencodable.md).[isEmpty](_codec_compact_.compactencodable.md#isempty)*
+*Inherited from [SignerPayloadType](_extrinsic_signerpayload_.signerpayloadtype.md).[isEmpty](_extrinsic_signerpayload_.signerpayloadtype.md#isempty)*
 
-*Defined in [packages/types/src/types/codec.ts:50](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/codec.ts#L50)*
+*Defined in [packages/types/src/types/codec.ts:50](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/codec.ts#L50)*
 
 **`description`** Checks if the value is an empty value
 
@@ -84,7 +84,7 @@ ___
 
 • **method**: *Call*
 
-*Defined in [packages/types/src/types/extrinsic.ts:107](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/extrinsic.ts#L107)*
+*Defined in [packages/types/src/types/extrinsic.ts:107](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/extrinsic.ts#L107)*
 
 ___
 
@@ -92,9 +92,9 @@ ___
 
 • **registry**: *[Registry](_types_registry_.registry.md)*
 
-*Inherited from [CompactEncodable](_codec_compact_.compactencodable.md).[registry](_codec_compact_.compactencodable.md#registry)*
+*Inherited from [SignerPayloadType](_extrinsic_signerpayload_.signerpayloadtype.md).[registry](_extrinsic_signerpayload_.signerpayloadtype.md#registry)*
 
-*Defined in [packages/types/src/types/codec.ts:55](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/codec.ts#L55)*
+*Defined in [packages/types/src/types/codec.ts:55](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/codec.ts#L55)*
 
 **`description`** The registry associated with this object
 
@@ -104,7 +104,7 @@ ___
 
 • **signature**: *[IExtrinsicSignature](_types_extrinsic_.iextrinsicsignature.md)*
 
-*Defined in [packages/types/src/types/extrinsic.ts:108](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/extrinsic.ts#L108)*
+*Defined in [packages/types/src/types/extrinsic.ts:108](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/extrinsic.ts#L108)*
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 • **version**: *number*
 
-*Defined in [packages/types/src/types/extrinsic.ts:109](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/extrinsic.ts#L109)*
+*Defined in [packages/types/src/types/extrinsic.ts:109](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/extrinsic.ts#L109)*
 
 ## Methods
 
@@ -122,7 +122,7 @@ ___
 
 *Inherited from [IExtrinsicImpl](_types_extrinsic_.iextrinsicimpl.md).[addSignature](_types_extrinsic_.iextrinsicimpl.md#addsignature)*
 
-*Defined in [packages/types/src/types/extrinsic.ts:100](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/extrinsic.ts#L100)*
+*Defined in [packages/types/src/types/extrinsic.ts:100](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/extrinsic.ts#L100)*
 
 **Parameters:**
 
@@ -140,9 +140,9 @@ ___
 
 ▸ **eq**(`other?`: any): *boolean*
 
-*Inherited from [CompactEncodable](_codec_compact_.compactencodable.md).[eq](_codec_compact_.compactencodable.md#eq)*
+*Inherited from [SignerPayloadType](_extrinsic_signerpayload_.signerpayloadtype.md).[eq](_extrinsic_signerpayload_.signerpayloadtype.md#eq)*
 
-*Defined in [packages/types/src/types/codec.ts:60](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/codec.ts#L60)*
+*Defined in [packages/types/src/types/codec.ts:60](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/codec.ts#L60)*
 
 **`description`** Compares the value of the input to see if there is a match
 
@@ -162,7 +162,7 @@ ___
 
 *Inherited from [IExtrinsicImpl](_types_extrinsic_.iextrinsicimpl.md).[sign](_types_extrinsic_.iextrinsicimpl.md#sign)*
 
-*Defined in [packages/types/src/types/extrinsic.ts:101](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/extrinsic.ts#L101)*
+*Defined in [packages/types/src/types/extrinsic.ts:101](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/extrinsic.ts#L101)*
 
 **Parameters:**
 
@@ -181,7 +181,7 @@ ___
 
 *Inherited from [IExtrinsicImpl](_types_extrinsic_.iextrinsicimpl.md).[signFake](_types_extrinsic_.iextrinsicimpl.md#signfake)*
 
-*Defined in [packages/types/src/types/extrinsic.ts:102](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/extrinsic.ts#L102)*
+*Defined in [packages/types/src/types/extrinsic.ts:102](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/extrinsic.ts#L102)*
 
 **Parameters:**
 
@@ -198,9 +198,9 @@ ___
 
 ▸ **toHex**(`isLe?`: undefined | false | true): *string*
 
-*Inherited from [CompactEncodable](_codec_compact_.compactencodable.md).[toHex](_codec_compact_.compactencodable.md#tohex)*
+*Inherited from [SignerPayloadType](_extrinsic_signerpayload_.signerpayloadtype.md).[toHex](_extrinsic_signerpayload_.signerpayloadtype.md#tohex)*
 
-*Defined in [packages/types/src/types/codec.ts:65](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/codec.ts#L65)*
+*Defined in [packages/types/src/types/codec.ts:65](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/codec.ts#L65)*
 
 **`description`** Returns a hex string representation of the value. isLe returns a LE (number-only) representation
 
@@ -218,9 +218,9 @@ ___
 
 ▸ **toHuman**(`isExtended?`: undefined | false | true): *[AnyJson](../modules/_types_helpers_.md#anyjson)*
 
-*Inherited from [CompactEncodable](_codec_compact_.compactencodable.md).[toHuman](_codec_compact_.compactencodable.md#tohuman)*
+*Inherited from [SignerPayloadType](_extrinsic_signerpayload_.signerpayloadtype.md).[toHuman](_extrinsic_signerpayload_.signerpayloadtype.md#tohuman)*
 
-*Defined in [packages/types/src/types/codec.ts:70](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/codec.ts#L70)*
+*Defined in [packages/types/src/types/codec.ts:70](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/codec.ts#L70)*
 
 **`description`** Converts the Object to to a human-friendly JSON, with additional fields, expansion and formatting of information
 
@@ -238,9 +238,9 @@ ___
 
 ▸ **toJSON**(): *[AnyJson](../modules/_types_helpers_.md#anyjson)*
 
-*Inherited from [CompactEncodable](_codec_compact_.compactencodable.md).[toJSON](_codec_compact_.compactencodable.md#tojson)*
+*Inherited from [SignerPayloadType](_extrinsic_signerpayload_.signerpayloadtype.md).[toJSON](_extrinsic_signerpayload_.signerpayloadtype.md#tojson)*
 
-*Defined in [packages/types/src/types/codec.ts:75](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/codec.ts#L75)*
+*Defined in [packages/types/src/types/codec.ts:75](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/codec.ts#L75)*
 
 **`description`** Converts the Object to JSON, typically used for RPC transfers
 
@@ -252,9 +252,9 @@ ___
 
 ▸ **toRawType**(): *string*
 
-*Inherited from [CompactEncodable](_codec_compact_.compactencodable.md).[toRawType](_codec_compact_.compactencodable.md#torawtype)*
+*Inherited from [SignerPayloadType](_extrinsic_signerpayload_.signerpayloadtype.md).[toRawType](_extrinsic_signerpayload_.signerpayloadtype.md#torawtype)*
 
-*Defined in [packages/types/src/types/codec.ts:80](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/codec.ts#L80)*
+*Defined in [packages/types/src/types/codec.ts:80](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/codec.ts#L80)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -266,9 +266,9 @@ ___
 
 ▸ **toString**(): *string*
 
-*Inherited from [CompactEncodable](_codec_compact_.compactencodable.md).[toString](_codec_compact_.compactencodable.md#tostring)*
+*Inherited from [SignerPayloadType](_extrinsic_signerpayload_.signerpayloadtype.md).[toString](_extrinsic_signerpayload_.signerpayloadtype.md#tostring)*
 
-*Defined in [packages/types/src/types/codec.ts:85](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/codec.ts#L85)*
+*Defined in [packages/types/src/types/codec.ts:85](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/codec.ts#L85)*
 
 **`description`** Returns the string representation of the value
 
@@ -280,9 +280,9 @@ ___
 
 ▸ **toU8a**(`isBare?`: [BareOpts](../modules/_types_helpers_.md#bareopts)): *[Uint8Array](../classes/_codec_raw_.raw.md#static-uint8array)*
 
-*Inherited from [CompactEncodable](_codec_compact_.compactencodable.md).[toU8a](_codec_compact_.compactencodable.md#tou8a)*
+*Inherited from [SignerPayloadType](_extrinsic_signerpayload_.signerpayloadtype.md).[toU8a](_extrinsic_signerpayload_.signerpayloadtype.md#tou8a)*
 
-*Defined in [packages/types/src/types/codec.ts:91](https://github.com/polkadot-js/api/blob/db2ae1324/packages/types/src/types/codec.ts#L91)*
+*Defined in [packages/types/src/types/codec.ts:91](https://github.com/polkadot-js/api/blob/85ae6f949/packages/types/src/types/codec.ts#L91)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 
