@@ -49,7 +49,7 @@
 
 *Overrides [Decorate](_base_decorate_.decorate.md).[constructor](_base_decorate_.decorate.md#constructor)*
 
-*Defined in [api/src/base/Init.ts:25](https://github.com/polkadot-js/api/blob/4e756704e/packages/api/src/base/Init.ts#L25)*
+*Defined in [api/src/base/Init.ts:25](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/api/src/base/Init.ts#L25)*
 
 **Parameters:**
 
@@ -69,7 +69,7 @@ Name | Type |
 
 *Inherited from [Events](_base_events_.events.md).[#eventemitter](_base_events_.events.md##eventemitter)*
 
-*Defined in [api/src/base/Events.ts:10](https://github.com/polkadot-js/api/blob/4e756704e/packages/api/src/base/Events.ts#L10)*
+*Defined in [api/src/base/Events.ts:10](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/api/src/base/Events.ts#L10)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 • **#healthTimer**: *Timeout | null* = null
 
-*Defined in [api/src/base/Init.ts:23](https://github.com/polkadot-js/api/blob/4e756704e/packages/api/src/base/Init.ts#L23)*
+*Defined in [api/src/base/Init.ts:23](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/api/src/base/Init.ts#L23)*
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 • **#updateSub**? : *Subscription*
 
-*Defined in [api/src/base/Init.ts:25](https://github.com/polkadot-js/api/blob/4e756704e/packages/api/src/base/Init.ts#L25)*
+*Defined in [api/src/base/Init.ts:25](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/api/src/base/Init.ts#L25)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 *Inherited from [Decorate](_base_decorate_.decorate.md).[registry](_base_decorate_.decorate.md#registry)*
 
-*Defined in [api/src/base/Decorate.ts:42](https://github.com/polkadot-js/api/blob/4e756704e/packages/api/src/base/Decorate.ts#L42)*
+*Defined in [api/src/base/Decorate.ts:42](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/api/src/base/Decorate.ts#L42)*
 
 ## Accessors
 
@@ -105,7 +105,7 @@ ___
 
 *Inherited from [Decorate](_base_decorate_.decorate.md).[hasSubscriptions](_base_decorate_.decorate.md#hassubscriptions)*
 
-*Defined in [api/src/base/Decorate.ts:156](https://github.com/polkadot-js/api/blob/4e756704e/packages/api/src/base/Decorate.ts#L156)*
+*Defined in [api/src/base/Decorate.ts:156](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/api/src/base/Decorate.ts#L156)*
 
 **Returns:** *boolean*
 
@@ -117,7 +117,7 @@ ___
 
 ▸ **#onProviderConnect**(): *Promise‹void›*
 
-*Defined in [api/src/base/Init.ts:204](https://github.com/polkadot-js/api/blob/4e756704e/packages/api/src/base/Init.ts#L204)*
+*Defined in [api/src/base/Init.ts:204](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/api/src/base/Init.ts#L204)*
 
 **Returns:** *Promise‹void›*
 
@@ -127,7 +127,7 @@ ___
 
 ▸ **#onProviderDisconnect**(): *void*
 
-*Defined in [api/src/base/Init.ts:234](https://github.com/polkadot-js/api/blob/4e756704e/packages/api/src/base/Init.ts#L234)*
+*Defined in [api/src/base/Init.ts:234](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/api/src/base/Init.ts#L234)*
 
 **Returns:** *void*
 
@@ -137,7 +137,7 @@ ___
 
 ▸ **#onProviderError**(`error`: Error): *void*
 
-*Defined in [api/src/base/Init.ts:244](https://github.com/polkadot-js/api/blob/4e756704e/packages/api/src/base/Init.ts#L244)*
+*Defined in [api/src/base/Init.ts:244](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/api/src/base/Init.ts#L244)*
 
 **Parameters:**
 
@@ -155,7 +155,7 @@ ___
 
 *Inherited from [Decorate](_base_decorate_.decorate.md).[createType](_base_decorate_.decorate.md#createtype)*
 
-*Defined in [api/src/base/Decorate.ts:142](https://github.com/polkadot-js/api/blob/4e756704e/packages/api/src/base/Decorate.ts#L142)*
+*Defined in [api/src/base/Decorate.ts:142](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/api/src/base/Decorate.ts#L142)*
 
 **`description`** Creates an instance of a type as registered
 
@@ -180,7 +180,7 @@ ___
 
 *Inherited from [Decorate](_base_decorate_.decorate.md).[injectMetadata](_base_decorate_.decorate.md#injectmetadata)*
 
-*Defined in [api/src/base/Decorate.ts:160](https://github.com/polkadot-js/api/blob/4e756704e/packages/api/src/base/Decorate.ts#L160)*
+*Defined in [api/src/base/Decorate.ts:160](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/api/src/base/Decorate.ts#L160)*
 
 **Parameters:**
 
@@ -199,7 +199,7 @@ ___
 
 *Inherited from [Events](_base_events_.events.md).[off](_base_events_.events.md#off)*
 
-*Defined in [api/src/base/Events.ts:62](https://github.com/polkadot-js/api/blob/4e756704e/packages/api/src/base/Events.ts#L62)*
+*Defined in [api/src/base/Events.ts:62](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/api/src/base/Events.ts#L62)*
 
 **`description`** Remove the given eventemitter handler
 
@@ -246,7 +246,7 @@ ___
 
 *Inherited from [Events](_base_events_.events.md).[on](_base_events_.events.md#on)*
 
-*Defined in [api/src/base/Events.ts:35](https://github.com/polkadot-js/api/blob/4e756704e/packages/api/src/base/Events.ts#L35)*
+*Defined in [api/src/base/Events.ts:35](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/api/src/base/Events.ts#L35)*
 
 **`description`** Attach an eventemitter handler to listen to a specific event
 
@@ -291,7 +291,7 @@ ___
 
 *Inherited from [Events](_base_events_.events.md).[once](_base_events_.events.md#once)*
 
-*Defined in [api/src/base/Events.ts:87](https://github.com/polkadot-js/api/blob/4e756704e/packages/api/src/base/Events.ts#L87)*
+*Defined in [api/src/base/Events.ts:87](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/api/src/base/Events.ts#L87)*
 
 **`description`** Attach an one-time eventemitter handler to listen to a specific event
 
@@ -336,7 +336,7 @@ ___
 
 *Inherited from [Decorate](_base_decorate_.decorate.md).[registerTypes](_base_decorate_.decorate.md#registertypes)*
 
-*Defined in [api/src/base/Decorate.ts:149](https://github.com/polkadot-js/api/blob/4e756704e/packages/api/src/base/Decorate.ts#L149)*
+*Defined in [api/src/base/Decorate.ts:149](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/api/src/base/Decorate.ts#L149)*
 
 **`description`** Register additional user-defined of chain-specific types in the type registry
 
