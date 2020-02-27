@@ -35,10 +35,6 @@ A 64-bit unsigned integer
 
 ### Methods
 
-* [toHex](_primitive_u64_.u64.md#tohex)
-* [toHuman](_primitive_u64_.u64.md#tohuman)
-* [toRawType](_primitive_u64_.u64.md#torawtype)
-* [toU8a](_primitive_u64_.u64.md#tou8a)
 * [with](_primitive_u64_.u64.md#static-with)
 
 ## Type aliases
@@ -65,7 +61,7 @@ Defined in node_modules/@types/bn.js/index.d.ts:12
 
 *Inherited from [UInt](_codec_uint_.uint.md).[constructor](_codec_uint_.uint.md#constructor)*
 
-*Defined in [packages/types/src/codec/UInt.ts:21](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/UInt.ts#L21)*
+*Defined in [packages/types/src/codec/UInt.ts:19](https://github.com/polkadot-js/api/blob/edff4231f/packages/types/src/codec/UInt.ts#L19)*
 
 **Parameters:**
 
@@ -80,99 +76,13 @@ Name | Type | Default |
 
 ## Methods
 
-###  toHex
-
-▸ **toHex**(`isLe`: boolean): *string*
-
-*Inherited from [UInt](_codec_uint_.uint.md).[toHex](_codec_uint_.uint.md#tohex)*
-
-*Overrides void*
-
-*Defined in [packages/types/src/codec/UInt.ts:41](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/UInt.ts#L41)*
-
-**`description`** Returns a hex string representation of the value
-
-**Parameters:**
-
-Name | Type | Default |
------- | ------ | ------ |
-`isLe` | boolean | false |
-
-**Returns:** *string*
-
-___
-
-###  toHuman
-
-▸ **toHuman**(`isExpanded?`: undefined | false | true): *any*
-
-*Implementation of [Codec](../interfaces/_types_codec_.codec.md)*
-
-*Inherited from [UInt](_codec_uint_.uint.md).[toHuman](_codec_uint_.uint.md#tohuman)*
-
-*Overrides void*
-
-*Defined in [packages/types/src/codec/UInt.ts:53](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/UInt.ts#L53)*
-
-**`description`** Converts the Object to to a human-friendly JSON, with additional fields, expansion and formatting of information
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`isExpanded?` | undefined &#124; false &#124; true |
-
-**Returns:** *any*
-
-___
-
-###  toRawType
-
-▸ **toRawType**(): *string*
-
-*Implementation of [Codec](../interfaces/_types_codec_.codec.md)*
-
-*Inherited from [UInt](_codec_uint_.uint.md).[toRawType](_codec_uint_.uint.md#torawtype)*
-
-*Overrides void*
-
-*Defined in [packages/types/src/codec/UInt.ts:63](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/UInt.ts#L63)*
-
-**`description`** Returns the base runtime type name for this instance
-
-**Returns:** *string*
-
-___
-
-###  toU8a
-
-▸ **toU8a**(`isBare?`: undefined | false | true): *[Uint8Array](_codec_raw_.raw.md#static-uint8array)*
-
-*Inherited from [UInt](_codec_uint_.uint.md).[toU8a](_codec_uint_.uint.md#tou8a)*
-
-*Overrides void*
-
-*Defined in [packages/types/src/codec/UInt.ts:77](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/UInt.ts#L77)*
-
-**`description`** Encodes the value as a Uint8Array as per the SCALE specifications
-
-**Parameters:**
-
-Name | Type | Description |
------- | ------ | ------ |
-`isBare?` | undefined &#124; false &#124; true | true when the value has none of the type-specific prefixes (internal)  |
-
-**Returns:** *[Uint8Array](_codec_raw_.raw.md#static-uint8array)*
-
-___
-
 ### `Static` with
 
 ▸ **with**(`bitLength`: [UIntBitLength](../modules/_codec_abstractint_.md#uintbitlength), `typeName?`: undefined | string): *[Constructor](../interfaces/_types_codec_.constructor.md)‹[UInt](_codec_uint_.uint.md)›*
 
 *Inherited from [UInt](_codec_uint_.uint.md).[with](_codec_uint_.uint.md#static-with)*
 
-*Defined in [packages/types/src/codec/UInt.ts:26](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/UInt.ts#L26)*
+*Defined in [packages/types/src/codec/UInt.ts:24](https://github.com/polkadot-js/api/blob/edff4231f/packages/types/src/codec/UInt.ts#L24)*
 
 **Parameters:**
 

@@ -51,9 +51,6 @@ is available here.
 
 ### Methods
 
-* [toHex](_codec_int_.int.md#tohex)
-* [toRawType](_codec_int_.int.md#torawtype)
-* [toU8a](_codec_int_.int.md#tou8a)
 * [with](_codec_int_.int.md#static-with)
 
 ## Type aliases
@@ -78,7 +75,7 @@ Defined in node_modules/@types/bn.js/index.d.ts:12
 
 \+ **new Int**(`registry`: [Registry](../interfaces/_types_registry_.registry.md), `value`: [AnyNumber](../modules/_types_helpers_.md#anynumber), `bitLength`: [UIntBitLength](../modules/_codec_abstractint_.md#uintbitlength), `isHexJson`: boolean): *[Int](_codec_int_.int.md)*
 
-*Defined in [packages/types/src/codec/Int.ts:21](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/Int.ts#L21)*
+*Defined in [packages/types/src/codec/Int.ts:19](https://github.com/polkadot-js/api/blob/edff4231f/packages/types/src/codec/Int.ts#L19)*
 
 **Parameters:**
 
@@ -93,67 +90,11 @@ Name | Type | Default |
 
 ## Methods
 
-###  toHex
-
-▸ **toHex**(`isLe`: boolean): *string*
-
-*Overrides void*
-
-*Defined in [packages/types/src/codec/Int.ts:41](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/Int.ts#L41)*
-
-**`description`** Returns a hex string representation of the value
-
-**Parameters:**
-
-Name | Type | Default |
------- | ------ | ------ |
-`isLe` | boolean | false |
-
-**Returns:** *string*
-
-___
-
-###  toRawType
-
-▸ **toRawType**(): *string*
-
-*Implementation of [Codec](../interfaces/_types_codec_.codec.md)*
-
-*Overrides void*
-
-*Defined in [packages/types/src/codec/Int.ts:52](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/Int.ts#L52)*
-
-**`description`** Returns the base runtime type name for this instance
-
-**Returns:** *string*
-
-___
-
-###  toU8a
-
-▸ **toU8a**(`isBare?`: undefined | false | true): *[Uint8Array](_codec_raw_.raw.md#static-uint8array)*
-
-*Overrides void*
-
-*Defined in [packages/types/src/codec/Int.ts:61](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/Int.ts#L61)*
-
-**`description`** Encodes the value as a Uint8Array as per the SCALE specifications
-
-**Parameters:**
-
-Name | Type | Description |
------- | ------ | ------ |
-`isBare?` | undefined &#124; false &#124; true | true when the value has none of the type-specific prefixes (internal)  |
-
-**Returns:** *[Uint8Array](_codec_raw_.raw.md#static-uint8array)*
-
-___
-
 ### `Static` with
 
 ▸ **with**(`bitLength`: [UIntBitLength](../modules/_codec_abstractint_.md#uintbitlength), `typeName?`: undefined | string): *[Constructor](../interfaces/_types_codec_.constructor.md)‹[Int](_codec_int_.int.md)›*
 
-*Defined in [packages/types/src/codec/Int.ts:26](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/Int.ts#L26)*
+*Defined in [packages/types/src/codec/Int.ts:24](https://github.com/polkadot-js/api/blob/edff4231f/packages/types/src/codec/Int.ts#L24)*
 
 **Parameters:**
 

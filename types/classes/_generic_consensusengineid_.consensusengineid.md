@@ -42,11 +42,7 @@ A 4-byte identifier (actually a [u8; 4]) identifying the engine, e.g. for Aura i
 ### Methods
 
 * [extractAuthor](_generic_consensusengineid_.consensusengineid.md#extractauthor)
-* [toHex](_generic_consensusengineid_.consensusengineid.md#tohex)
-* [toHuman](_generic_consensusengineid_.consensusengineid.md#tohuman)
-* [toRawType](_generic_consensusengineid_.consensusengineid.md#torawtype)
 * [toString](_generic_consensusengineid_.consensusengineid.md#tostring)
-* [toU8a](_generic_consensusengineid_.consensusengineid.md#tou8a)
 * [idToString](_generic_consensusengineid_.consensusengineid.md#static-idtostring)
 * [stringToId](_generic_consensusengineid_.consensusengineid.md#static-stringtoid)
 * [with](_generic_consensusengineid_.consensusengineid.md#static-with)
@@ -75,7 +71,7 @@ Defined in node_modules/@types/bn.js/index.d.ts:12
 
 *Inherited from [UInt](_codec_uint_.uint.md).[constructor](_codec_uint_.uint.md#constructor)*
 
-*Defined in [packages/types/src/codec/UInt.ts:21](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/UInt.ts#L21)*
+*Defined in [packages/types/src/codec/UInt.ts:19](https://github.com/polkadot-js/api/blob/edff4231f/packages/types/src/codec/UInt.ts#L19)*
 
 **Parameters:**
 
@@ -94,7 +90,7 @@ Name | Type | Default |
 
 • **get isAura**(): *boolean*
 
-*Defined in [packages/types/src/generic/ConsensusEngineId.ts:42](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/generic/ConsensusEngineId.ts#L42)*
+*Defined in [packages/types/src/generic/ConsensusEngineId.ts:42](https://github.com/polkadot-js/api/blob/edff4231f/packages/types/src/generic/ConsensusEngineId.ts#L42)*
 
 **`description`** `true` if the engine matches aura
 
@@ -106,7 +102,7 @@ ___
 
 • **get isBabe**(): *boolean*
 
-*Defined in [packages/types/src/generic/ConsensusEngineId.ts:49](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/generic/ConsensusEngineId.ts#L49)*
+*Defined in [packages/types/src/generic/ConsensusEngineId.ts:49](https://github.com/polkadot-js/api/blob/edff4231f/packages/types/src/generic/ConsensusEngineId.ts#L49)*
 
 **`description`** `true` is the engine matches babe
 
@@ -118,7 +114,7 @@ ___
 
 • **get isGrandpa**(): *boolean*
 
-*Defined in [packages/types/src/generic/ConsensusEngineId.ts:56](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/generic/ConsensusEngineId.ts#L56)*
+*Defined in [packages/types/src/generic/ConsensusEngineId.ts:56](https://github.com/polkadot-js/api/blob/edff4231f/packages/types/src/generic/ConsensusEngineId.ts#L56)*
 
 **`description`** `true` is the engine matches grandpa
 
@@ -130,7 +126,7 @@ ___
 
 ▸ **extractAuthor**(`bytes`: [Bytes](_primitive_bytes_.bytes.md), `sessionValidators`: AccountId[]): *AccountId | undefined*
 
-*Defined in [packages/types/src/generic/ConsensusEngineId.ts:80](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/generic/ConsensusEngineId.ts#L80)*
+*Defined in [packages/types/src/generic/ConsensusEngineId.ts:80](https://github.com/polkadot-js/api/blob/edff4231f/packages/types/src/generic/ConsensusEngineId.ts#L80)*
 
 **`description`** From the input bytes, decode into an author
 
@@ -145,70 +141,6 @@ Name | Type |
 
 ___
 
-###  toHex
-
-▸ **toHex**(`isLe`: boolean): *string*
-
-*Inherited from [UInt](_codec_uint_.uint.md).[toHex](_codec_uint_.uint.md#tohex)*
-
-*Overrides void*
-
-*Defined in [packages/types/src/codec/UInt.ts:41](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/UInt.ts#L41)*
-
-**`description`** Returns a hex string representation of the value
-
-**Parameters:**
-
-Name | Type | Default |
------- | ------ | ------ |
-`isLe` | boolean | false |
-
-**Returns:** *string*
-
-___
-
-###  toHuman
-
-▸ **toHuman**(`isExpanded?`: undefined | false | true): *any*
-
-*Implementation of [Codec](../interfaces/_types_codec_.codec.md)*
-
-*Inherited from [UInt](_codec_uint_.uint.md).[toHuman](_codec_uint_.uint.md#tohuman)*
-
-*Overrides void*
-
-*Defined in [packages/types/src/codec/UInt.ts:53](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/UInt.ts#L53)*
-
-**`description`** Converts the Object to to a human-friendly JSON, with additional fields, expansion and formatting of information
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`isExpanded?` | undefined &#124; false &#124; true |
-
-**Returns:** *any*
-
-___
-
-###  toRawType
-
-▸ **toRawType**(): *string*
-
-*Implementation of [Codec](../interfaces/_types_codec_.codec.md)*
-
-*Inherited from [UInt](_codec_uint_.uint.md).[toRawType](_codec_uint_.uint.md#torawtype)*
-
-*Overrides void*
-
-*Defined in [packages/types/src/codec/UInt.ts:63](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/UInt.ts#L63)*
-
-**`description`** Returns the base runtime type name for this instance
-
-**Returns:** *string*
-
-___
-
 ###  toString
 
 ▸ **toString**(): *string*
@@ -217,7 +149,7 @@ ___
 
 *Overrides void*
 
-*Defined in [packages/types/src/generic/ConsensusEngineId.ts:95](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/generic/ConsensusEngineId.ts#L95)*
+*Defined in [packages/types/src/generic/ConsensusEngineId.ts:95](https://github.com/polkadot-js/api/blob/edff4231f/packages/types/src/generic/ConsensusEngineId.ts#L95)*
 
 **`description`** Override the default toString to return a 4-byte string
 
@@ -225,33 +157,11 @@ ___
 
 ___
 
-###  toU8a
-
-▸ **toU8a**(`isBare?`: undefined | false | true): *[Uint8Array](_codec_raw_.raw.md#static-uint8array)*
-
-*Inherited from [UInt](_codec_uint_.uint.md).[toU8a](_codec_uint_.uint.md#tou8a)*
-
-*Overrides void*
-
-*Defined in [packages/types/src/codec/UInt.ts:77](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/UInt.ts#L77)*
-
-**`description`** Encodes the value as a Uint8Array as per the SCALE specifications
-
-**Parameters:**
-
-Name | Type | Description |
------- | ------ | ------ |
-`isBare?` | undefined &#124; false &#124; true | true when the value has none of the type-specific prefixes (internal)  |
-
-**Returns:** *[Uint8Array](_codec_raw_.raw.md#static-uint8array)*
-
-___
-
 ### `Static` idToString
 
 ▸ **idToString**(`input`: number | BN): *string*
 
-*Defined in [packages/types/src/generic/ConsensusEngineId.ts:25](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/generic/ConsensusEngineId.ts#L25)*
+*Defined in [packages/types/src/generic/ConsensusEngineId.ts:25](https://github.com/polkadot-js/api/blob/edff4231f/packages/types/src/generic/ConsensusEngineId.ts#L25)*
 
 **Parameters:**
 
@@ -267,7 +177,7 @@ ___
 
 ▸ **stringToId**(`input`: string): *number*
 
-*Defined in [packages/types/src/generic/ConsensusEngineId.ts:32](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/generic/ConsensusEngineId.ts#L32)*
+*Defined in [packages/types/src/generic/ConsensusEngineId.ts:32](https://github.com/polkadot-js/api/blob/edff4231f/packages/types/src/generic/ConsensusEngineId.ts#L32)*
 
 **Parameters:**
 
@@ -285,7 +195,7 @@ ___
 
 *Inherited from [UInt](_codec_uint_.uint.md).[with](_codec_uint_.uint.md#static-with)*
 
-*Defined in [packages/types/src/codec/UInt.ts:26](https://github.com/polkadot-js/api/blob/4e2fb23bd/packages/types/src/codec/UInt.ts#L26)*
+*Defined in [packages/types/src/codec/UInt.ts:24](https://github.com/polkadot-js/api/blob/edff4231f/packages/types/src/codec/UInt.ts#L24)*
 
 **Parameters:**
 
