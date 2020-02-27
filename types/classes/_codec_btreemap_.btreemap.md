@@ -63,7 +63,7 @@
 
 *Inherited from [CodecMap](_codec_map_.codecmap.md).[constructor](_codec_map_.codecmap.md#constructor)*
 
-*Defined in [packages/types/src/codec/Map.ts:101](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/Map.ts#L101)*
+*Defined in [packages/types/src/codec/Map.ts:101](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/Map.ts#L101)*
 
 **Parameters:**
 
@@ -85,7 +85,7 @@ Name | Type |
 
 *Inherited from [CodecMap](_codec_map_.codecmap.md).[#KeyClass](_codec_map_.codecmap.md##keyclass)*
 
-*Defined in [packages/types/src/codec/Map.ts:97](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/Map.ts#L97)*
+*Defined in [packages/types/src/codec/Map.ts:97](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/Map.ts#L97)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 *Inherited from [CodecMap](_codec_map_.codecmap.md).[#ValClass](_codec_map_.codecmap.md##valclass)*
 
-*Defined in [packages/types/src/codec/Map.ts:99](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/Map.ts#L99)*
+*Defined in [packages/types/src/codec/Map.ts:99](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/Map.ts#L99)*
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 *Inherited from [CodecMap](_codec_map_.codecmap.md).[#type](_codec_map_.codecmap.md##type)*
 
-*Defined in [packages/types/src/codec/Map.ts:101](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/Map.ts#L101)*
+*Defined in [packages/types/src/codec/Map.ts:101](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/Map.ts#L101)*
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 *Inherited from [CodecMap](_codec_map_.codecmap.md).[registry](_codec_map_.codecmap.md#registry)*
 
-*Defined in [packages/types/src/codec/Map.ts:95](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/Map.ts#L95)*
+*Defined in [packages/types/src/codec/Map.ts:95](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/Map.ts#L95)*
 
 ___
 
@@ -137,7 +137,7 @@ Defined in node_modules/typescript/lib/lib.es2015.collection.d.ts:28
 
 *Inherited from [CodecMap](_codec_map_.codecmap.md).[encodedLength](_codec_map_.codecmap.md#encodedlength)*
 
-*Defined in [packages/types/src/codec/Map.ts:115](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/Map.ts#L115)*
+*Defined in [packages/types/src/codec/Map.ts:115](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/Map.ts#L115)*
 
 **`description`** The length of the value when encoded as a Uint8Array
 
@@ -151,7 +151,7 @@ ___
 
 *Inherited from [CodecMap](_codec_map_.codecmap.md).[hash](_codec_map_.codecmap.md#hash)*
 
-*Defined in [packages/types/src/codec/Map.ts:128](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/Map.ts#L128)*
+*Defined in [packages/types/src/codec/Map.ts:128](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/Map.ts#L128)*
 
 **`description`** Returns a hash of the value
 
@@ -165,7 +165,7 @@ ___
 
 *Inherited from [CodecMap](_codec_map_.codecmap.md).[isEmpty](_codec_map_.codecmap.md#isempty)*
 
-*Defined in [packages/types/src/codec/Map.ts:135](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/Map.ts#L135)*
+*Defined in [packages/types/src/codec/Map.ts:135](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/Map.ts#L135)*
 
 **`description`** Checks if the value is an empty value
 
@@ -211,7 +211,7 @@ ___
 
 *Inherited from [CodecMap](_codec_map_.codecmap.md).[eq](_codec_map_.codecmap.md#eq)*
 
-*Defined in [packages/types/src/codec/Map.ts:142](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/Map.ts#L142)*
+*Defined in [packages/types/src/codec/Map.ts:142](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/Map.ts#L142)*
 
 **`description`** Compares the value of the input to see if there is a match
 
@@ -314,7 +314,7 @@ ___
 
 *Inherited from [CodecMap](_codec_map_.codecmap.md).[toHex](_codec_map_.codecmap.md#tohex)*
 
-*Defined in [packages/types/src/codec/Map.ts:149](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/Map.ts#L149)*
+*Defined in [packages/types/src/codec/Map.ts:149](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/Map.ts#L149)*
 
 **`description`** Returns a hex string representation of the value. isLe returns a LE (number-only) representation
 
@@ -330,7 +330,7 @@ ___
 
 *Inherited from [CodecMap](_codec_map_.codecmap.md).[toHuman](_codec_map_.codecmap.md#tohuman)*
 
-*Defined in [packages/types/src/codec/Map.ts:156](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/Map.ts#L156)*
+*Defined in [packages/types/src/codec/Map.ts:156](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/Map.ts#L156)*
 
 **`description`** Converts the Object to to a human-friendly JSON, with additional fields, expansion and formatting of information
 
@@ -352,7 +352,7 @@ ___
 
 *Inherited from [CodecMap](_codec_map_.codecmap.md).[toJSON](_codec_map_.codecmap.md#tojson)*
 
-*Defined in [packages/types/src/codec/Map.ts:169](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/Map.ts#L169)*
+*Defined in [packages/types/src/codec/Map.ts:169](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/Map.ts#L169)*
 
 **`description`** Converts the Object to JSON, typically used for RPC transfers
 
@@ -368,7 +368,7 @@ ___
 
 *Inherited from [CodecMap](_codec_map_.codecmap.md).[toRawType](_codec_map_.codecmap.md#torawtype)*
 
-*Defined in [packages/types/src/codec/Map.ts:182](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/Map.ts#L182)*
+*Defined in [packages/types/src/codec/Map.ts:182](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/Map.ts#L182)*
 
 **`description`** Returns the base runtime type name for this instance
 
@@ -384,7 +384,7 @@ ___
 
 *Inherited from [CodecMap](_codec_map_.codecmap.md).[toString](_codec_map_.codecmap.md#tostring)*
 
-*Defined in [packages/types/src/codec/Map.ts:189](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/Map.ts#L189)*
+*Defined in [packages/types/src/codec/Map.ts:189](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/Map.ts#L189)*
 
 **`description`** Returns the string representation of the value
 
@@ -398,7 +398,7 @@ ___
 
 *Inherited from [CodecMap](_codec_map_.codecmap.md).[toU8a](_codec_map_.codecmap.md#tou8a)*
 
-*Defined in [packages/types/src/codec/Map.ts:197](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/Map.ts#L197)*
+*Defined in [packages/types/src/codec/Map.ts:197](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/Map.ts#L197)*
 
 **`description`** Encodes the value as a Uint8Array as per the SCALE specifications
 
@@ -416,7 +416,7 @@ ___
 
 ▸ **with**<**K**, **V**>(`keyType`: [Constructor](../interfaces/_types_codec_.constructor.md)‹K› | keyof InterfaceTypes, `valType`: [Constructor](../interfaces/_types_codec_.constructor.md)‹V› | keyof InterfaceTypes): *[Constructor](../interfaces/_types_codec_.constructor.md)‹[CodecMap](_codec_map_.codecmap.md)‹K, V››*
 
-*Defined in [packages/types/src/codec/BTreeMap.ts:10](https://github.com/polkadot-js/api/blob/a8f2ba8c3/packages/types/src/codec/BTreeMap.ts#L10)*
+*Defined in [packages/types/src/codec/BTreeMap.ts:10](https://github.com/polkadot-js/api/blob/370dc8681/packages/types/src/codec/BTreeMap.ts#L10)*
 
 **Type parameters:**
 
