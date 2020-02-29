@@ -21,6 +21,7 @@ import type { Balance } from '@polkadot/types/interfaces';
 
 ...
 // unwrap out option into a zero Balance whn not found
+// (This can be done via `.unwrapOrDefault()`, which does the same underlying)
 const balance: Balance = balanceOpt.unwrapOr(api.createType('Balance'));
 ```
 
@@ -45,10 +46,11 @@ api.createType('Balance', 123);
 // via registry (`.registry` is on all API and Codec objects)
 api.registry.createType('Balance', 123n);
 
-// via the low-level approach
+// via the low-level approach (not recommended)
 createType(api.registry, 'Balance', '123');
 ```
 
-## Extending extrinsics
+## Using with TypeScript
 
-On customized chains, it is possible to [extend the format of the extrinsics and extrinsic payload for the chain](extrinsic.extend.md), next up we will look at this advanced use-case.
+The API is built with TypeScript (as are all projects in the [polkadot-js organization](https://github.com/polkadot-js/)) and as such allows developers using TS to have access to all the type interfaces defined on the chain, as well as having access to typings on interacting with the `api.*` namespaces. In the next section we will provide an overview of [what is available in terms of types and TypeScript](typescript.md).
+
