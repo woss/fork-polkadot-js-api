@@ -14,7 +14,7 @@
 
 ▸ **account**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/balances/account.ts:83](https://github.com/polkadot-js/api/blob/7316f68cd/packages/api-derive/src/balances/account.ts#L83)*
+*Defined in [packages/api-derive/src/balances/account.ts:83](https://github.com/polkadot-js/api/blob/f59cb12ec/packages/api-derive/src/balances/account.ts#L83)*
 
 **`name`** account
 

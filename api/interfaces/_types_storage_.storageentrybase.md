@@ -25,6 +25,7 @@
 * [key](_types_storage_.storageentrybase.md#key)
 * [keyPrefix](_types_storage_.storageentrybase.md#keyprefix)
 * [multi](_types_storage_.storageentrybase.md#multi)
+* [range](_types_storage_.storageentrybase.md#range)
 * [size](_types_storage_.storageentrybase.md#size)
 
 ## Properties
@@ -33,11 +34,15 @@
 
 • **at**: *function*
 
-*Defined in [api/src/types/storage.ts:29](https://github.com/polkadot-js/api/blob/7316f68cd/packages/api/src/types/storage.ts#L29)*
+*Defined in [api/src/types/storage.ts:29](https://github.com/polkadot-js/api/blob/f59cb12ec/packages/api/src/types/storage.ts#L29)*
 
 #### Type declaration:
 
-▸ (`hash`: Hash | Uint8Array | string, ...`args`: Parameters‹F›): *[PromiseOrObs](../modules/_types_base_.md#promiseorobs)‹ApiType, [ObsInnerType](../modules/_types_base_.md#obsinnertype)‹ReturnType‹F›››*
+▸ <**T**>(`hash`: Hash | Uint8Array | string, ...`args`: Parameters‹F›): *[PromiseOrObs](../modules/_types_base_.md#promiseorobs)‹ApiType, T›*
+
+**Type parameters:**
+
+▪ **T**: *Codec | any*
 
 **Parameters:**
 
@@ -52,7 +57,7 @@ ___
 
 • **creator**: *StorageEntry*
 
-*Defined in [api/src/types/storage.ts:30](https://github.com/polkadot-js/api/blob/7316f68cd/packages/api/src/types/storage.ts#L30)*
+*Defined in [api/src/types/storage.ts:30](https://github.com/polkadot-js/api/blob/f59cb12ec/packages/api/src/types/storage.ts#L30)*
 
 ___
 
@@ -60,11 +65,15 @@ ___
 
 • **entries**: *function*
 
-*Defined in [api/src/types/storage.ts:31](https://github.com/polkadot-js/api/blob/7316f68cd/packages/api/src/types/storage.ts#L31)*
+*Defined in [api/src/types/storage.ts:31](https://github.com/polkadot-js/api/blob/f59cb12ec/packages/api/src/types/storage.ts#L31)*
 
 #### Type declaration:
 
-▸ (`arg?`: any): *[PromiseOrObs](../modules/_types_base_.md#promiseorobs)‹ApiType, [StorageKey, [ObsInnerType](../modules/_types_base_.md#obsinnertype)‹ReturnType‹F››][]›*
+▸ <**T**>(`arg?`: any): *[PromiseOrObs](../modules/_types_base_.md#promiseorobs)‹ApiType, [StorageKey, T][]›*
+
+**Type parameters:**
+
+▪ **T**: *Codec | any*
 
 **Parameters:**
 
@@ -78,7 +87,7 @@ ___
 
 • **hash**: *function*
 
-*Defined in [api/src/types/storage.ts:32](https://github.com/polkadot-js/api/blob/7316f68cd/packages/api/src/types/storage.ts#L32)*
+*Defined in [api/src/types/storage.ts:32](https://github.com/polkadot-js/api/blob/f59cb12ec/packages/api/src/types/storage.ts#L32)*
 
 #### Type declaration:
 
@@ -96,7 +105,7 @@ ___
 
 • **key**: *function*
 
-*Defined in [api/src/types/storage.ts:33](https://github.com/polkadot-js/api/blob/7316f68cd/packages/api/src/types/storage.ts#L33)*
+*Defined in [api/src/types/storage.ts:33](https://github.com/polkadot-js/api/blob/f59cb12ec/packages/api/src/types/storage.ts#L33)*
 
 #### Type declaration:
 
@@ -114,7 +123,7 @@ ___
 
 • **keyPrefix**: *function*
 
-*Defined in [api/src/types/storage.ts:34](https://github.com/polkadot-js/api/blob/7316f68cd/packages/api/src/types/storage.ts#L34)*
+*Defined in [api/src/types/storage.ts:34](https://github.com/polkadot-js/api/blob/f59cb12ec/packages/api/src/types/storage.ts#L34)*
 
 #### Type declaration:
 
@@ -126,7 +135,30 @@ ___
 
 • **multi**: *ApiType extends "rxjs" ? StorageEntryObservableMulti : StorageEntryPromiseMulti*
 
-*Defined in [api/src/types/storage.ts:36](https://github.com/polkadot-js/api/blob/7316f68cd/packages/api/src/types/storage.ts#L36)*
+*Defined in [api/src/types/storage.ts:37](https://github.com/polkadot-js/api/blob/f59cb12ec/packages/api/src/types/storage.ts#L37)*
+
+___
+
+###  range
+
+• **range**: *function*
+
+*Defined in [api/src/types/storage.ts:35](https://github.com/polkadot-js/api/blob/f59cb12ec/packages/api/src/types/storage.ts#L35)*
+
+#### Type declaration:
+
+▸ <**T**>(`__namedParameters`: [string | Hash‹› | Uint8Array‹›, undefined | string | Hash‹› | Uint8Array‹›], ...`args`: Parameters‹F›): *[PromiseOrObs](../modules/_types_base_.md#promiseorobs)‹ApiType, [Hash, T][]›*
+
+**Type parameters:**
+
+▪ **T**: *Codec | any*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`__namedParameters` | [string &#124; Hash‹› &#124; Uint8Array‹›, undefined &#124; string &#124; Hash‹› &#124; Uint8Array‹›] |
+`...args` | Parameters‹F› |
 
 ___
 
@@ -134,7 +166,7 @@ ___
 
 • **size**: *function*
 
-*Defined in [api/src/types/storage.ts:35](https://github.com/polkadot-js/api/blob/7316f68cd/packages/api/src/types/storage.ts#L35)*
+*Defined in [api/src/types/storage.ts:36](https://github.com/polkadot-js/api/blob/f59cb12ec/packages/api/src/types/storage.ts#L36)*
 
 #### Type declaration:
 
