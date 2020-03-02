@@ -14,7 +14,7 @@
 
 ▸ **indexes**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/session/indexes.ts:75](https://github.com/polkadot-js/api/blob/eaf5216d4/packages/api-derive/src/session/indexes.ts#L75)*
+*Defined in [packages/api-derive/src/session/indexes.ts:75](https://github.com/polkadot-js/api/blob/69020faaa/packages/api-derive/src/session/indexes.ts#L75)*
 
 **Parameters:**
 
