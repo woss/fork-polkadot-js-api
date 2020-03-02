@@ -7,6 +7,7 @@
 ### Interfaces
 
 * [InterfaceTypes](../interfaces/_types_registry_.interfacetypes.md)
+* [RegisteredTypes](../interfaces/_types_registry_.registeredtypes.md)
 * [Registry](../interfaces/_types_registry_.registry.md)
 * [RegistryError](../interfaces/_types_registry_.registryerror.md)
 * [RegistryMetadata](../interfaces/_types_registry_.registrymetadata.md)
@@ -32,7 +33,7 @@
 
 Ƭ **RegistryMetadataErrors**: *[RegistryMetadataError](../interfaces/_types_registry_.registrymetadataerror.md)[]*
 
-*Defined in [packages/types/src/types/registry.ts:51](https://github.com/polkadot-js/api/blob/d9ee39f36/packages/types/src/types/registry.ts#L51)*
+*Defined in [packages/types/src/types/registry.ts:52](https://github.com/polkadot-js/api/blob/586c90208/packages/types/src/types/registry.ts#L52)*
 
 ___
 
@@ -40,4 +41,4 @@ ___
 
 Ƭ **RegistryTypes**: *Record‹string, [Constructor](../interfaces/_types_codec_.constructor.md) | string | Record‹string, string› | object | object›*
 
-*Defined in [packages/types/src/types/registry.ts:16](https://github.com/polkadot-js/api/blob/d9ee39f36/packages/types/src/types/registry.ts#L16)*
+*Defined in [packages/types/src/types/registry.ts:17](https://github.com/polkadot-js/api/blob/586c90208/packages/types/src/types/registry.ts#L17)*
