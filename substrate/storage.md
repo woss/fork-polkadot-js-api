@@ -258,7 +258,7 @@ ___
 - **interface**: api.query.democracy.preimages
 - **summary**:   Map of hashes to the proposal preimage, along with who registered it and their deposit. The block number is the block at which it was deposited. 
  
-### proxy(`AccountId`): `Option<AccountId>`
+### proxy(`AccountId`): `Option<ProxyState>`
 - **interface**: api.query.democracy.proxy
 - **summary**:   Who is able to vote for whom. Value is the fund-holding account, key is the vote-transaction-sending account. 
  
@@ -324,7 +324,7 @@ ___
 - **interface**: api.query.grandpa.authorities
 - **summary**:   DEPRECATED 
 
-  This used to store the current authority set, which has been migrated to the well-known GRANDPA_AUTHORITES_KEY unhashed key. 
+  This used to store the current authority set, which has been migrated to the well-known GRANDPA_AUTHORITIES_KEY unhashed key. 
  
 ### currentSetId(): `SetId`
 - **interface**: api.query.grandpa.currentSetId
@@ -448,15 +448,15 @@ ___
 
   First account is the account to be recovered, and the second account is the user trying to recover the account. 
  
+### proxy(`AccountId`): `Option<AccountId>`
+- **interface**: api.query.recovery.proxy
+- **summary**:   The list of allowed proxy accounts. 
+
+  Map from the user who can access it to the recovered account. 
+ 
 ### recoverable(`AccountId`): `Option<RecoveryConfig>`
 - **interface**: api.query.recovery.recoverable
 - **summary**:   The set of recoverable accounts and their recovery configuration. 
- 
-### recovered(`AccountId`): `Option<AccountId>`
-- **interface**: api.query.recovery.recovered
-- **summary**:   The final list of recovered accounts. 
-
-  Map from the recovered account to the user who can access it. 
 
 ___
 
@@ -571,6 +571,12 @@ ___
 
 ## staking
  
+### activeEra(): `Option<ActiveEraInfo>`
+- **interface**: api.query.staking.activeEra
+- **summary**:   The active era information, it holds index and start. 
+
+  The active era is the era currently rewarded. Validator set of this era must be equal to `SessionInterface::validators`. 
+ 
 ### bonded(`AccountId`): `Option<AccountId>`
 - **interface**: api.query.staking.bonded
 - **summary**:   Map from all locked "stash" accounts to the controller account. 
@@ -578,42 +584,88 @@ ___
 ### bondedEras(): `Vec<(EraIndex,SessionIndex)>`
 - **interface**: api.query.staking.bondedEras
 - **summary**:   A mapping from still-bonded eras to the first session index of that era. 
+
+  Must contains information for eras for the range: `[active_era - bounding_duration; active_era]` 
  
 ### canceledSlashPayout(): `BalanceOf`
 - **interface**: api.query.staking.canceledSlashPayout
 - **summary**:   The amount of currency given to reporters of a slash event which was canceled by extraordinary circumstances (e.g. governance). 
  
-### currentElected(): `Vec<AccountId>`
-- **interface**: api.query.staking.currentElected
-- **summary**:   The currently elected validator set keyed by stash account ID. 
- 
-### currentEra(): `EraIndex`
+### currentEra(): `Option<EraIndex>`
 - **interface**: api.query.staking.currentEra
 - **summary**:   The current era index. 
- 
-### currentEraPointsEarned(): `EraPoints`
-- **interface**: api.query.staking.currentEraPointsEarned
-- **summary**:   Rewards for the current era. Using indices of current elected set. 
- 
-### currentEraStart(): `MomentOf`
-- **interface**: api.query.staking.currentEraStart
-- **summary**:   The start of the current era. 
- 
-### currentEraStartSessionIndex(): `SessionIndex`
-- **interface**: api.query.staking.currentEraStartSessionIndex
-- **summary**:   The session index at which the current era started. 
+
+  This is the latest planned era, depending on how session module queues the validator set, it might be active or not. 
  
 ### earliestUnappliedSlash(): `Option<EraIndex>`
 - **interface**: api.query.staking.earliestUnappliedSlash
 - **summary**:   The earliest era for which we have a pending, unapplied slash. 
  
+### erasRewardPoints(`EraIndex`): `EraRewardPoints`
+- **interface**: api.query.staking.erasRewardPoints
+- **summary**:   Rewards for the last `HISTORY_DEPTH` eras. If reward hasn't been set or has been removed then 0 reward is returned. 
+ 
+### erasStakers(`EraIndex, AccountId`): `Exposure`
+- **interface**: api.query.staking.erasStakers
+- **summary**:   Exposure of validator at era. 
+
+  This is keyed first by the era index to allow bulk deletion and then the stash account. 
+
+  Is it removed after `HISTORY_DEPTH` eras. If stakers hasn't been set or has been removed then empty exposure is returned. 
+ 
+### erasStakersClipped(`EraIndex, AccountId`): `Exposure`
+- **interface**: api.query.staking.erasStakersClipped
+- **summary**:   Clipped Exposure of validator at era. 
+
+  This is similar to [`ErasStakers`] but number of nominators exposed is reduce to the `T::MaxNominatorRewardedPerValidator` biggest stakers. This is used to limit the i/o cost for the nominator payout. 
+
+  This is keyed fist by the era index to allow bulk deletion and then the stash account. 
+
+  Is it removed after `HISTORY_DEPTH` eras. If stakers hasn't been set or has been removed then empty exposure is returned. 
+ 
+### erasStartSessionIndex(`EraIndex`): `Option<SessionIndex>`
+- **interface**: api.query.staking.erasStartSessionIndex
+- **summary**:   The session index at which the era start for the last `HISTORY_DEPTH` eras 
+ 
+### erasTotalStake(`EraIndex`): `BalanceOf`
+- **interface**: api.query.staking.erasTotalStake
+- **summary**:   The total amount staked for the last `HISTORY_DEPTH` eras. If total hasn't been set or has been removed then 0 stake is returned. 
+ 
+### erasValidatorPrefs(`EraIndex, AccountId`): `ValidatorPrefs`
+- **interface**: api.query.staking.erasValidatorPrefs
+- **summary**:   Similarly to `ErasStakers` this holds the preferences of validators. 
+
+  This is keyed fist by the era index to allow bulk deletion and then the stash account. 
+
+  Is it removed after `HISTORY_DEPTH` eras. 
+ 
+### erasValidatorReward(`EraIndex`): `Option<BalanceOf>`
+- **interface**: api.query.staking.erasValidatorReward
+- **summary**:   The total validator era payout for the last `HISTORY_DEPTH` eras. 
+
+  Eras that haven't finished yet or has been removed doesn't have reward. 
+ 
 ### forceEra(): `Forcing`
 - **interface**: api.query.staking.forceEra
 - **summary**:   True if the next session change will be a new era regardless of index. 
  
+### historyDepth(): `u32`
+- **interface**: api.query.staking.historyDepth
+- **summary**:   Number of era to keep in history. 
+
+  Information is kept for eras in `[current_era - history_depth; current_era] 
+
+  Must be more than the number of era delayed by session otherwise. i.e. active era must always be in history. i.e. `active_era > current_era - history_depth` must be guaranteed. 
+ 
 ### invulnerables(): `Vec<AccountId>`
 - **interface**: api.query.staking.invulnerables
 - **summary**:   Any validators that may never be slashed or forcibly kicked. It's a Vec since they're easy to initialize and the performance hit is minimal (we expect no more than four invulnerables) and restricted to testnets. 
+ 
+### isUpgraded(): `bool`
+- **interface**: api.query.staking.isUpgraded
+- **summary**:   True if network has been upgraded to this version. 
+
+  True for new networks. 
  
 ### ledger(`AccountId`): `Option<StakingLedger>`
 - **interface**: api.query.staking.ledger
@@ -626,8 +678,6 @@ ___
 ### nominators(`AccountId`): `Option<(Nominations, Linkage<AccountId>)>`
 - **interface**: api.query.staking.nominators
 - **summary**:   The map from nominator stash key to the set of stash keys of all validators to nominate. 
-
-  NOTE: is private so that we can ensure upgraded before all typical accesses. Direct storage APIs can still bypass this protection. 
  
 ### nominatorSlashInEra(`EraIndex, AccountId`): `Option<BalanceOf>`
 - **interface**: api.query.staking.nominatorSlashInEra
@@ -647,21 +697,9 @@ ___
 
   The rest of the slashed value is handled by the `Slash`. 
  
-### slotStake(): `BalanceOf`
-- **interface**: api.query.staking.slotStake
-- **summary**:   The amount of balance actively at stake for each validator slot, currently. 
-
-  This is used to derive rewards and punishments. 
- 
 ### spanSlash(`(AccountId,SpanIndex)`): `SpanRecord`
 - **interface**: api.query.staking.spanSlash
 - **summary**:   Records information about the maximum slash of a stash within a slashing span, as well as how much reward has been paid out. 
- 
-### stakers(`AccountId`): `Exposure`
-- **interface**: api.query.staking.stakers
-- **summary**:   Nominators for a particular account that is in action right now. You can't iterate through validators here, but you can find them in the Session module. 
-
-  This is keyed by the stash account. 
  
 ### unappliedSlashes(`EraIndex`): `Vec<UnappliedSlash>`
 - **interface**: api.query.staking.unappliedSlashes
@@ -693,7 +731,7 @@ ___
 
 ## system
  
-### account(`AccountId`): `(Index,AccountData)`
+### account(`AccountId`): `AccountInfo`
 - **interface**: api.query.system.account
 - **summary**:   The full account information for a particular account ID. 
  

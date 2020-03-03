@@ -375,8 +375,8 @@ ___
 ### OldSlashingReportDiscarded(`SessionIndex`)
 - **summary**:   An old slashing report from a prior era was discarded because it could not be processed. 
  
-### Reward(`Balance`, `Balance`)
-- **summary**:   All validators have been rewarded by the first balance; the second is the remainder from the maximum amount of reward. 
+### Reward(`AccountId`, `Balance`)
+- **summary**:   The staker has been rewarded by this amount. AccountId is controller account. 
  
 ### Slash(`AccountId`, `Balance`)
 - **summary**:   One validator (and its nominators) has been slashed by the given amount. 
@@ -409,11 +409,11 @@ ___
 ### ExtrinsicSuccess(`DispatchInfo`)
 - **summary**:   An extrinsic completed successfully. 
  
+### KilledAccount(`AccountId`)
+- **summary**:   An account was reaped. 
+ 
 ### NewAccount(`AccountId`)
 - **summary**:   A new account was created. 
- 
-### ReapedAccount(`AccountId`)
-- **summary**:   An account was reaped. 
 
 ___
 

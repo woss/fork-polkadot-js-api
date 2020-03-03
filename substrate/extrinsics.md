@@ -216,6 +216,20 @@ ___
 
 ## democracy
  
+### activateProxy(proxy: `T::AccountId`)
+- **interface**: api.tx.democracy.activateProxy
+- **summary**:   Specify a proxy that is already open to us. Called by the stash. 
+
+  NOTE: Used to be called `set_proxy`. 
+
+  \# \<weight>
+
+   
+
+  - One extra DB entry.
+
+  \# \</weight> 
+ 
 ### cancelQueued(which: `ReferendumIndex`)
 - **interface**: api.tx.democracy.cancelQueued
 - **summary**:   Cancel a proposal queued for enactment. 
@@ -227,6 +241,36 @@ ___
 ### clearPublicProposals()
 - **interface**: api.tx.democracy.clearPublicProposals
 - **summary**:   Veto and blacklist the proposal hash. Must be from Root origin. 
+ 
+### closeProxy()
+- **interface**: api.tx.democracy.closeProxy
+- **summary**:   Clear the proxy. Called by the proxy. 
+
+  NOTE: Used to be called `resign_proxy`. 
+
+  \# \<weight>
+
+   
+
+  - One DB clear.
+
+  \# \</weight> 
+ 
+### deactivateProxy(proxy: `T::AccountId`)
+- **interface**: api.tx.democracy.deactivateProxy
+- **summary**:   Deactivate the proxy, but leave open to this account. Called by the stash. 
+
+  The proxy must already be active. 
+
+  NOTE: Used to be called `remove_proxy`. 
+
+  \# \<weight>
+
+   
+
+  - One DB clear.
+
+  \# \</weight> 
  
 ### delegate(to: `T::AccountId`, conviction: `Conviction`)
 - **interface**: api.tx.democracy.delegate
@@ -278,6 +322,26 @@ ___
 - **interface**: api.tx.democracy.notePreimage
 - **summary**:   Register the preimage for an upcoming proposal. This doesn't require the proposal to be in the dispatch queue but does require a deposit, returned once enacted. 
  
+### openProxy(target: `T::AccountId`)
+- **interface**: api.tx.democracy.openProxy
+- **summary**:   Become a proxy. 
+
+  This must be called prior to a later `activate_proxy`. 
+
+  Origin must be a Signed. 
+
+  - `target`: The account whose votes will later be proxied. 
+
+  `close_proxy` must be called before the account can be destroyed. 
+
+  \# \<weight>
+
+   
+
+  - One extra DB entry.
+
+  \# \</weight> 
+ 
 ### propose(proposal_hash: `T::Hash`, value: `Compact<BalanceOf<T>>`)
 - **interface**: api.tx.democracy.propose
 - **summary**:   Propose a sensitive action to be taken. 
@@ -312,30 +376,6 @@ ___
 
   This will only work after `VotingPeriod` blocks from the time that the preimage was noted, if it's the same account doing it. If it's a different account, then it'll only work an additional `EnactmentPeriod` later. 
  
-### removeProxy(proxy: `T::AccountId`)
-- **interface**: api.tx.democracy.removeProxy
-- **summary**:   Clear the proxy. Called by the stash. 
-
-  \# \<weight>
-
-   
-
-  - One DB clear.
-
-  \# \</weight> 
- 
-### resignProxy()
-- **interface**: api.tx.democracy.resignProxy
-- **summary**:   Clear the proxy. Called by the proxy. 
-
-  \# \<weight>
-
-   
-
-  - One DB clear.
-
-  \# \</weight> 
- 
 ### second(proposal: `Compact<PropIndex>`)
 - **interface**: api.tx.democracy.second
 - **summary**:   Propose a sensitive action to be taken. 
@@ -347,18 +387,6 @@ ___
   - O(1).
 
   - One DB entry.
-
-  \# \</weight> 
- 
-### setProxy(proxy: `T::AccountId`)
-- **interface**: api.tx.democracy.setProxy
-- **summary**:   Specify a proxy. Called by the stash. 
-
-  \# \<weight>
-
-   
-
-  - One extra DB entry.
 
   \# \</weight> 
  
@@ -647,7 +675,7 @@ ___
 
   - `max_fee`: The maximum fee that may be paid. This should just be auto-populated as:
 
-  ```nocompile Self::registrars(reg_index).uwnrap().fee ``` 
+  ```nocompile Self::registrars(reg_index).unwrap().fee ``` 
 
   Emits `JudgementRequested` if successful. 
 
@@ -866,7 +894,7 @@ ___
  
 ### transfer(new: `T::AccountId`, index: `T::AccountIndex`)
 - **interface**: api.tx.indices.transfer
-- **summary**:   Assign an index already owned by the sender to another account. The balance reservation is effectively transfered to the new account. 
+- **summary**:   Assign an index already owned by the sender to another account. The balance reservation is effectively transferred to the new account. 
 
   The dispatch origin for this call must be _Signed_. 
 
@@ -911,9 +939,27 @@ ___
 
    
 
-  - The weight of the `call`.
+  - The weight of the `call` + 10,000.
 
   - One storage lookup to check account is recovered by `who`. O(1)
+
+  \# \</weight> 
+ 
+### cancelRecovered(account: `T::AccountId`)
+- **interface**: api.tx.recovery.cancelRecovered
+- **summary**:   Cancel the ability to use `as_recovered` for `account`. 
+
+  The dispatch origin for this call must be _Signed_ and registered to be able to make calls on behalf of the recovered account. 
+
+  Parameters: 
+
+  - `account`: The recovered account you are able to call on-behalf-of.
+
+  \# \<weight>
+
+   
+
+  - One storage mutation to check account is recovered by `who`. O(1)
 
   \# \</weight> 
  
@@ -1041,7 +1087,7 @@ ___
  
 ### removeRecovery()
 - **interface**: api.tx.recovery.removeRecovery
-- **summary**:   Remove the recovery process for your account. 
+- **summary**:   Remove the recovery process for your account. Recovered accounts are still accessible. 
 
   NOTE: The user must make sure to call `close_recovery` on all active recovery attempts before calling this function else it will fail. 
 
@@ -1126,6 +1172,24 @@ ___
 
 ## session
  
+### purgeKeys()
+- **interface**: api.tx.session.purgeKeys
+- **summary**:   Removes any session key(s) of the function caller. This doesn't take effect until the next session. 
+
+  The dispatch origin of this function must be signed. 
+
+  \# \<weight>
+
+   
+
+  - O(N) in number of key types.
+
+  - Removes N + 1 DB entries.
+
+  - Reduces system account refs by one on success.
+
+  \# \</weight> 
+ 
 ### setKeys(keys: `T::Keys`, proof: `Vec<u8>`)
 - **interface**: api.tx.session.setKeys
 - **summary**:   Sets the session key(s) of the function caller to `keys`. Allows an account to set its session key prior to becoming a validator. This doesn't take effect until the next session. 
@@ -1139,6 +1203,8 @@ ___
   - O(log n) in number of accounts.
 
   - One extra DB entry.
+
+  - Increases system account refs by one on success iff there were previously no keys set.  In this case, purge_keys will need to be called before the account can be removed. 
 
   \# \</weight> 
 
@@ -1437,7 +1503,7 @@ ___
  
 ### unfound()
 - **interface**: api.tx.society.unfound
-- **summary**:   Anull the founding of the society. 
+- **summary**:   Annul the founding of the society. 
 
   The dispatch origin for this call must be Signed, and the signing account must be both the `Founder` and the `Head`. This implies that it may only be done when there is one member. 
 
@@ -1716,6 +1782,62 @@ ___
 
   \# \</weight> 
  
+### payoutNominator(era: `EraIndex`, validators: `Vec<(T::AccountId, u32)>`)
+- **interface**: api.tx.staking.payoutNominator
+- **summary**:   Make one nominator's payout for one era. 
+
+  - `who` is the controller account of the nominator to pay out. 
+
+  - `era` may not be lower than one following the most recently paid era. If it is higher,  then it indicates an instruction to skip the payout of all previous eras. 
+
+  - `validators` is the list of all validators that `who` had exposure to during `era`.  If it is incomplete, then less than the full reward will be paid out.   It must not exceed `MAX_NOMINATIONS`. 
+
+  WARNING: once an era is payed for a validator such validator can't claim the payout of previous era. 
+
+  WARNING: Incorrect arguments here can result in loss of payout. Be very careful. 
+
+  \# \<weight>
+
+   
+
+  - Number of storage read of `O(validators)`; `validators` is the argument of the call,  and is bounded by `MAX_NOMINATIONS`. 
+
+  - Each storage read is `O(N)` size and decode complexity; `N` is the  maximum  nominations that can be given to a single validator. 
+
+  - Computation complexity: `O(MAX_NOMINATIONS * logN)`; `MAX_NOMINATIONS` is the  maximum number of validators that may be nominated by a single nominator, it is   bounded only economically (all nominators are required to place a minimum stake). 
+
+  \# \</weight> 
+ 
+### payoutValidator(era: `EraIndex`)
+- **interface**: api.tx.staking.payoutValidator
+- **summary**:   Make one validator's payout for one era. 
+
+  - `who` is the controller account of the validator to pay out. 
+
+  - `era` may not be lower than one following the most recently paid era. If it is higher,  then it indicates an instruction to skip the payout of all previous eras. 
+
+  WARNING: once an era is payed for a validator such validator can't claim the payout of previous era. 
+
+  WARNING: Incorrect arguments here can result in loss of payout. Be very careful. 
+
+  \# \<weight>
+
+   
+
+  - Time complexity: O(1).
+
+  - Contains a limited number of reads and writes.
+
+  \# \</weight> 
+ 
+### reapStash(stash: `T::AccountId`)
+- **interface**: api.tx.staking.reapStash
+- **summary**:   Remove all data structure concerning a staker/stash once its balance is zero. This is essentially equivalent to `withdraw_unbonded` except it can be called by anyone and the target `stash` must have no funds left. 
+
+  This can be called from any origin. 
+
+  - `stash`: The stash account to reap. Its balance must be zero. 
+ 
 ### rebond(value: `Compact<BalanceOf<T>>`)
 - **interface**: api.tx.staking.rebond
 - **summary**:   Rebond a portion of the stash scheduled to be unlocked. 
@@ -1749,6 +1871,12 @@ ___
   - Writes are limited to the `origin` account key.
 
   \# \</weight> 
+ 
+### setHistoryDepth(new_history_depth: `Compact<EraIndex>`)
+- **interface**: api.tx.staking.setHistoryDepth
+- **summary**:   Set history_depth value. 
+
+  Origin must be root. 
  
 ### setInvulnerables(validators: `Vec<T::AccountId>`)
 - **interface**: api.tx.staking.setInvulnerables
@@ -1798,7 +1926,7 @@ ___
 
   - Contains a limited number of reads.
 
-  - Each call (requires the remainder of the bonded balance to be above `minimum_balance`)  will cause a new entry to be inserted into a vector (`Ledger.unlocking`) kept in storage.   The only way to clean the aforementioned storage item is also user-controlled via `withdraw_unbonded`. 
+  - Each call (requires the remainder of the bonded balance to be above `minimum_balance`)  will cause a new entry to be inserted into a vector (`Ledger.unlocking`) kept in storage.   The only way to clean the aforementioned storage item is also user-controlled via   `withdraw_unbonded`. 
 
   - One DB entry.</weight> 
  
@@ -1867,7 +1995,7 @@ ___
 
   \# \</weight> 
  
-### sudo(proposal: `Box<T::Proposal>`)
+### sudo(call: `Box<<T as Trait>::Call>`)
 - **interface**: api.tx.sudo.sudo
 - **summary**:   Authenticates the sudo key and dispatches a function call with `Root` origin. 
 
@@ -1883,11 +2011,11 @@ ___
 
   - One DB write (event).
 
-  - Unknown weight of derivative `proposal` execution.
+  - Weight of derivative `call` execution + 10,000.
 
   \# \</weight> 
  
-### sudoAs(who: `<T::Lookup as StaticLookup>::Source`, proposal: `Box<T::Proposal>`)
+### sudoAs(who: `<T::Lookup as StaticLookup>::Source`, call: `Box<<T as Trait>::Call>`)
 - **interface**: api.tx.sudo.sudoAs
 - **summary**:   Authenticates the sudo key and dispatches a function call with `Signed` origin from a given account. 
 
@@ -1903,7 +2031,7 @@ ___
 
   - One DB write (event).
 
-  - Unknown weight of derivative `proposal` execution.
+  - Weight of derivative `call` execution + 10,000.
 
   \# \</weight> 
 
@@ -1912,9 +2040,9 @@ ___
 
 ## system
  
-### fillBlock()
+### fillBlock(_ratio: `Perbill`)
 - **interface**: api.tx.system.fillBlock
-- **summary**:   A big dispatch that will disallow any other transaction to be included. 
+- **summary**:   A dispatch that will fill the block weight up to the given ratio. 
  
 ### killPrefix(prefix: `Key`)
 - **interface**: api.tx.system.killPrefix
@@ -1947,6 +2075,10 @@ ___
 ### setStorage(items: `Vec<KeyValue>`)
 - **interface**: api.tx.system.setStorage
 - **summary**:   Set some items of storage. 
+ 
+### suicide()
+- **interface**: api.tx.system.suicide
+- **summary**:   Kill the sending account, assuming there are no references outstanding and the composite data is equal to its default value. 
 
 ___
 
@@ -2321,7 +2453,7 @@ ___
 
    
 
-  - The weight of the `call`.
+  - The weight of the `call` + 10,000.
 
   \# \</weight> 
  

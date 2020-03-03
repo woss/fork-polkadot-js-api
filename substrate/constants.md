@@ -98,7 +98,7 @@ ___
  
 ### storageSizeOffset: `u32`
 - **interface**: api.consts.contracts.storageSizeOffset
-- **summary**:   Size of a contract at the time of instantiaion. This is a simple way to ensure that empty contracts eventually gets deleted. 
+- **summary**:   Size of a contract at the time of instantiation. This is a simple way to ensure that empty contracts eventually gets deleted. 
  
 ### surchargeReward: `BalanceOf<T>`
 - **interface**: api.consts.contracts.surchargeReward

@@ -184,6 +184,9 @@ ___
 ### NoProposal
 - **summary**:   No external proposal 
  
+### NotActive
+- **summary**:   A proxy-de-pairing was attempted to an account that was not active. 
+ 
 ### NotDelegated
 - **summary**:   Not delegated 
  
@@ -195,6 +198,9 @@ ___
  
 ### NotLocked
 - **summary**:   The target account does not have a lock. 
+ 
+### NotOpen
+- **summary**:   A proxy-pairing was attempted to an account that was not open. 
  
 ### NotProxy
 - **summary**:   Not a proxy 
@@ -219,6 +225,9 @@ ___
  
 ### ValueLow
 - **summary**:   Value too low 
+ 
+### WrongOpen
+- **summary**:   A proxy-pairing was attempted to an account that was open to another account. 
  
 ### WrongProxy
 - **summary**:   Wrong proxy 
@@ -355,6 +364,9 @@ ___
 
 ## recovery
  
+### AlreadyProxy
+- **summary**:   This account is already set up for recovery 
+ 
 ### AlreadyRecoverable
 - **summary**:   This account is already set up for recovery 
  
@@ -413,6 +425,9 @@ ___
  
 ### NoAssociatedValidatorId
 - **summary**:   No associated validator ID for account. 
+ 
+### NoKeys
+- **summary**:   No keys are associated with this account. 
 
 ___
 
@@ -490,8 +505,17 @@ ___
 ### EmptyTargets
 - **summary**:   Targets cannot be empty. 
  
+### FundedTarget
+- **summary**:   Attempting to target a stash that still has funds. 
+ 
 ### InsufficientValue
 - **summary**:   Can not bond with value less than minimum balance. 
+ 
+### InvalidEraToReward
+- **summary**:   Invalid era to reward. 
+ 
+### InvalidNumberOfNominations
+- **summary**:   Invalid number of nominations. 
  
 ### InvalidSlashIndex
 - **summary**:   Slash record index out of bounds. 
@@ -531,6 +555,12 @@ ___
  
 ### InvalidSpecName
 - **summary**:   The name of specification does not match between the current runtime and the new runtime. 
+ 
+### NonDefaultComposite
+- **summary**:   Suicide called when the account has non-default composite data. 
+ 
+### NonZeroRefCount
+- **summary**:   There is a non-zero reference count preventing the account from being purged. 
  
 ### SpecOrImplVersionNeedToIncrease
 - **summary**:   The specification or the implementation version need to increase between the current runtime and the new runtime. 
