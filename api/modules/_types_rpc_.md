@@ -4,10 +4,16 @@
 
 ## Index
 
+### Interfaces
+
+* [RpcPromiseResult](../interfaces/_types_rpc_.rpcpromiseresult.md)
+* [RpcRxResult](../interfaces/_types_rpc_.rpcrxresult.md)
+
 ### Type aliases
 
 * [DecoratedRpc](_types_rpc_.md#decoratedrpc)
 * [DecoratedRpcSection](_types_rpc_.md#decoratedrpcsection)
+* [RpcMethodResult](_types_rpc_.md#rpcmethodresult)
 
 ## Type aliases
 
@@ -15,7 +21,7 @@
 
 Ƭ **DecoratedRpc**: *object*
 
-*Defined in [api/src/types/rpc.ts:15](https://github.com/polkadot-js/api/blob/69020faaa/packages/api/src/types/rpc.ts#L15)*
+*Defined in [api/src/types/rpc.ts:31](https://github.com/polkadot-js/api/blob/0e297c677/packages/api/src/types/rpc.ts#L31)*
 
 #### Type declaration:
 
@@ -25,6 +31,14 @@ ___
 
 Ƭ **DecoratedRpcSection**: *object*
 
-*Defined in [api/src/types/rpc.ts:9](https://github.com/polkadot-js/api/blob/69020faaa/packages/api/src/types/rpc.ts#L9)*
+*Defined in [api/src/types/rpc.ts:25](https://github.com/polkadot-js/api/blob/0e297c677/packages/api/src/types/rpc.ts#L25)*
 
 #### Type declaration:
+
+___
+
+###  RpcMethodResult
+
+Ƭ **RpcMethodResult**: *ApiType extends "rxjs" ? RpcRxResult<F> : RpcPromiseResult<F>*
+
+*Defined in [api/src/types/rpc.ts:21](https://github.com/polkadot-js/api/blob/0e297c677/packages/api/src/types/rpc.ts#L21)*
