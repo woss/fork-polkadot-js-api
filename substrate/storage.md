@@ -193,6 +193,10 @@ ___
 - **interface**: api.query.council.members
 - **summary**:   The current members of the collective. This is stored sorted (just by value). 
  
+### prime(): `Option<AccountId>`
+- **interface**: api.query.council.prime
+- **summary**:   The member who provides the default vote for any other members that do not vote before the timeout. If None, then no member has that privilege. 
+ 
 ### proposalCount(): `u32`
 - **interface**: api.query.council.proposalCount
 - **summary**:   Proposals so far. 
@@ -800,6 +804,10 @@ ___
 - **interface**: api.query.technicalCommittee.members
 - **summary**:   The current members of the collective. This is stored sorted (just by value). 
  
+### prime(): `Option<AccountId>`
+- **interface**: api.query.technicalCommittee.prime
+- **summary**:   The member who provides the default vote for any other members that do not vote before the timeout. If None, then no member has that privilege. 
+ 
 ### proposalCount(): `u32`
 - **interface**: api.query.technicalCommittee.proposalCount
 - **summary**:   Proposals so far. 
@@ -824,6 +832,10 @@ ___
 ### members(): `Vec<AccountId>`
 - **interface**: api.query.technicalMembership.members
 - **summary**:   The current membership, stored as an ordered Vec. 
+ 
+### prime(): `Option<AccountId>`
+- **interface**: api.query.technicalMembership.prime
+- **summary**:   The current prime member, if one exists. 
 
 ___
 

@@ -122,6 +122,9 @@ ___
 ### Approved(`Hash`)
 - **summary**:   A motion was approved by the required threshold. 
  
+### Closed(`Hash`, `MemberCount`, `MemberCount`)
+- **summary**:   A proposal was closed after its duration was up. 
+ 
 ### Disapproved(`Hash`)
 - **summary**:   A motion was not approved by the required threshold. 
  
@@ -422,6 +425,9 @@ ___
  
 ### Approved(`Hash`)
 - **summary**:   A motion was approved by the required threshold. 
+ 
+### Closed(`Hash`, `MemberCount`, `MemberCount`)
+- **summary**:   A proposal was closed after its duration was up. 
  
 ### Disapproved(`Hash`)
 - **summary**:   A motion was not approved by the required threshold. 

@@ -143,6 +143,9 @@ ___
 ### ProposalMissing
 - **summary**:   Proposal must exist 
  
+### TooEarly
+- **summary**:   The close call is made too early, before the end of the voting. 
+ 
 ### WrongIndex
 - **summary**:   Mismatched index 
 
@@ -587,6 +590,9 @@ ___
  
 ### ProposalMissing
 - **summary**:   Proposal must exist 
+ 
+### TooEarly
+- **summary**:   The close call is made too early, before the end of the voting. 
  
 ### WrongIndex
 - **summary**:   Mismatched index 

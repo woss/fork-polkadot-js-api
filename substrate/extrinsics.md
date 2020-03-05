@@ -175,6 +175,26 @@ ___
 
 ## council
  
+### close(proposal: `T::Hash`, index: `Compact<ProposalIndex>`)
+- **interface**: api.tx.council.close
+- **summary**:   May be called by any signed account after the voting duration has ended in order to finish voting and close the proposal. 
+
+  Abstentions are counted as rejections unless there is a prime member set and the prime member cast an approval. 
+
+  - the weight of `proposal` preimage. 
+
+  - up to three events deposited.
+
+  - one read, two removals, one mutation. (plus three static reads.)
+
+  - computation and i/o `O(P + L + M)` where:
+
+    - `M` is number of members,
+
+    - `P` is number of active proposals,
+
+    - `L` is the encoded length of `proposal` preimage.
+ 
 ### execute(proposal: `Box<<T as Trait<I>>::Proposal>`)
 - **interface**: api.tx.council.execute
 - **summary**:   Dispatch a proposal from a member using the `Member` origin. 
@@ -193,9 +213,13 @@ ___
 
   \# \</weight> 
  
-### setMembers(new_members: `Vec<T::AccountId>`)
+### setMembers(new_members: `Vec<T::AccountId>`, prime: `Option<T::AccountId>`)
 - **interface**: api.tx.council.setMembers
-- **summary**:   Set the collective's membership manually to `new_members`. Be nice to the chain and provide it pre-sorted. 
+- **summary**:   Set the collective's membership. 
+
+  - `new_members`: The new member list. Be nice to the chain and 
+
+  - `prime`: The prime member whose vote sets the default.
 
   Requires root origin. 
  
@@ -2316,6 +2340,26 @@ ___
 
 ## technicalCommittee
  
+### close(proposal: `T::Hash`, index: `Compact<ProposalIndex>`)
+- **interface**: api.tx.technicalCommittee.close
+- **summary**:   May be called by any signed account after the voting duration has ended in order to finish voting and close the proposal. 
+
+  Abstentions are counted as rejections unless there is a prime member set and the prime member cast an approval. 
+
+  - the weight of `proposal` preimage. 
+
+  - up to three events deposited.
+
+  - one read, two removals, one mutation. (plus three static reads.)
+
+  - computation and i/o `O(P + L + M)` where:
+
+    - `M` is number of members,
+
+    - `P` is number of active proposals,
+
+    - `L` is the encoded length of `proposal` preimage.
+ 
 ### execute(proposal: `Box<<T as Trait<I>>::Proposal>`)
 - **interface**: api.tx.technicalCommittee.execute
 - **summary**:   Dispatch a proposal from a member using the `Member` origin. 
@@ -2334,9 +2378,13 @@ ___
 
   \# \</weight> 
  
-### setMembers(new_members: `Vec<T::AccountId>`)
+### setMembers(new_members: `Vec<T::AccountId>`, prime: `Option<T::AccountId>`)
 - **interface**: api.tx.technicalCommittee.setMembers
-- **summary**:   Set the collective's membership manually to `new_members`. Be nice to the chain and provide it pre-sorted. 
+- **summary**:   Set the collective's membership. 
+
+  - `new_members`: The new member list. Be nice to the chain and 
+
+  - `prime`: The prime member whose vote sets the default.
 
   Requires root origin. 
  
@@ -2368,6 +2416,12 @@ ___
 - **summary**:   Swap out the sending member for some other key `new`. 
 
   May only be called from `Signed` origin of a current member. 
+
+  Prime membership is passed from the origin account to `new`, if extant. 
+ 
+### clearPrime()
+- **interface**: api.tx.technicalMembership.clearPrime
+- **summary**:   Remove the prime member if it exists. 
  
 ### removeMember(who: `T::AccountId`)
 - **interface**: api.tx.technicalMembership.removeMember
@@ -2381,11 +2435,17 @@ ___
 
   May only be called from `ResetOrigin` or root. 
  
+### setPrime(who: `T::AccountId`)
+- **interface**: api.tx.technicalMembership.setPrime
+- **summary**:   Set the prime member. Must be a current member. 
+ 
 ### swapMember(remove: `T::AccountId`, add: `T::AccountId`)
 - **interface**: api.tx.technicalMembership.swapMember
 - **summary**:   Swap out one member `remove` for another `add`. 
 
   May only be called from `SwapOrigin` or root. 
+
+  Prime membership is *not* passed from `remove` to `add`, if extant. 
 
 ___
 
