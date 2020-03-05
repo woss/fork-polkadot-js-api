@@ -222,6 +222,10 @@ ___
 
   NOTE: Used to be called `set_proxy`. 
 
+  The dispatch origin of this call must be _Signed_. 
+
+  - `proxy`: The account that will be activated as proxy. 
+
   \# \<weight>
 
    
@@ -233,20 +237,58 @@ ___
 ### cancelQueued(which: `ReferendumIndex`)
 - **interface**: api.tx.democracy.cancelQueued
 - **summary**:   Cancel a proposal queued for enactment. 
+
+  The dispatch origin of this call must be _Root_. 
+
+  - `which`: The index of the referendum to cancel. 
+
+  \# \<weight>
+
+   
+
+  - One DB change.
+
+  \# \</weight> 
  
 ### cancelReferendum(ref_index: `Compact<ReferendumIndex>`)
 - **interface**: api.tx.democracy.cancelReferendum
 - **summary**:   Remove a referendum. 
+
+  The dispatch origin of this call must be _Root_. 
+
+  - `ref_index`: The index of the referendum to cancel. 
+
+  \# \<weight>
+
+   
+
+  - `O(1)`.
+
+  \# \</weight> 
  
 ### clearPublicProposals()
 - **interface**: api.tx.democracy.clearPublicProposals
-- **summary**:   Veto and blacklist the proposal hash. Must be from Root origin. 
+- **summary**:   Clears all public proposals. 
+
+  The dispatch origin of this call must be _Root_. 
+
+  \# \<weight>
+
+   
+
+  - `O(1)`.
+
+  - One DB clear.
+
+  \# \</weight> 
  
 ### closeProxy()
 - **interface**: api.tx.democracy.closeProxy
 - **summary**:   Clear the proxy. Called by the proxy. 
 
   NOTE: Used to be called `resign_proxy`. 
+
+  The dispatch origin of this call must be _Signed_. 
 
   \# \<weight>
 
@@ -264,6 +306,10 @@ ___
 
   NOTE: Used to be called `remove_proxy`. 
 
+  The dispatch origin of this call must be _Signed_. 
+
+  - `proxy`: The account that will be deactivated as proxy. 
+
   \# \<weight>
 
    
@@ -276,6 +322,16 @@ ___
 - **interface**: api.tx.democracy.delegate
 - **summary**:   Delegate vote. 
 
+  Currency is locked indefinitely for as long as it's delegated. 
+
+  The dispatch origin of this call must be _Signed_. 
+
+  - `to`: The account to make a delegate of the sender. 
+
+  - `conviction`: The conviction that will be attached to the delegated  votes. 
+
+  Emits `Delegated`. 
+
   \# \<weight>
 
    
@@ -287,40 +343,138 @@ ___
 ### emergencyCancel(ref_index: `ReferendumIndex`)
 - **interface**: api.tx.democracy.emergencyCancel
 - **summary**:   Schedule an emergency cancellation of a referendum. Cannot happen twice to the same referendum. 
+
+  The dispatch origin of this call must be `CancellationOrigin`. 
+
+  -`ref_index`: The index of the referendum to cancel. 
+
+  \# \<weight>
+
+   
+
+  - Depends on size of storage vec `VotersFor` for this referendum.
+
+  \# \</weight> 
  
 ### externalPropose(proposal_hash: `T::Hash`)
 - **interface**: api.tx.democracy.externalPropose
 - **summary**:   Schedule a referendum to be tabled once it is legal to schedule an external referendum. 
+
+  The dispatch origin of this call must be `ExternalOrigin`. 
+
+  - `proposal_hash`: The preimage hash of the proposal. 
+
+  \# \<weight>
+
+   
+
+  - `O(1)`.
+
+  - One DB change.
+
+  \# \</weight> 
  
 ### externalProposeDefault(proposal_hash: `T::Hash`)
 - **interface**: api.tx.democracy.externalProposeDefault
 - **summary**:   Schedule a negative-turnout-bias referendum to be tabled next once it is legal to schedule an external referendum. 
 
+  The dispatch of this call must be `ExternalDefaultOrigin`. 
+
+  - `proposal_hash`: The preimage hash of the proposal. 
+
   Unlike `external_propose`, blacklisting has no effect on this and it may replace a pre-scheduled `external_propose` call. 
+
+  \# \<weight>
+
+   
+
+  - `O(1)`.
+
+  - One DB change.
+
+  \# \</weight> 
  
 ### externalProposeMajority(proposal_hash: `T::Hash`)
 - **interface**: api.tx.democracy.externalProposeMajority
 - **summary**:   Schedule a majority-carries referendum to be tabled next once it is legal to schedule an external referendum. 
 
+  The dispatch of this call must be `ExternalMajorityOrigin`. 
+
+  - `proposal_hash`: The preimage hash of the proposal. 
+
   Unlike `external_propose`, blacklisting has no effect on this and it may replace a pre-scheduled `external_propose` call. 
+
+  \# \<weight>
+
+   
+
+  - `O(1)`.
+
+  - One DB change.
+
+  \# \</weight> 
  
 ### fastTrack(proposal_hash: `T::Hash`, voting_period: `T::BlockNumber`, delay: `T::BlockNumber`)
 - **interface**: api.tx.democracy.fastTrack
 - **summary**:   Schedule the currently externally-proposed majority-carries referendum to be tabled immediately. If there is no externally-proposed referendum currently, or if there is one but it is not a majority-carries referendum then it fails. 
+
+  The dispatch of this call must be `FastTrackOrigin`. 
 
   - `proposal_hash`: The hash of the current external proposal. 
 
   - `voting_period`: The period that is allowed for voting on this proposal. Increased to  `EmergencyVotingPeriod` if too low. 
 
   - `delay`: The number of block after voting has ended in approval and this should be  enacted. This doesn't have a minimum amount. 
+
+  Emits `Started`. 
+
+  \# \<weight>
+
+   
+
+  - One DB clear.
+
+  - One DB change.
+
+  - One extra DB entry.
+
+  \# \</weight> 
  
 ### noteImminentPreimage(encoded_proposal: `Vec<u8>`)
 - **interface**: api.tx.democracy.noteImminentPreimage
 - **summary**:   Register the preimage for an upcoming proposal. This requires the proposal to be in the dispatch queue. No deposit is needed. 
+
+  The dispatch origin of this call must be _Signed_. 
+
+  - `encoded_proposal`: The preimage of a proposal. 
+
+  Emits `PreimageNoted`. 
+
+  \# \<weight>
+
+   
+
+  - Dependent on the size of `encoded_proposal`.
+
+  \# \</weight> 
  
 ### notePreimage(encoded_proposal: `Vec<u8>`)
 - **interface**: api.tx.democracy.notePreimage
 - **summary**:   Register the preimage for an upcoming proposal. This doesn't require the proposal to be in the dispatch queue but does require a deposit, returned once enacted. 
+
+  The dispatch origin of this call must be _Signed_. 
+
+  - `encoded_proposal`: The preimage of a proposal. 
+
+  Emits `PreimageNoted`. 
+
+  \# \<weight>
+
+   
+
+  - Dependent on the size of `encoded_proposal` but protected by a   required deposit. 
+
+  \# \</weight> 
  
 ### openProxy(target: `T::AccountId`)
 - **interface**: api.tx.democracy.openProxy
@@ -346,11 +500,19 @@ ___
 - **interface**: api.tx.democracy.propose
 - **summary**:   Propose a sensitive action to be taken. 
 
+  The dispatch origin of this call must be _Signed_ and the sender must have funds to cover the deposit. 
+
+  - `proposal_hash`: The hash of the proposal preimage. 
+
+  - `value`: The amount of deposit (must be at least `MinimumDeposit`).
+
+  Emits `Proposed`. 
+
   \# \<weight>
 
    
 
-  - O(1).
+  - `O(1)`.
 
   - Two DB changes, one DB entry.
 
@@ -360,11 +522,17 @@ ___
 - **interface**: api.tx.democracy.proxyVote
 - **summary**:   Vote in a referendum on behalf of a stash. If `vote.is_aye()`, the vote is to enact the proposal; otherwise it is a vote to keep the status quo. 
 
+  The dispatch origin of this call must be _Signed_. 
+
+  - `ref_index`: The index of the referendum to proxy vote for. 
+
+  - `vote`: The vote configuration.
+
   \# \<weight>
 
    
 
-  - O(1).
+  - `O(1)`.
 
   - One DB change, one DB entry.
 
@@ -374,17 +542,35 @@ ___
 - **interface**: api.tx.democracy.reapPreimage
 - **summary**:   Remove an expired proposal preimage and collect the deposit. 
 
+  The dispatch origin of this call must be _Signed_. 
+
+  - `proposal_hash`: The preimage hash of a proposal. 
+
   This will only work after `VotingPeriod` blocks from the time that the preimage was noted, if it's the same account doing it. If it's a different account, then it'll only work an additional `EnactmentPeriod` later. 
- 
-### second(proposal: `Compact<PropIndex>`)
-- **interface**: api.tx.democracy.second
-- **summary**:   Propose a sensitive action to be taken. 
+
+  Emits `PreimageReaped`. 
 
   \# \<weight>
 
    
 
-  - O(1).
+  - One DB clear.
+
+  \# \</weight> 
+ 
+### second(proposal: `Compact<PropIndex>`)
+- **interface**: api.tx.democracy.second
+- **summary**:   Signals agreement with a particular proposal. 
+
+  The dispatch origin of this call must be _Signed_ and the sender must have funds to cover the deposit, equal to the original deposit. 
+
+  - `proposal`: The index of the proposal to second. 
+
+  \# \<weight>
+
+   
+
+  - `O(1)`.
 
   - One DB entry.
 
@@ -393,6 +579,12 @@ ___
 ### undelegate()
 - **interface**: api.tx.democracy.undelegate
 - **summary**:   Undelegate vote. 
+
+  Must be sent from an account that has called delegate previously. The tokens will be reduced from an indefinite lock to the maximum possible according to the conviction of the prior delegation. 
+
+  The dispatch origin of this call must be _Signed_. 
+
+  Emits `Undelegated`. 
 
   \# \<weight>
 
@@ -404,20 +596,59 @@ ___
  
 ### unlock(target: `T::AccountId`)
 - **interface**: api.tx.democracy.unlock
- 
-### vetoExternal(proposal_hash: `T::Hash`)
-- **interface**: api.tx.democracy.vetoExternal
-- **summary**:   Veto and blacklist the external proposal hash. 
- 
-### vote(ref_index: `Compact<ReferendumIndex>`, vote: `Vote`)
-- **interface**: api.tx.democracy.vote
-- **summary**:   Vote in a referendum. If `vote.is_aye()`, the vote is to enact the proposal; otherwise it is a vote to keep the status quo. 
+- **summary**:   Unlock tokens that have an expired lock. 
+
+  The dispatch origin of this call must be _Signed_. 
+
+  - `target`: The account to remove the lock on. 
+
+  Emits `Unlocked`. 
 
   \# \<weight>
 
    
 
-  - O(1).
+  - `O(1)`.
+
+  \# \</weight> 
+ 
+### vetoExternal(proposal_hash: `T::Hash`)
+- **interface**: api.tx.democracy.vetoExternal
+- **summary**:   Veto and blacklist the external proposal hash. 
+
+  The dispatch origin of this call must be `VetoOrigin`. 
+
+  - `proposal_hash`: The preimage hash of the proposal to veto and blacklist. 
+
+  Emits `Vetoed`. 
+
+  \# \<weight>
+
+   
+
+  - Two DB entries.
+
+  - One DB clear.
+
+  - Performs a binary search on `existing_vetoers` which should not  be very large. 
+
+  \# \</weight> 
+ 
+### vote(ref_index: `Compact<ReferendumIndex>`, vote: `Vote`)
+- **interface**: api.tx.democracy.vote
+- **summary**:   Vote in a referendum. If `vote.is_aye()`, the vote is to enact the proposal; otherwise it is a vote to keep the status quo. 
+
+  The dispatch origin of this call must be _Signed_. 
+
+  - `ref_index`: The index of the referendum to vote for. 
+
+  - `vote`: The vote configuration.
+
+  \# \<weight>
+
+   
+
+  - `O(1)`.
 
   - One DB change, one DB entry.
 
@@ -2563,5 +2794,27 @@ ___
   - One storage read (codec `O(1)`) and up to one removal.
 
   - One event.
+
+  \# \</weight> 
+ 
+### vestedTransfer(target: `<T::Lookup as StaticLookup>::Source`, schedule: `VestingInfo<BalanceOf<T>, T::BlockNumber>`)
+- **interface**: api.tx.vesting.vestedTransfer
+- **summary**:   Create a vested transfer.  
+
+  The dispatch origin for this call must be _Signed_. 
+
+  - `target`: The account that should be transferred the vested funds. 
+
+  - `amount`: The amount of funds to transfer and will be vested.
+
+  - `schedule`: The vesting schedule attached to the transfer.
+
+  Emits `VestingCreated`. 
+
+  \# \<weight>
+
+   
+
+  - Creates a new storage entry, but is protected by a minimum transfer   amount needed to succeed. 
 
   \# \</weight> 

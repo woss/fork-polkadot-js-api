@@ -137,15 +137,15 @@ ___
 
   NOTE: This is only used in the case that this module is used to store balances. 
  
-### isUpgraded(): `bool`
-- **interface**: api.query.balances.isUpgraded
-- **summary**:   True if network has been upgraded to this version. 
-
-  True for new networks. 
- 
 ### locks(`AccountId`): `Vec<BalanceLock>`
 - **interface**: api.query.balances.locks
 - **summary**:   Any liquidity locks on some account balances. NOTE: Should only be accessed when setting, changing and freeing a lock. 
+ 
+### storageVersion(): `ReleasesBalances`
+- **interface**: api.query.balances.storageVersion
+- **summary**:   Storage version of the pallet. 
+
+  This is set to v2.0.0 for new networks. 
  
 ### totalIssuance(): `Balance`
 - **interface**: api.query.balances.totalIssuance
@@ -661,12 +661,6 @@ ___
 - **interface**: api.query.staking.invulnerables
 - **summary**:   Any validators that may never be slashed or forcibly kicked. It's a Vec since they're easy to initialize and the performance hit is minimal (we expect no more than four invulnerables) and restricted to testnets. 
  
-### isUpgraded(): `bool`
-- **interface**: api.query.staking.isUpgraded
-- **summary**:   True if network has been upgraded to this version. 
-
-  True for new networks. 
- 
 ### ledger(`AccountId`): `Option<StakingLedger>`
 - **interface**: api.query.staking.ledger
 - **summary**:   Map from all (unlocked) "controller" accounts to the info regarding the staking. 
@@ -700,6 +694,12 @@ ___
 ### spanSlash(`(AccountId,SpanIndex)`): `SpanRecord`
 - **interface**: api.query.staking.spanSlash
 - **summary**:   Records information about the maximum slash of a stash within a slashing span, as well as how much reward has been paid out. 
+ 
+### storageVersion(): `ReleasesStaking`
+- **interface**: api.query.staking.storageVersion
+- **summary**:   Storage version of the pallet. 
+
+  This is set to v2.0.0 for new networks. 
  
 ### unappliedSlashes(`EraIndex`): `Vec<UnappliedSlash>`
 - **interface**: api.query.staking.unappliedSlashes
@@ -786,6 +786,10 @@ ___
 ### parentHash(): `Hash`
 - **interface**: api.query.system.parentHash
 - **summary**:   Hash of the previous block. 
+ 
+### runtimeUpgraded(): `bool`
+- **interface**: api.query.system.runtimeUpgraded
+- **summary**:   A bool to track if the runtime was upgraded last block. 
 
 ___
 

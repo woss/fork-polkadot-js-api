@@ -28,6 +28,8 @@ The following sections contain the module constants, also known as parameter typ
 
 - **[treasury](#treasury)**
 
+- **[vesting](#vesting)**
+
 
 ___
 
@@ -293,3 +295,12 @@ ___
 ### tipReportDepositPerByte: `BalanceOf<T>`
 - **interface**: api.consts.treasury.tipReportDepositPerByte
 - **summary**:   The amount held on deposit per byte within the tip report reason. 
+
+___
+
+
+## vesting
+ 
+### minVestedTransfer: `BalanceOf<T>`
+- **interface**: api.consts.vesting.minVestedTransfer
+- **summary**:   The minimum amount to be transferred to create a new vesting schedule. 

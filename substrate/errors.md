@@ -666,6 +666,9 @@ ___
 
 ## vesting
  
+### AmountLow
+- **summary**:   Amount being transferred is too low to create a vesting schedule. 
+ 
 ### ExistingVestingSchedule
 - **summary**:   An existing vesting schedule already exists for this account that cannot be clobbered. 
  
