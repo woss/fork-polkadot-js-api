@@ -14,7 +14,7 @@
 
 ▸ **validators**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/validators.ts:34](https://github.com/polkadot-js/api/blob/89992ea03/packages/api-derive/src/staking/validators.ts#L34)*
+*Defined in [packages/api-derive/src/staking/validators.ts:31](https://github.com/polkadot-js/api/blob/adee447cd/packages/api-derive/src/staking/validators.ts#L31)*
 
 **`description`** Retrieve latest list of validators
 
