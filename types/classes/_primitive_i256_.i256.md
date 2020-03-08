@@ -61,7 +61,7 @@ Defined in node_modules/@types/bn.js/index.d.ts:12
 
 *Inherited from [Int](_codec_int_.int.md).[constructor](_codec_int_.int.md#constructor)*
 
-*Defined in [packages/types/src/codec/Int.ts:19](https://github.com/polkadot-js/api/blob/0a6c6ec4c5/packages/types/src/codec/Int.ts#L19)*
+*Defined in [packages/types/src/codec/Int.ts:19](https://github.com/polkadot-js/api/blob/9bf854445c/packages/types/src/codec/Int.ts#L19)*
 
 **Parameters:**
 
@@ -82,7 +82,7 @@ Name | Type | Default |
 
 *Inherited from [Int](_codec_int_.int.md).[with](_codec_int_.int.md#static-with)*
 
-*Defined in [packages/types/src/codec/Int.ts:24](https://github.com/polkadot-js/api/blob/0a6c6ec4c5/packages/types/src/codec/Int.ts#L24)*
+*Defined in [packages/types/src/codec/Int.ts:24](https://github.com/polkadot-js/api/blob/9bf854445c/packages/types/src/codec/Int.ts#L24)*
 
 **Parameters:**
 

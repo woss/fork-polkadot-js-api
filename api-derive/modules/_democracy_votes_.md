@@ -14,7 +14,7 @@
 
 ▸ **votes**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/democracy/votes.ts:13](https://github.com/polkadot-js/api/blob/0a6c6ec4c5/packages/api-derive/src/democracy/votes.ts#L13)*
+*Defined in [packages/api-derive/src/democracy/votes.ts:13](https://github.com/polkadot-js/api/blob/9bf854445c/packages/api-derive/src/democracy/votes.ts#L13)*
 
 **Parameters:**
 
