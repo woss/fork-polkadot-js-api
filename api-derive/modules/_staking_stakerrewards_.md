@@ -14,7 +14,7 @@
 
 ▸ **stakerRewards**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerRewards.ts:14](https://github.com/polkadot-js/api/blob/7051e20d5/packages/api-derive/src/staking/stakerRewards.ts#L14)*
+*Defined in [packages/api-derive/src/staking/stakerRewards.ts:13](https://github.com/polkadot-js/api/blob/0a6c6ec4c5/packages/api-derive/src/staking/stakerRewards.ts#L13)*
 
 **Parameters:**
 
@@ -24,10 +24,11 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (`accountId`: Uint8Array | string): *Observable‹DeriveStakerReward[]›*
+▸ (`accountId`: Uint8Array | string, `withActive?`: undefined | false | true): *Observable‹DeriveStakerReward[]›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `accountId` | Uint8Array &#124; string |
+`withActive?` | undefined &#124; false &#124; true |

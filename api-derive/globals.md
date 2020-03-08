@@ -51,7 +51,6 @@
 * ["staking/overview"](modules/_staking_overview_.md)
 * ["staking/query"](modules/_staking_query_.md)
 * ["staking/stakerRewards"](modules/_staking_stakerrewards_.md)
-* ["staking/validatorPoints"](modules/_staking_validatorpoints_.md)
 * ["staking/validators"](modules/_staking_validators_.md)
 * ["technicalCommittee/proposals"](modules/_technicalcommittee_proposals_.md)
 * ["treasury/proposals"](modules/_treasury_proposals_.md)

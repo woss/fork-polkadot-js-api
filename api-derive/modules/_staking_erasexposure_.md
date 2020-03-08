@@ -14,7 +14,7 @@
 
 ▸ **erasExposure**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasExposure.ts:41](https://github.com/polkadot-js/api/blob/7051e20d5/packages/api-derive/src/staking/erasExposure.ts#L41)*
+*Defined in [packages/api-derive/src/staking/erasExposure.ts:43](https://github.com/polkadot-js/api/blob/0a6c6ec4c5/packages/api-derive/src/staking/erasExposure.ts#L43)*
 
 **Parameters:**
 
@@ -24,4 +24,10 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (): *Observable‹DeriveEraExposure[]›*
+▸ (`withActive?`: undefined | false | true): *Observable‹DeriveEraExposure[]›*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`withActive?` | undefined &#124; false &#124; true |
