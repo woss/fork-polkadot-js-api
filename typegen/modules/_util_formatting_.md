@@ -20,7 +20,7 @@
 "* = "
 "
 
-*Defined in [util/formatting.ts:13](https://github.com/polkadot-js/api/blob/81a2a51610/packages/typegen/src/util/formatting.ts#L13)*
+*Defined in [util/formatting.ts:13](https://github.com/polkadot-js/api/blob/5b40d95b0f/packages/typegen/src/util/formatting.ts#L13)*
 
 ## Functions
 
@@ -28,7 +28,7 @@
 
 ▸ **HEADER**(`type`: "chain" | "defs"): *string*
 
-*Defined in [util/formatting.ts:12](https://github.com/polkadot-js/api/blob/81a2a51610/packages/typegen/src/util/formatting.ts#L12)*
+*Defined in [util/formatting.ts:12](https://github.com/polkadot-js/api/blob/5b40d95b0f/packages/typegen/src/util/formatting.ts#L12)*
 
 **Parameters:**
 
