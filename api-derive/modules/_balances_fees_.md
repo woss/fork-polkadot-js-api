@@ -14,7 +14,7 @@
 
 ▸ **fees**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/balances/fees.ts:28](https://github.com/polkadot-js/api/blob/049a1a59f5/packages/api-derive/src/balances/fees.ts#L28)*
+*Defined in [packages/api-derive/src/balances/fees.ts:28](https://github.com/polkadot-js/api/blob/071b5ba7cb/packages/api-derive/src/balances/fees.ts#L28)*
 
 **`name`** fees
 
