@@ -14,7 +14,7 @@
 
 ▸ **stakerPoints**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerPoints.ts:14](https://github.com/polkadot-js/api/blob/bb08ac4a28/packages/api-derive/src/staking/stakerPoints.ts#L14)*
+*Defined in [packages/api-derive/src/staking/stakerPoints.ts:14](https://github.com/polkadot-js/api/blob/a09fc51693/packages/api-derive/src/staking/stakerPoints.ts#L14)*
 
 **Parameters:**
 
@@ -24,11 +24,11 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (`accountId`: Uint8Array | string, `withActive?`: boolean | BN): *Observable‹DeriveStakerPoints[]›*
+▸ (`accountId`: Uint8Array | string, `withActive?`: boolean | BN | number): *Observable‹DeriveStakerPoints[]›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `accountId` | Uint8Array &#124; string |
-`withActive?` | boolean &#124; BN |
+`withActive?` | boolean &#124; BN &#124; number |
