@@ -7,6 +7,7 @@
 ### Functions
 
 * [stakerRewards](_staking_stakerrewards_.md#stakerrewards)
+* [stakerRewardsMulti](_staking_stakerrewards_.md#stakerrewardsmulti)
 
 ## Functions
 
@@ -14,7 +15,7 @@
 
 ▸ **stakerRewards**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerRewards.ts:61](https://github.com/polkadot-js/api/blob/a09fc51693/packages/api-derive/src/staking/stakerRewards.ts#L61)*
+*Defined in [packages/api-derive/src/staking/stakerRewards.ts:61](https://github.com/polkadot-js/api/blob/3a37bf1e6b/packages/api-derive/src/staking/stakerRewards.ts#L61)*
 
 **Parameters:**
 
@@ -32,3 +33,27 @@ Name | Type |
 ------ | ------ |
 `accountId` | Uint8Array &#124; string |
 `startEra` | BN &#124; number |
+
+___
+
+###  stakerRewardsMulti
+
+▸ **stakerRewardsMulti**(`api`: ApiInterfaceRx): *function*
+
+*Defined in [packages/api-derive/src/staking/stakerRewards.ts:77](https://github.com/polkadot-js/api/blob/3a37bf1e6b/packages/api-derive/src/staking/stakerRewards.ts#L77)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`api` | ApiInterfaceRx |
+
+**Returns:** *function*
+
+▸ (...`params`: [Uint8Array | string, BN | number][]): *Observable‹DeriveStakerReward[][]›*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`...params` | [Uint8Array &#124; string, BN &#124; number][] |
