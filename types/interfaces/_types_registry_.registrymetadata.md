@@ -18,4 +18,4 @@
 
 • **asLatest**: *[RegistryMetadataLatest](_types_registry_.registrymetadatalatest.md)*
 
-*Defined in [packages/types/src/types/registry.ts:82](https://github.com/polkadot-js/api/blob/421594b0eb/packages/types/src/types/registry.ts#L82)*
+*Defined in [packages/types/src/types/registry.ts:82](https://github.com/polkadot-js/api/blob/f3c2c5c084/packages/types/src/types/registry.ts#L82)*

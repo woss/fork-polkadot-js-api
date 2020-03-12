@@ -6,15 +6,40 @@
 
 ### Functions
 
+* [eraExposure](_staking_erasexposure_.md#eraexposure)
 * [erasExposure](_staking_erasexposure_.md#erasexposure)
 
 ## Functions
+
+###  eraExposure
+
+▸ **eraExposure**(`api`: ApiInterfaceRx): *function*
+
+*Defined in [packages/api-derive/src/staking/erasExposure.ts:38](https://github.com/polkadot-js/api/blob/f3c2c5c084/packages/api-derive/src/staking/erasExposure.ts#L38)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`api` | ApiInterfaceRx |
+
+**Returns:** *function*
+
+▸ (`era`: EraIndex): *Observable‹DeriveEraExposure›*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`era` | EraIndex |
+
+___
 
 ###  erasExposure
 
 ▸ **erasExposure**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasExposure.ts:36](https://github.com/polkadot-js/api/blob/421594b0eb/packages/api-derive/src/staking/erasExposure.ts#L36)*
+*Defined in [packages/api-derive/src/staking/erasExposure.ts:47](https://github.com/polkadot-js/api/blob/f3c2c5c084/packages/api-derive/src/staking/erasExposure.ts#L47)*
 
 **Parameters:**
 
