@@ -29,3 +29,4 @@
 * ["util/filterEvents"](modules/_util_filterevents_.md)
 * ["util/isKeyringPair"](modules/_util_iskeyringpair_.md)
 * ["util/logging"](modules/_util_logging_.md)
+* ["util/validate"](modules/_util_validate_.md)
