@@ -22,4 +22,4 @@
 
 Ƭ **ITuple**: *Sub & [Codec](../interfaces/_types_codec_.codec.md)*
 
-*Defined in [packages/types/src/types/interfaces.ts:52](https://github.com/polkadot-js/api/blob/c2f9ef7ca8/packages/types/src/types/interfaces.ts#L52)*
+*Defined in [packages/types/src/types/interfaces.ts:52](https://github.com/polkadot-js/api/blob/ca2a313aec/packages/types/src/types/interfaces.ts#L52)*
