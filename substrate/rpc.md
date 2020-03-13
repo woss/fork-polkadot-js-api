@@ -198,6 +198,11 @@ _Query of state_
 - **interface**: `api.rpc.state.getKeys`
 - **summary**: Retrieves the keys with a certain prefix
  
+### getKeysPaged(key: `StorageKey`, count: `u32`, startKey?: `StorageKey`, at?: `BlockHash`): `Vec<StorageKey>`
+- **jsonrpc**: `state_getKeysPaged`
+- **interface**: `api.rpc.state.getKeysPaged`
+- **summary**: Returns the keys with prefix with pagination support.
+ 
 ### getMetadata(at?: `BlockHash`): `Metadata`
 - **jsonrpc**: `state_getMetadata`
 - **interface**: `api.rpc.state.getMetadata`
