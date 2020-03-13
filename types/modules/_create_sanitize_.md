@@ -23,7 +23,7 @@
 
 ▸ **alias**(`src`: string[], `dest`: string, `withChecks`: boolean): *Mapper*
 
-*Defined in [packages/types/src/create/sanitize.ts:62](https://github.com/polkadot-js/api/blob/4093ef9ffa/packages/types/src/create/sanitize.ts#L62)*
+*Defined in [packages/types/src/create/sanitize.ts:62](https://github.com/polkadot-js/api/blob/34be2399eb/packages/types/src/create/sanitize.ts#L62)*
 
 **Parameters:**
 
@@ -41,7 +41,7 @@ ___
 
 ▸ **cleanupCompact**(): *Mapper*
 
-*Defined in [packages/types/src/create/sanitize.ts:77](https://github.com/polkadot-js/api/blob/4093ef9ffa/packages/types/src/create/sanitize.ts#L77)*
+*Defined in [packages/types/src/create/sanitize.ts:77](https://github.com/polkadot-js/api/blob/34be2399eb/packages/types/src/create/sanitize.ts#L77)*
 
 **Returns:** *Mapper*
 
@@ -51,7 +51,7 @@ ___
 
 ▸ **findClosing**(`value`: string, `start`: number): *number*
 
-*Defined in [packages/types/src/create/sanitize.ts:44](https://github.com/polkadot-js/api/blob/4093ef9ffa/packages/types/src/create/sanitize.ts#L44)*
+*Defined in [packages/types/src/create/sanitize.ts:44](https://github.com/polkadot-js/api/blob/34be2399eb/packages/types/src/create/sanitize.ts#L44)*
 
 **Parameters:**
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **flattenSingleTuple**(): *Mapper*
 
-*Defined in [packages/types/src/create/sanitize.ts:95](https://github.com/polkadot-js/api/blob/4093ef9ffa/packages/types/src/create/sanitize.ts#L95)*
+*Defined in [packages/types/src/create/sanitize.ts:95](https://github.com/polkadot-js/api/blob/34be2399eb/packages/types/src/create/sanitize.ts#L95)*
 
 **Returns:** *Mapper*
 
@@ -78,7 +78,7 @@ ___
 
 ▸ **removeColonPrefix**(): *Mapper*
 
-*Defined in [packages/types/src/create/sanitize.ts:101](https://github.com/polkadot-js/api/blob/4093ef9ffa/packages/types/src/create/sanitize.ts#L101)*
+*Defined in [packages/types/src/create/sanitize.ts:101](https://github.com/polkadot-js/api/blob/34be2399eb/packages/types/src/create/sanitize.ts#L101)*
 
 **Returns:** *Mapper*
 
@@ -88,7 +88,7 @@ ___
 
 ▸ **removeGenerics**(): *Mapper*
 
-*Defined in [packages/types/src/create/sanitize.ts:107](https://github.com/polkadot-js/api/blob/4093ef9ffa/packages/types/src/create/sanitize.ts#L107)*
+*Defined in [packages/types/src/create/sanitize.ts:107](https://github.com/polkadot-js/api/blob/34be2399eb/packages/types/src/create/sanitize.ts#L107)*
 
 **Returns:** *Mapper*
 
@@ -98,7 +98,7 @@ ___
 
 ▸ **removePairOf**(): *Mapper*
 
-*Defined in [packages/types/src/create/sanitize.ts:135](https://github.com/polkadot-js/api/blob/4093ef9ffa/packages/types/src/create/sanitize.ts#L135)*
+*Defined in [packages/types/src/create/sanitize.ts:135](https://github.com/polkadot-js/api/blob/34be2399eb/packages/types/src/create/sanitize.ts#L135)*
 
 **Returns:** *Mapper*
 
@@ -108,7 +108,7 @@ ___
 
 ▸ **removeTraits**(): *Mapper*
 
-*Defined in [packages/types/src/create/sanitize.ts:152](https://github.com/polkadot-js/api/blob/4093ef9ffa/packages/types/src/create/sanitize.ts#L152)*
+*Defined in [packages/types/src/create/sanitize.ts:152](https://github.com/polkadot-js/api/blob/34be2399eb/packages/types/src/create/sanitize.ts#L152)*
 
 **Returns:** *Mapper*
 
@@ -118,7 +118,7 @@ ___
 
 ▸ **removeWrap**(`_check`: string): *Mapper*
 
-*Defined in [packages/types/src/create/sanitize.ts:173](https://github.com/polkadot-js/api/blob/4093ef9ffa/packages/types/src/create/sanitize.ts#L173)*
+*Defined in [packages/types/src/create/sanitize.ts:173](https://github.com/polkadot-js/api/blob/34be2399eb/packages/types/src/create/sanitize.ts#L173)*
 
 **Parameters:**
 
@@ -134,7 +134,7 @@ ___
 
 ▸ **sanitize**(`value`: string): *string*
 
-*Defined in [packages/types/src/create/sanitize.ts:194](https://github.com/polkadot-js/api/blob/4093ef9ffa/packages/types/src/create/sanitize.ts#L194)*
+*Defined in [packages/types/src/create/sanitize.ts:194](https://github.com/polkadot-js/api/blob/34be2399eb/packages/types/src/create/sanitize.ts#L194)*
 
 **Parameters:**
 
