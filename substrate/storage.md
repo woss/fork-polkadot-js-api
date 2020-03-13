@@ -673,7 +673,7 @@ ___
 - **interface**: `api.query.staking.minimumValidatorCount`
 - **summary**:   Minimum number of staking participants before emergency conditions are imposed. 
  
-### nominators(`AccountId`): `Option<(Nominations, Linkage<AccountId>)>`
+### nominators(`AccountId`): `(Option<Nominations>, Linkage<AccountId>)`
 - **interface**: `api.query.staking.nominators`
 - **summary**:   The map from nominator stash key to the set of stash keys of all validators to nominate. 
  

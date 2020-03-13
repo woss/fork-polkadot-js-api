@@ -14,7 +14,7 @@
 
 ▸ **compareMap**(`a`: [Map](../classes/_codec_struct_.struct.md#static-map)‹any, any›, `b?`: any): *boolean*
 
-*Defined in [packages/types/src/codec/utils/compareMap.ts:29](https://github.com/polkadot-js/api/blob/d9dad3566a/packages/types/src/codec/utils/compareMap.ts#L29)*
+*Defined in [packages/types/src/codec/utils/compareMap.ts:29](https://github.com/polkadot-js/api/blob/4093ef9ffa/packages/types/src/codec/utils/compareMap.ts#L29)*
 
 **Parameters:**
 
