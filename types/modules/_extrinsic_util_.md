@@ -14,7 +14,7 @@
 
 ▸ **sign**(`signerPair`: [IKeyringPair](../interfaces/_types_interfaces_.ikeyringpair.md), `u8a`: [Uint8Array](../classes/_codec_raw_.raw.md#static-uint8array), `options?`: SignOptions): *[Uint8Array](../classes/_codec_raw_.raw.md#static-uint8array)*
 
-*Defined in [packages/types/src/extrinsic/util.ts:11](https://github.com/polkadot-js/api/blob/94a3b1f09a/packages/types/src/extrinsic/util.ts#L11)*
+*Defined in [packages/types/src/extrinsic/util.ts:11](https://github.com/polkadot-js/api/blob/e86fe5bab0/packages/types/src/extrinsic/util.ts#L11)*
 
 **Parameters:**
 
