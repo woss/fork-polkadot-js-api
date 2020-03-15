@@ -10,7 +10,7 @@
 
 ▸ (`arg1?`: CodecArg, `arg2?`: CodecArg): *Promise‹Codec›*
 
-*Defined in [api/src/types/storage.ts:54](https://github.com/polkadot-js/api/blob/e86fe5bab0/packages/api/src/types/storage.ts#L54)*
+*Defined in [api/src/types/storage.ts:54](https://github.com/polkadot-js/api/blob/82addc4f6a/packages/api/src/types/storage.ts#L54)*
 
 **Parameters:**
 
@@ -23,7 +23,7 @@ Name | Type |
 
 ▸ <**T**>(`arg1?`: CodecArg, `arg2?`: CodecArg): *Promise‹T›*
 
-*Defined in [api/src/types/storage.ts:55](https://github.com/polkadot-js/api/blob/e86fe5bab0/packages/api/src/types/storage.ts#L55)*
+*Defined in [api/src/types/storage.ts:55](https://github.com/polkadot-js/api/blob/82addc4f6a/packages/api/src/types/storage.ts#L55)*
 
 **Type parameters:**
 
@@ -40,7 +40,7 @@ Name | Type |
 
 ▸ <**T**>(`callback`: Callback‹T›): *[UnsubscribePromise](../modules/_types_base_.md#unsubscribepromise)*
 
-*Defined in [api/src/types/storage.ts:56](https://github.com/polkadot-js/api/blob/e86fe5bab0/packages/api/src/types/storage.ts#L56)*
+*Defined in [api/src/types/storage.ts:56](https://github.com/polkadot-js/api/blob/82addc4f6a/packages/api/src/types/storage.ts#L56)*
 
 **Type parameters:**
 
@@ -56,7 +56,7 @@ Name | Type |
 
 ▸ <**T**>(`arg`: CodecArg, `callback`: Callback‹T›): *[UnsubscribePromise](../modules/_types_base_.md#unsubscribepromise)*
 
-*Defined in [api/src/types/storage.ts:57](https://github.com/polkadot-js/api/blob/e86fe5bab0/packages/api/src/types/storage.ts#L57)*
+*Defined in [api/src/types/storage.ts:57](https://github.com/polkadot-js/api/blob/82addc4f6a/packages/api/src/types/storage.ts#L57)*
 
 **Type parameters:**
 
@@ -73,7 +73,7 @@ Name | Type |
 
 ▸ <**T**>(`arg1`: CodecArg, `arg2`: CodecArg, `callback`: Callback‹T›): *[UnsubscribePromise](../modules/_types_base_.md#unsubscribepromise)*
 
-*Defined in [api/src/types/storage.ts:58](https://github.com/polkadot-js/api/blob/e86fe5bab0/packages/api/src/types/storage.ts#L58)*
+*Defined in [api/src/types/storage.ts:58](https://github.com/polkadot-js/api/blob/82addc4f6a/packages/api/src/types/storage.ts#L58)*
 
 **Type parameters:**
 
