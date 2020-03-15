@@ -14,7 +14,7 @@
 
 ▸ **createDocComments**(`spaces`: number, `docs`: AnyString[], `args`: Arg[]): *string*
 
-*Defined in [util/docs.ts:12](https://github.com/polkadot-js/api/blob/82addc4f6a/packages/typegen/src/util/docs.ts#L12)*
+*Defined in [util/docs.ts:12](https://github.com/polkadot-js/api/blob/908d0fcf52/packages/typegen/src/util/docs.ts#L12)*
 
 **Parameters:**
 

@@ -18,4 +18,4 @@
 
 • **ACCOUNT_ID_PREFIX**: *[Uint8Array](../classes/_codec_raw_.raw.md#static-uint8array)‹›* = new Uint8Array([0xff])
 
-*Defined in [packages/types/src/generic/Address.ts:17](https://github.com/polkadot-js/api/blob/82addc4f6a/packages/types/src/generic/Address.ts#L17)*
+*Defined in [packages/types/src/generic/Address.ts:17](https://github.com/polkadot-js/api/blob/908d0fcf52/packages/types/src/generic/Address.ts#L17)*

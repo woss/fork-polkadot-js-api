@@ -48,6 +48,7 @@
 * ["staking/erasExposure"](modules/_staking_erasexposure_.md)
 * ["staking/erasHistoric"](modules/_staking_erashistoric_.md)
 * ["staking/erasPoints"](modules/_staking_eraspoints_.md)
+* ["staking/erasPrefs"](modules/_staking_erasprefs_.md)
 * ["staking/erasRewards"](modules/_staking_erasrewards_.md)
 * ["staking/overview"](modules/_staking_overview_.md)
 * ["staking/query"](modules/_staking_query_.md)
