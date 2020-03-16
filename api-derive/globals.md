@@ -52,6 +52,8 @@
 * ["staking/erasRewards"](modules/_staking_erasrewards_.md)
 * ["staking/erasSlashes"](modules/_staking_erasslashes_.md)
 * ["staking/overview"](modules/_staking_overview_.md)
+* ["staking/ownExposure"](modules/_staking_ownexposure_.md)
+* ["staking/ownSlashes"](modules/_staking_ownslashes_.md)
 * ["staking/query"](modules/_staking_query_.md)
 * ["staking/stakerExposure"](modules/_staking_stakerexposure_.md)
 * ["staking/stakerPoints"](modules/_staking_stakerpoints_.md)

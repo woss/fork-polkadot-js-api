@@ -75,7 +75,7 @@ Defined in node_modules/@types/bn.js/index.d.ts:12
 
 \+ **new UInt**(`registry`: [Registry](../interfaces/_types_registry_.registry.md), `value`: [AnyNumber](../modules/_types_helpers_.md#anynumber), `bitLength`: [UIntBitLength](../modules/_codec_abstractint_.md#uintbitlength), `isHexJson`: boolean): *[UInt](_codec_uint_.uint.md)*
 
-*Defined in [packages/types/src/codec/UInt.ts:19](https://github.com/polkadot-js/api/blob/1750522cb6/packages/types/src/codec/UInt.ts#L19)*
+*Defined in [packages/types/src/codec/UInt.ts:19](https://github.com/polkadot-js/api/blob/63573ca0de/packages/types/src/codec/UInt.ts#L19)*
 
 **Parameters:**
 
@@ -94,7 +94,7 @@ Name | Type | Default |
 
 ▸ **with**(`bitLength`: [UIntBitLength](../modules/_codec_abstractint_.md#uintbitlength), `typeName?`: undefined | string): *[Constructor](../interfaces/_types_codec_.constructor.md)‹[UInt](_codec_uint_.uint.md)›*
 
-*Defined in [packages/types/src/codec/UInt.ts:24](https://github.com/polkadot-js/api/blob/1750522cb6/packages/types/src/codec/UInt.ts#L24)*
+*Defined in [packages/types/src/codec/UInt.ts:24](https://github.com/polkadot-js/api/blob/63573ca0de/packages/types/src/codec/UInt.ts#L24)*
 
 **Parameters:**
 
