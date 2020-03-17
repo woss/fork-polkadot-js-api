@@ -14,7 +14,7 @@
 
 Ƭ **DrrResult**: *function*
 
-*Defined in [rxjs/drr.ts:11](https://github.com/polkadot-js/api/blob/9ea6053a42/packages/rpc-core/src/rxjs/drr.ts#L11)*
+*Defined in [rxjs/drr.ts:11](https://github.com/polkadot-js/api/blob/a613308bdb/packages/rpc-core/src/rxjs/drr.ts#L11)*
 
 #### Type declaration:
 
