@@ -14,7 +14,7 @@
 
 ▸ **stakerPoints**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerPoints.ts:14](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/staking/stakerPoints.ts#L14)*
+*Defined in [packages/api-derive/src/staking/stakerPoints.ts:14](https://github.com/polkadot-js/api/blob/9ea6053a42/packages/api-derive/src/staking/stakerPoints.ts#L14)*
 
 **Parameters:**
 
