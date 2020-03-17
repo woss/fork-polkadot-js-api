@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["generic/AccountId"](_generic_accountid_.md)
 
-# External module: "generic/AccountId"
+# Module: "generic/AccountId"
 
 ## Index
 

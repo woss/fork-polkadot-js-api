@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["staking/ownExposure"](_staking_ownexposure_.md)
 
-# External module: "staking/ownExposure"
+# Module: "staking/ownExposure"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **ownExposure**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/ownExposure.ts:14](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/staking/ownExposure.ts#L14)*
+*Defined in [packages/api-derive/src/staking/ownExposure.ts:14](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/staking/ownExposure.ts#L14)*
 
 **Parameters:**
 

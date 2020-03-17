@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["extractChain"](_extractchain_.md)
 
-# External module: "extractChain"
+# Module: "extractChain"
 
 ## Index
 
@@ -14,6 +14,6 @@
 
 ▸ **main**(): *void*
 
-*Defined in [extractChain.ts:28](https://github.com/polkadot-js/api/blob/3f4576f524/packages/typegen/src/extractChain.ts#L28)*
+*Defined in [extractChain.ts:28](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/typegen/src/extractChain.ts#L28)*
 
 **Returns:** *void*

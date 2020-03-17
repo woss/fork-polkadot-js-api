@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["extrinsic/ExtrinsicEra"](_extrinsic_extrinsicera_.md)
 
-# External module: "extrinsic/ExtrinsicEra"
+# Module: "extrinsic/ExtrinsicEra"
 
 ## Index
 

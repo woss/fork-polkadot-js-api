@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["util/filterEvents"](_util_filterevents_.md)
 
-# External module: "util/filterEvents"
+# Module: "util/filterEvents"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **filterEvents**(`extHash`: H256, `__namedParameters`: object, `allEvents`: EventRecord[], `status`: ExtrinsicStatus): *EventRecord[] | undefined*
 
-*Defined in [api/src/util/filterEvents.ts:9](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api/src/util/filterEvents.ts#L9)*
+*Defined in [api/src/util/filterEvents.ts:9](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api/src/util/filterEvents.ts#L9)*
 
 **Parameters:**
 

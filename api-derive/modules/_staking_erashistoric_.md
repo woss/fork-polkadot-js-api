@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["staking/erasHistoric"](_staking_erashistoric_.md)
 
-# External module: "staking/erasHistoric"
+# Module: "staking/erasHistoric"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **erasHistoric**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasHistoric.ts:16](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/staking/erasHistoric.ts#L16)*
+*Defined in [packages/api-derive/src/staking/erasHistoric.ts:16](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/staking/erasHistoric.ts#L16)*
 
 **Parameters:**
 

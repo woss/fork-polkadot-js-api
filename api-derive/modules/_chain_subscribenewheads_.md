@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["chain/subscribeNewHeads"](_chain_subscribenewheads_.md)
 
-# External module: "chain/subscribeNewHeads"
+# Module: "chain/subscribeNewHeads"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **subscribeNewHeads**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/chain/subscribeNewHeads.ts:26](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/chain/subscribeNewHeads.ts#L26)*
+*Defined in [packages/api-derive/src/chain/subscribeNewHeads.ts:26](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/chain/subscribeNewHeads.ts#L26)*
 
 **`name`** subscribeNewHeads
 

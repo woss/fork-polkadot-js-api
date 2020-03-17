@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["staking/erasRewards"](_staking_erasrewards_.md)
 
-# External module: "staking/erasRewards"
+# Module: "staking/erasRewards"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **erasRewards**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasRewards.ts:16](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/staking/erasRewards.ts#L16)*
+*Defined in [packages/api-derive/src/staking/erasRewards.ts:16](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/staking/erasRewards.ts#L16)*
 
 **Parameters:**
 

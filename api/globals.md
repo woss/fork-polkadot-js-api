@@ -4,7 +4,7 @@
 
 ## Index
 
-### External modules
+### Modules
 
 * ["augment/consts"](modules/_augment_consts_.md)
 * ["augment/query"](modules/_augment_query_.md)

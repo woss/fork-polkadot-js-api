@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["extrinsic/v4/Extrinsic"](_extrinsic_v4_extrinsic_.md)
 
-# External module: "extrinsic/v4/Extrinsic"
+# Module: "extrinsic/v4/Extrinsic"
 
 ## Index
 
@@ -22,4 +22,4 @@
 
 • **TRANSACTION_VERSION**: *4* = 4
 
-*Defined in [packages/types/src/extrinsic/v4/Extrinsic.ts:14](https://github.com/polkadot-js/api/blob/3f4576f524/packages/types/src/extrinsic/v4/Extrinsic.ts#L14)*
+*Defined in [packages/types/src/extrinsic/v4/Extrinsic.ts:14](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/types/src/extrinsic/v4/Extrinsic.ts#L14)*

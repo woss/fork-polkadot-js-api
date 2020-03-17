@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["rxjs/drr"](_rxjs_drr_.md)
 
-# External module: "rxjs/drr"
+# Module: "rxjs/drr"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 Ƭ **DrrResult**: *function*
 
-*Defined in [rxjs/drr.ts:11](https://github.com/polkadot-js/api/blob/3f4576f524/packages/rpc-core/src/rxjs/drr.ts#L11)*
+*Defined in [rxjs/drr.ts:11](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/rpc-core/src/rxjs/drr.ts#L11)*
 
 #### Type declaration:
 

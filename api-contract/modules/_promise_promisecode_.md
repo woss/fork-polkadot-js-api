@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["promise/PromiseCode"](_promise_promisecode_.md)
 
-# External module: "promise/PromiseCode"
+# Module: "promise/PromiseCode"
 
 ## Index
 

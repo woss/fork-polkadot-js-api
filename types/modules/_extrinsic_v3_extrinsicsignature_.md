@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["extrinsic/v3/ExtrinsicSignature"](_extrinsic_v3_extrinsicsignature_.md)
 
-# External module: "extrinsic/v3/ExtrinsicSignature"
+# Module: "extrinsic/v3/ExtrinsicSignature"
 
 ## Index
 

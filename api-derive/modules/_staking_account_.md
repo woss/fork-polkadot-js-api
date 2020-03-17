@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["staking/account"](_staking_account_.md)
 
-# External module: "staking/account"
+# Module: "staking/account"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **account**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/account.ts:90](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/staking/account.ts#L90)*
+*Defined in [packages/api-derive/src/staking/account.ts:90](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/staking/account.ts#L90)*
 
 **`description`** From a stash, retrieve the controllerId and fill in all the relevant staking details
 

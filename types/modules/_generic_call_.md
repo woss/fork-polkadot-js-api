@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["generic/Call"](_generic_call_.md)
 
-# External module: "generic/Call"
+# Module: "generic/Call"
 
 ## Index
 

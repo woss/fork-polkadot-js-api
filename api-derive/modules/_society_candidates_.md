@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["society/candidates"](_society_candidates_.md)
 
-# External module: "society/candidates"
+# Module: "society/candidates"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **candidates**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/society/candidates.ts:22](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/society/candidates.ts#L22)*
+*Defined in [packages/api-derive/src/society/candidates.ts:22](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/society/candidates.ts#L22)*
 
 **`description`** Get the candidate info for a society
 

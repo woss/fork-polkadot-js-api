@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["staking/erasSlashes"](_staking_erasslashes_.md)
 
-# External module: "staking/erasSlashes"
+# Module: "staking/erasSlashes"
 
 ## Index
 
@@ -15,7 +15,7 @@
 
 ▸ **eraSlashes**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasSlashes.ts:32](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/staking/erasSlashes.ts#L32)*
+*Defined in [packages/api-derive/src/staking/erasSlashes.ts:32](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/staking/erasSlashes.ts#L32)*
 
 **Parameters:**
 
@@ -39,7 +39,7 @@ ___
 
 ▸ **erasSlashes**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasSlashes.ts:43](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/staking/erasSlashes.ts#L43)*
+*Defined in [packages/api-derive/src/staking/erasSlashes.ts:43](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/staking/erasSlashes.ts#L43)*
 
 **Parameters:**
 

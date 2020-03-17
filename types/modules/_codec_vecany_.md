@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["codec/VecAny"](_codec_vecany_.md)
 
-# External module: "codec/VecAny"
+# Module: "codec/VecAny"
 
 ## Index
 

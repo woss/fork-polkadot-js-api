@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["staking/stakerSlashes"](_staking_stakerslashes_.md)
 
-# External module: "staking/stakerSlashes"
+# Module: "staking/stakerSlashes"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **stakerSlashes**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerSlashes.ts:14](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/staking/stakerSlashes.ts#L14)*
+*Defined in [packages/api-derive/src/staking/stakerSlashes.ts:14](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/staking/stakerSlashes.ts#L14)*
 
 **Parameters:**
 

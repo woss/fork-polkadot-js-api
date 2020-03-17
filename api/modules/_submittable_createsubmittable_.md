@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["submittable/createSubmittable"](_submittable_createsubmittable_.md)
 
-# External module: "submittable/createSubmittable"
+# Module: "submittable/createSubmittable"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **createSubmittable**<**ApiType**>(`apiType`: [ApiTypes](_types_base_.md#apitypes), `api`: ApiInterfaceRx, `decorateMethod`: ApiBase<ApiType>["decorateMethod"]): *Creator‹ApiType›*
 
-*Defined in [api/src/submittable/createSubmittable.ts:17](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api/src/submittable/createSubmittable.ts#L17)*
+*Defined in [api/src/submittable/createSubmittable.ts:17](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api/src/submittable/createSubmittable.ts#L17)*
 
 **Type parameters:**
 

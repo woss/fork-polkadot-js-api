@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["generic/Vote"](_generic_vote_.md)
 
-# External module: "generic/Vote"
+# Module: "generic/Vote"
 
 ## Index
 
@@ -18,4 +18,4 @@
 
 • **convictionNames**: *string[]* = democracyDef.types.Conviction._enum
 
-*Defined in [packages/types/src/generic/Vote.ts:14](https://github.com/polkadot-js/api/blob/3f4576f524/packages/types/src/generic/Vote.ts#L14)*
+*Defined in [packages/types/src/generic/Vote.ts:14](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/types/src/generic/Vote.ts#L14)*

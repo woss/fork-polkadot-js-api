@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["primitive/I256"](_primitive_i256_.md)
 
-# External module: "primitive/I256"
+# Module: "primitive/I256"
 
 ## Index
 

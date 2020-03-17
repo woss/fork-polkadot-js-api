@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["rx/Api"](_rx_api_.md)
 
-# External module: "rx/Api"
+# Module: "rx/Api"
 
 ## Index
 
@@ -18,7 +18,7 @@
 
 ▸ **decorateMethod**<**Method**>(`method`: Method): *Method*
 
-*Defined in [api/src/rx/Api.ts:12](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api/src/rx/Api.ts#L12)*
+*Defined in [api/src/rx/Api.ts:12](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api/src/rx/Api.ts#L12)*
 
 **Type parameters:**
 

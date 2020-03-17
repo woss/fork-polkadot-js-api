@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["primitive/BitVec"](_primitive_bitvec_.md)
 
-# External module: "primitive/BitVec"
+# Module: "primitive/BitVec"
 
 ## Index
 

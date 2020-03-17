@@ -16,8 +16,6 @@ The following sections contain the module constants, also known as parameter typ
 
 - **[finalityTracker](#finalitytracker)**
 
-- **[session](#session)**
-
 - **[society](#society)**
 
 - **[staking](#staking)**
@@ -185,15 +183,6 @@ ___
 ### windowSize: `T::BlockNumber`
 - **interface**: `api.consts.finalityTracker.windowSize`
 - **summary**:   The number of recent samples to keep from this chain. Default is 101. 
-
-___
-
-
-## session
- 
-### dedupKeyPrefix: `&[u8]`
-- **interface**: `api.consts.session.dedupKeyPrefix`
-- **summary**:   Used as first key for `NextKeys` and `KeyOwner` to put all the data into the same branch of the trie. 
 
 ___
 

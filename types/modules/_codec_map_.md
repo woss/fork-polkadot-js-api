@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["codec/Map"](_codec_map_.md)
 
-# External module: "codec/Map"
+# Module: "codec/Map"
 
 ## Index
 

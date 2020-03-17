@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["codec/Linkage"](_codec_linkage_.md)
 
-# External module: "codec/Linkage"
+# Module: "codec/Linkage"
 
 ## Index
 

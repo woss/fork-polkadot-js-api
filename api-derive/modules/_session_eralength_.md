@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["session/eraLength"](_session_eralength_.md)
 
-# External module: "session/eraLength"
+# Module: "session/eraLength"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **eraLength**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/session/eraLength.ts:13](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/session/eraLength.ts#L13)*
+*Defined in [packages/api-derive/src/session/eraLength.ts:13](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/session/eraLength.ts#L13)*
 
 **Parameters:**
 

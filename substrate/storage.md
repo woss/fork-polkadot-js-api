@@ -226,7 +226,7 @@ ___
 - **interface**: `api.query.democracy.cancellations`
 - **summary**:   Record of all proposals that have been subject to emergency cancellation. 
  
-### delegations(`AccountId`): `((AccountId,Conviction), Linkage<AccountId>)`
+### delegations(`AccountId`): `(AccountId,Conviction)`
 - **interface**: `api.query.democracy.delegations`
 - **summary**:   Get the account (and lock periods) to which another account is delegating vote. 
  
@@ -315,7 +315,7 @@ ___
 - **interface**: `api.query.elections.stakeOf`
 - **summary**:   Locked stake of a voter. 
  
-### votesOf(`AccountId`): `(Vec<AccountId>, Linkage<AccountId>)`
+### votesOf(`AccountId`): `Vec<AccountId>`
 - **interface**: `api.query.elections.votesOf`
 - **summary**:   Votes of a particular voter, with the round index of the votes. 
 
@@ -477,17 +477,13 @@ ___
 
   The set is cleared when `on_session_ending` returns a new set of identities. 
  
-### keyOwner(`Bytes, (KeyTypeId,Bytes)`): `Option<ValidatorId>`
+### keyOwner(`(KeyTypeId,Bytes)`): `Option<ValidatorId>`
 - **interface**: `api.query.session.keyOwner`
-- **summary**:   The owner of a key. The second key is the `KeyTypeId` + the encoded key. 
-
-  The first key is always `DEDUP_KEY_PREFIX` to have all the data in the same branch of the trie. Having all data in the same branch should prevent slowing down other queries. 
+- **summary**:   The owner of a key. The key is the `KeyTypeId` + the encoded key. 
  
-### nextKeys(`Bytes, ValidatorId`): `Option<Keys>`
+### nextKeys(`ValidatorId`): `Option<Keys>`
 - **interface**: `api.query.session.nextKeys`
 - **summary**:   The next session keys for a validator. 
-
-  The first key is always `DEDUP_KEY_PREFIX` to have all the data in the same branch of the trie. Having all data in the same branch should prevent slowing down other queries. 
  
 ### queuedChanged(): `bool`
 - **interface**: `api.query.session.queuedChanged`
@@ -621,7 +617,7 @@ ___
 - **interface**: `api.query.staking.erasStakersClipped`
 - **summary**:   Clipped Exposure of validator at era. 
 
-  This is similar to [`ErasStakers`] but number of nominators exposed is reduce to the `T::MaxNominatorRewardedPerValidator` biggest stakers. This is used to limit the i/o cost for the nominator payout. 
+  This is similar to [`ErasStakers`] but number of nominators exposed is reduce to the `T::MaxNominatorRewardedPerValidator` biggest stakers. (Note: the field `total` and `own` of the exposure remains unchanged). This is used to limit the i/o cost for the nominator payout. 
 
   This is keyed fist by the era index to allow bulk deletion and then the stash account. 
 
@@ -639,7 +635,7 @@ ___
 - **interface**: `api.query.staking.erasValidatorPrefs`
 - **summary**:   Similarly to `ErasStakers` this holds the preferences of validators. 
 
-  This is keyed fist by the era index to allow bulk deletion and then the stash account. 
+  This is keyed first by the era index to allow bulk deletion and then the stash account. 
 
   Is it removed after `HISTORY_DEPTH` eras. 
  
@@ -673,7 +669,7 @@ ___
 - **interface**: `api.query.staking.minimumValidatorCount`
 - **summary**:   Minimum number of staking participants before emergency conditions are imposed. 
  
-### nominators(`AccountId`): `(Option<Nominations>, Linkage<AccountId>)`
+### nominators(`AccountId`): `Option<Nominations>`
 - **interface**: `api.query.staking.nominators`
 - **summary**:   The map from nominator stash key to the set of stash keys of all validators to nominate. 
  
@@ -713,7 +709,7 @@ ___
 - **interface**: `api.query.staking.validatorCount`
 - **summary**:   The ideal number of staking participants. 
  
-### validators(`AccountId`): `(ValidatorPrefs, Linkage<AccountId>)`
+### validators(`AccountId`): `ValidatorPrefs`
 - **interface**: `api.query.staking.validators`
 - **summary**:   The map from (wannabe) validator stash key to the preferences of that validator. 
  
@@ -783,6 +779,10 @@ ___
 - **interface**: `api.query.system.extrinsicsRoot`
 - **summary**:   Extrinsics root of the current block, also part of the block header. 
  
+### lastRuntimeUpgrade(): `Option<LastRuntimeUpgradeInfo>`
+- **interface**: `api.query.system.lastRuntimeUpgrade`
+- **summary**:   Stores the `spec_version` and `spec_name` of when the last runtime upgrade happened. 
+ 
 ### number(): `BlockNumber`
 - **interface**: `api.query.system.number`
 - **summary**:   The current block number being processed. Set by `execute_block`. 
@@ -790,10 +790,6 @@ ___
 ### parentHash(): `Hash`
 - **interface**: `api.query.system.parentHash`
 - **summary**:   Hash of the previous block. 
- 
-### runtimeUpgraded(): `bool`
-- **interface**: `api.query.system.runtimeUpgraded`
-- **summary**:   A bool to track if the runtime was upgraded last block. 
 
 ___
 

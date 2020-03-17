@@ -529,6 +529,9 @@ ___
 ### NotController
 - **summary**:   Not a controller account. 
  
+### NotSortedAndUnique
+- **summary**:   Items are not sorted and unique. 
+ 
 ### NotStash
 - **summary**:   Not a stash account. 
  
@@ -553,9 +556,6 @@ ___
 
   Either calling `Core_version` or decoding `RuntimeVersion` failed. 
  
-### ImplVersionNotAllowedToDecrease
-- **summary**:   The implementation version is not allowed to decrease between the current runtime and the new runtime. 
- 
 ### InvalidSpecName
 - **summary**:   The name of specification does not match between the current runtime and the new runtime. 
  
@@ -565,10 +565,7 @@ ___
 ### NonZeroRefCount
 - **summary**:   There is a non-zero reference count preventing the account from being purged. 
  
-### SpecOrImplVersionNeedToIncrease
-- **summary**:   The specification or the implementation version need to increase between the current runtime and the new runtime. 
- 
-### SpecVersionNotAllowedToDecrease
+### SpecVersionNeedsToIncrease
 - **summary**:   The specification version is not allowed to decrease between the current runtime and the new runtime. 
 
 ___

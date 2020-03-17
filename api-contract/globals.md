@@ -4,7 +4,7 @@
 
 ## Index
 
-### External modules
+### Modules
 
 * ["Abi"](modules/_abi_.md)
 * ["ContractRegistry"](modules/_contractregistry_.md)

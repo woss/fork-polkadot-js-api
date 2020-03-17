@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["codec/utils/typeToConstructor"](_codec_utils_typetoconstructor_.md)
 
-# External module: "codec/utils/typeToConstructor"
+# Module: "codec/utils/typeToConstructor"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **typeToConstructor**<**T**>(`registry`: [Registry](../interfaces/_types_registry_.registry.md), `type`: keyof InterfaceTypes | [Constructor](../interfaces/_types_codec_.constructor.md)‹T›): *[Constructor](../interfaces/_types_codec_.constructor.md)‹T›*
 
-*Defined in [packages/types/src/codec/utils/typeToConstructor.ts:9](https://github.com/polkadot-js/api/blob/3f4576f524/packages/types/src/codec/utils/typeToConstructor.ts#L9)*
+*Defined in [packages/types/src/codec/utils/typeToConstructor.ts:9](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/types/src/codec/utils/typeToConstructor.ts#L9)*
 
 **Type parameters:**
 

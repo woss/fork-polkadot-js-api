@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["util/docs"](_util_docs_.md)
 
-# External module: "util/docs"
+# Module: "util/docs"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **createDocComments**(`spaces`: number, `docs`: AnyString[], `args`: Arg[]): *string*
 
-*Defined in [util/docs.ts:12](https://github.com/polkadot-js/api/blob/3f4576f524/packages/typegen/src/util/docs.ts#L12)*
+*Defined in [util/docs.ts:12](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/typegen/src/util/docs.ts#L12)*
 
 **Parameters:**
 

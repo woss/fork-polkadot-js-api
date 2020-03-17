@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["util/register"](_util_register_.md)
 
-# External module: "util/register"
+# Module: "util/register"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **registerDefinitions**(`registry`: TypeRegistry, `extras`: Record‹string, Record‹string, object››): *void*
 
-*Defined in [util/register.ts:7](https://github.com/polkadot-js/api/blob/3f4576f524/packages/typegen/src/util/register.ts#L7)*
+*Defined in [util/register.ts:7](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/typegen/src/util/register.ts#L7)*
 
 **Parameters:**
 

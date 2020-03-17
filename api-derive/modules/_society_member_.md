@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["society/member"](_society_member_.md)
 
-# External module: "society/member"
+# Module: "society/member"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **member**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/society/member.ts:21](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/society/member.ts#L21)*
+*Defined in [packages/api-derive/src/society/member.ts:21](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/society/member.ts#L21)*
 
 **`description`** Get the member info for a society
 

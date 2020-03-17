@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["codec/Date"](_codec_date_.md)
 
-# External module: "codec/Date"
+# Module: "codec/Date"
 
 ## Index
 

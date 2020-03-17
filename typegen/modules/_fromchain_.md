@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["fromChain"](_fromchain_.md)
 
-# External module: "fromChain"
+# Module: "fromChain"
 
 ## Index
 
@@ -14,6 +14,6 @@
 
 ▸ **main**(): *void*
 
-*Defined in [fromChain.ts:61](https://github.com/polkadot-js/api/blob/3f4576f524/packages/typegen/src/fromChain.ts#L61)*
+*Defined in [fromChain.ts:61](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/typegen/src/fromChain.ts#L61)*
 
 **Returns:** *void*

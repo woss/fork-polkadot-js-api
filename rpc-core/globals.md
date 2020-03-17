@@ -4,7 +4,7 @@
 
 ## Index
 
-### External modules
+### Modules
 
 * ["rxjs/drr"](modules/_rxjs_drr_.md)
 * ["rxjs/refCountDelay"](modules/_rxjs_refcountdelay_.md)

@@ -375,6 +375,11 @@ ___
 
 ## staking
  
+### Bonded(`AccountId`, `Balance`)
+- **summary**:   An account has bonded this amount. 
+
+  NOTE: This event is only emitted when funds are bonded via a dispatchable. Notably, it will not be emitted for staking rewards when they are added to stake. 
+ 
 ### OldSlashingReportDiscarded(`SessionIndex`)
 - **summary**:   An old slashing report from a prior era was discarded because it could not be processed. 
  
@@ -383,6 +388,12 @@ ___
  
 ### Slash(`AccountId`, `Balance`)
 - **summary**:   One validator (and its nominators) has been slashed by the given amount. 
+ 
+### Unbonded(`AccountId`, `Balance`)
+- **summary**:   An account has unbonded this amount. 
+ 
+### Withdrawn(`AccountId`, `Balance`)
+- **summary**:   An account has called `withdraw_unbonded` and removed unbonding chunks worth `Balance` from the unlocking queue. 
 
 ___
 

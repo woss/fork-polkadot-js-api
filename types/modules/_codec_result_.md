@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["codec/Result"](_codec_result_.md)
 
-# External module: "codec/Result"
+# Module: "codec/Result"
 
 ## Index
 

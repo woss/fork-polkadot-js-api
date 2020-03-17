@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["staking/erasPrefs"](_staking_erasprefs_.md)
 
-# External module: "staking/erasPrefs"
+# Module: "staking/erasPrefs"
 
 ## Index
 
@@ -15,7 +15,7 @@
 
 ▸ **eraPrefs**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasPrefs.ts:26](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/staking/erasPrefs.ts#L26)*
+*Defined in [packages/api-derive/src/staking/erasPrefs.ts:26](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/staking/erasPrefs.ts#L26)*
 
 **Parameters:**
 
@@ -39,7 +39,7 @@ ___
 
 ▸ **erasPrefs**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasPrefs.ts:34](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/staking/erasPrefs.ts#L34)*
+*Defined in [packages/api-derive/src/staking/erasPrefs.ts:34](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/staking/erasPrefs.ts#L34)*
 
 **Parameters:**
 

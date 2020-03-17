@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["create/typeSplit"](_create_typesplit_.md)
 
-# External module: "create/typeSplit"
+# Module: "create/typeSplit"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **typeSplit**(`type`: string): *string[]*
 
-*Defined in [packages/types/src/create/typeSplit.ts:12](https://github.com/polkadot-js/api/blob/3f4576f524/packages/types/src/create/typeSplit.ts#L12)*
+*Defined in [packages/types/src/create/typeSplit.ts:12](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/types/src/create/typeSplit.ts#L12)*
 
 **Parameters:**
 

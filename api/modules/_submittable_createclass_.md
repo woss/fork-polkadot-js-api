@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["submittable/createClass"](_submittable_createclass_.md)
 
-# External module: "submittable/createClass"
+# Module: "submittable/createClass"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **createClass**<**ApiType**>(`__namedParameters`: object): *Constructor‹SubmittableExtrinsic‹ApiType››*
 
-*Defined in [api/src/submittable/createClass.ts:32](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api/src/submittable/createClass.ts#L32)*
+*Defined in [api/src/submittable/createClass.ts:32](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api/src/submittable/createClass.ts#L32)*
 
 **Type parameters:**
 

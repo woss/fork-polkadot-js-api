@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["types/interfaces"](_types_interfaces_.md)
 
-# External module: "types/interfaces"
+# Module: "types/interfaces"
 
 ## Index
 
@@ -22,4 +22,4 @@
 
 Ƭ **ITuple**: *Sub & [Codec](../interfaces/_types_codec_.codec.md)*
 
-*Defined in [packages/types/src/types/interfaces.ts:52](https://github.com/polkadot-js/api/blob/3f4576f524/packages/types/src/types/interfaces.ts#L52)*
+*Defined in [packages/types/src/types/interfaces.ts:52](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/types/src/types/interfaces.ts#L52)*

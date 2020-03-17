@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["ContractRegistry"](_contractregistry_.md)
 
-# External module: "ContractRegistry"
+# Module: "ContractRegistry"
 
 ## Index
 

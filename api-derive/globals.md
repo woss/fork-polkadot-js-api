@@ -4,7 +4,7 @@
 
 ## Index
 
-### External modules
+### Modules
 
 * ["accounts/idAndIndex"](modules/_accounts_idandindex_.md)
 * ["accounts/idToIndex"](modules/_accounts_idtoindex_.md)

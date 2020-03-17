@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["technicalCommittee/proposals"](_technicalcommittee_proposals_.md)
 
-# External module: "technicalCommittee/proposals"
+# Module: "technicalCommittee/proposals"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **proposals**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/technicalCommittee/proposals.ts:12](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/technicalCommittee/proposals.ts#L12)*
+*Defined in [packages/api-derive/src/technicalCommittee/proposals.ts:12](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/technicalCommittee/proposals.ts#L12)*
 
 **Parameters:**
 

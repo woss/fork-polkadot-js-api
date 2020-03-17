@@ -4,7 +4,7 @@
 
 ## Index
 
-### External modules
+### Modules
 
 * ["augment/registry"](modules/_augment_registry_.md)
 * ["classes"](modules/_classes_.md)

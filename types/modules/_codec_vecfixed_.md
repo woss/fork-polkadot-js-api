@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["codec/VecFixed"](_codec_vecfixed_.md)
 
-# External module: "codec/VecFixed"
+# Module: "codec/VecFixed"
 
 ## Index
 

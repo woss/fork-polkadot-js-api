@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["generic/Origin"](_generic_origin_.md)
 
-# External module: "generic/Origin"
+# Module: "generic/Origin"
 
 ## Index
 

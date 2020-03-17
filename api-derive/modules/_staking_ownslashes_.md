@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["staking/ownSlashes"](_staking_ownslashes_.md)
 
-# External module: "staking/ownSlashes"
+# Module: "staking/ownSlashes"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **ownSlashes**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/ownSlashes.ts:14](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/staking/ownSlashes.ts#L14)*
+*Defined in [packages/api-derive/src/staking/ownSlashes.ts:14](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/staking/ownSlashes.ts#L14)*
 
 **Parameters:**
 

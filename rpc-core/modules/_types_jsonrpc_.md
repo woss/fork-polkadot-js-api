@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["types.jsonrpc"](_types_jsonrpc_.md)
 
-# External module: "types.jsonrpc"
+# Module: "types.jsonrpc"
 
 ## Index
 
@@ -18,4 +18,4 @@
 
 Ƭ **AugmentedRpc**: *F*
 
-*Defined in [types.jsonrpc.ts:12](https://github.com/polkadot-js/api/blob/3f4576f524/packages/rpc-core/src/types.jsonrpc.ts#L12)*
+*Defined in [types.jsonrpc.ts:12](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/rpc-core/src/types.jsonrpc.ts#L12)*

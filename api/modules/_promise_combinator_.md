@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["promise/Combinator"](_promise_combinator_.md)
 
-# External module: "promise/Combinator"
+# Module: "promise/Combinator"
 
 ## Index
 
@@ -22,4 +22,4 @@
 
 Ƭ **CombinatorCallback**: *Callback‹any[]›*
 
-*Defined in [api/src/promise/Combinator.ts:10](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api/src/promise/Combinator.ts#L10)*
+*Defined in [api/src/promise/Combinator.ts:10](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api/src/promise/Combinator.ts#L10)*

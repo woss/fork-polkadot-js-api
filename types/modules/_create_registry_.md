@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["create/registry"](_create_registry_.md)
 
-# External module: "create/registry"
+# Module: "create/registry"
 
 ## Index
 

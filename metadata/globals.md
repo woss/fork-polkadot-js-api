@@ -4,7 +4,7 @@
 
 ## Index
 
-### External modules
+### Modules
 
 * ["Decorated/Decorated"](modules/_decorated_decorated_.md)
 * ["Decorated/extrinsics/fromMetadata/createUnchecked"](modules/_decorated_extrinsics_frommetadata_createunchecked_.md)

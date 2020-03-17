@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["generic/Event"](_generic_event_.md)
 
-# External module: "generic/Event"
+# Module: "generic/Event"
 
 ## Index
 

@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["society/info"](_society_info_.md)
 
-# External module: "society/info"
+# Module: "society/info"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **info**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/society/info.ts:20](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/society/info.ts#L20)*
+*Defined in [packages/api-derive/src/society/info.ts:20](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/society/info.ts#L20)*
 
 **`description`** Get the overall info for a society
 

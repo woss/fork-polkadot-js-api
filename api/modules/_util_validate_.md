@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["util/validate"](_util_validate_.md)
 
-# External module: "util/validate"
+# Module: "util/validate"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **extractStorageArgs**(`creator`: StorageEntry, `_args`: any[]): *any[]*
 
-*Defined in [api/src/util/validate.ts:37](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api/src/util/validate.ts#L37)*
+*Defined in [api/src/util/validate.ts:37](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api/src/util/validate.ts#L37)*
 
 **Parameters:**
 

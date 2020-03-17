@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["parachains/info"](_parachains_info_.md)
 
-# External module: "parachains/info"
+# Module: "parachains/info"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **info**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/parachains/info.ts:79](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/parachains/info.ts#L79)*
+*Defined in [packages/api-derive/src/parachains/info.ts:79](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/parachains/info.ts#L79)*
 
 **Parameters:**
 

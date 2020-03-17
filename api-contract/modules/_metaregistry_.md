@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["MetaRegistry"](_metaregistry_.md)
 
-# External module: "MetaRegistry"
+# Module: "MetaRegistry"
 
 ## Index
 

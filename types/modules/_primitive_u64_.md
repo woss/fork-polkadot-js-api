@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["primitive/U64"](_primitive_u64_.md)
 
-# External module: "primitive/U64"
+# Module: "primitive/U64"
 
 ## Index
 

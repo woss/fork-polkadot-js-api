@@ -4,7 +4,7 @@
 
 ## Index
 
-### External modules
+### Modules
 
 * ["extractChain"](modules/_extractchain_.md)
 * ["fromChain"](modules/_fromchain_.md)

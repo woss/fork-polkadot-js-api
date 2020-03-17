@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["rx/RxCode"](_rx_rxcode_.md)
 
-# External module: "rx/RxCode"
+# Module: "rx/RxCode"
 
 ## Index
 

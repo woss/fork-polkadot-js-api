@@ -4,7 +4,7 @@
 
 ## Index
 
-### External modules
+### Modules
 
 * ["defaults"](modules/_defaults_.md)
 * ["http/polyfill"](modules/_http_polyfill_.md)

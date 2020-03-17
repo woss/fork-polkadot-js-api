@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["fromDefs"](_fromdefs_.md)
 
-# External module: "fromDefs"
+# Module: "fromDefs"
 
 ## Index
 
@@ -14,6 +14,6 @@
 
 ▸ **main**(): *void*
 
-*Defined in [fromDefs.ts:12](https://github.com/polkadot-js/api/blob/3f4576f524/packages/typegen/src/fromDefs.ts#L12)*
+*Defined in [fromDefs.ts:12](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/typegen/src/fromDefs.ts#L12)*
 
 **Returns:** *void*

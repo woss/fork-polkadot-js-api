@@ -496,7 +496,7 @@ ___
 
    
 
-  - Dependent on the size of `encoded_proposal` but protected by a   required deposit. 
+  - Dependent on the size of `encoded_proposal` but protected by a  required deposit. 
 
   \# \</weight> 
  
@@ -1913,6 +1913,8 @@ ___
 
   The dispatch origin for this call must be _Signed_ by the stash account. 
 
+  Emits `Bonded`. 
+
   \# \<weight>
 
    
@@ -1934,6 +1936,8 @@ ___
   Use this if there are additional funds in your stash account that you wish to bond. Unlike [`bond`] or [`unbond`] this function does not impose any limitation on the amount that can be added. 
 
   The dispatch origin for this call must be _Signed_ by the stash, not the controller. 
+
+  Emits `Bonded`. 
 
   \# \<weight>
 
@@ -2045,7 +2049,7 @@ ___
 
   - `era` may not be lower than one following the most recently paid era. If it is higher,  then it indicates an instruction to skip the payout of all previous eras. 
 
-  - `validators` is the list of all validators that `who` had exposure to during `era`.  If it is incomplete, then less than the full reward will be paid out.   It must not exceed `MAX_NOMINATIONS`. 
+  - `validators` is the list of all validators that `who` had exposure to during `era`,  alongside the index of `who` in the clipped exposure of the validator.   I.e. each element is a tuple of   `(validator, index of `who` in clipped exposure of validator)`.   If it is incomplete, then less than the full reward will be paid out.   It must not exceed `MAX_NOMINATIONS`. 
 
   WARNING: once an era is payed for a validator such validator can't claim the payout of previous era. 
 
@@ -2171,6 +2175,8 @@ ___
 
   The dispatch origin for this call must be _Signed_ by the controller, not the stash. 
 
+  Emits `Unbonded`. 
+
   See also [`Call::withdraw_unbonded`]. 
 
   \# \<weight>
@@ -2212,6 +2218,8 @@ ___
   This essentially frees up that balance to be used by the stash account to do whatever it wants. 
 
   The dispatch origin for this call must be _Signed_ by the controller, not the stash. 
+
+  Emits `Withdrawn`. 
 
   See also [`Call::unbond`]. 
 
@@ -2306,6 +2314,9 @@ ___
 ### killStorage(keys: `Vec<Key>`)
 - **interface**: `api.tx.system.killStorage`
 - **summary**:   Kill some items from storage. 
+ 
+### migrateAccounts(accounts: `Vec<T::AccountId>`)
+- **interface**: `api.tx.system.migrateAccounts`
  
 ### remark(_remark: `Vec<u8>`)
 - **interface**: `api.tx.system.remark`
@@ -2859,7 +2870,7 @@ ___
  
 ### vestedTransfer(target: `<T::Lookup as StaticLookup>::Source`, schedule: `VestingInfo<BalanceOf<T>, T::BlockNumber>`)
 - **interface**: `api.tx.vesting.vestedTransfer`
-- **summary**:   Create a vested transfer.  
+- **summary**:   Create a vested transfer. 
 
   The dispatch origin for this call must be _Signed_. 
 

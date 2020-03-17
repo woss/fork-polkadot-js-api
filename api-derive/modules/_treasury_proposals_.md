@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["treasury/proposals"](_treasury_proposals_.md)
 
-# External module: "treasury/proposals"
+# Module: "treasury/proposals"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **proposals**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/treasury/proposals.ts:77](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/treasury/proposals.ts#L77)*
+*Defined in [packages/api-derive/src/treasury/proposals.ts:77](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/treasury/proposals.ts#L77)*
 
 **`description`** Retrieve all active and approved treasury proposals, along with their info
 

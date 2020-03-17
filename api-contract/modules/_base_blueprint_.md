@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["base/Blueprint"](_base_blueprint_.md)
 
-# External module: "base/Blueprint"
+# Module: "base/Blueprint"
 
 ## Index
 

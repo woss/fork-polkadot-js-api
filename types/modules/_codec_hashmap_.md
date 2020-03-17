@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["codec/HashMap"](_codec_hashmap_.md)
 
-# External module: "codec/HashMap"
+# Module: "codec/HashMap"
 
 ## Index
 

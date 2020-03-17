@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["Decorated/Decorated"](_decorated_decorated_.md)
 
-# External module: "Decorated/Decorated"
+# Module: "Decorated/Decorated"
 
 ## Index
 

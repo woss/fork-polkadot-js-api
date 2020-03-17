@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["staking/stashes"](_staking_stashes_.md)
 
-# External module: "staking/stashes"
+# Module: "staking/stashes"
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ▸ **stashes**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stashes.ts:18](https://github.com/polkadot-js/api/blob/3f4576f524/packages/api-derive/src/staking/stashes.ts#L18)*
+*Defined in [packages/api-derive/src/staking/stashes.ts:18](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/api-derive/src/staking/stashes.ts#L18)*
 
 **`description`** Retrieve the list of all validator stashes
 

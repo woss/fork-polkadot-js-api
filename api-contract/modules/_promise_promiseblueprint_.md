@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["promise/PromiseBlueprint"](_promise_promiseblueprint_.md)
 
-# External module: "promise/PromiseBlueprint"
+# Module: "promise/PromiseBlueprint"
 
 ## Index
 

@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["util/formatting"](_util_formatting_.md)
 
-# External module: "util/formatting"
+# Module: "util/formatting"
 
 ## Index
 
@@ -20,7 +20,7 @@
 "* = "
 "
 
-*Defined in [util/formatting.ts:13](https://github.com/polkadot-js/api/blob/3f4576f524/packages/typegen/src/util/formatting.ts#L13)*
+*Defined in [util/formatting.ts:13](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/typegen/src/util/formatting.ts#L13)*
 
 ## Functions
 
@@ -28,7 +28,7 @@
 
 ▸ **HEADER**(`type`: "chain" | "defs"): *string*
 
-*Defined in [util/formatting.ts:12](https://github.com/polkadot-js/api/blob/3f4576f524/packages/typegen/src/util/formatting.ts#L12)*
+*Defined in [util/formatting.ts:12](https://github.com/polkadot-js/api/blob/5a7811c80f/packages/typegen/src/util/formatting.ts#L12)*
 
 **Parameters:**
 

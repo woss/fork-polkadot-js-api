@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["codec/BTreeMap"](_codec_btreemap_.md)
 
-# External module: "codec/BTreeMap"
+# Module: "codec/BTreeMap"
 
 ## Index
 

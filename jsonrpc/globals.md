@@ -4,7 +4,7 @@
 
 ## Index
 
-### External modules
+### Modules
 
 * ["account"](modules/_account_.md)
 * ["author"](modules/_author_.md)

@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["generic/Block"](_generic_block_.md)
 
-# External module: "generic/Block"
+# Module: "generic/Block"
 
 ## Index
 

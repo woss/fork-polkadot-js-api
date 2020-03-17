@@ -1,6 +1,6 @@
 [Polkadot JS API](../README.md) › [Globals](../globals.md) › ["codec/Raw"](_codec_raw_.md)
 
-# External module: "codec/Raw"
+# Module: "codec/Raw"
 
 ## Index
 
