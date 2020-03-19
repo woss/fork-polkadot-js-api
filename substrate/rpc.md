@@ -10,6 +10,8 @@ The following sections contain RPC methods that are Remote Calls available by de
 
 - **[contracts](#contracts)**
 
+- **[engine](#engine)**
+
 - **[payment](#payment)**
 
 - **[rpc](#rpc)**
@@ -23,8 +25,6 @@ ___
 
 
 ## account
-
-_(Optional) Methods that retrieves account-specific information_
  
 ### nextIndex(accountId: `AccountId`): `Index`
 - **jsonrpc**: `account_nextIndex`
@@ -35,8 +35,6 @@ ___
 
 
 ## author
-
-_Authoring of network items_
  
 ### hasKey(publicKey: `Bytes`, keyType: `Text`): `bool`
 - **jsonrpc**: `author_hasKey`
@@ -82,8 +80,6 @@ ___
 
 
 ## chain
-
-_Retrieval of chain data_
  
 ### getBlock(hash?: `BlockHash`): `SignedBlock`
 - **jsonrpc**: `chain_getBlock`
@@ -124,8 +120,6 @@ ___
 
 
 ## contracts
-
-_(Optional) Methods that performs actions on contracts_
  
 ### call(callRequest: `ContractCallRequest`, at?: `BlockHash`): `ContractExecResult`
 - **jsonrpc**: `contracts_call`
@@ -140,9 +134,22 @@ _(Optional) Methods that performs actions on contracts_
 ___
 
 
-## payment
+## engine
+ 
+### createBlock(createEmpty: `bool`, finalize: `bool`, parentHash?: `BlockHash`): `CreatedBlock`
+- **jsonrpc**: `engine_createBlock`
+- **interface**: `api.rpc.engine.createBlock`
+- **summary**: Instructs the manual-seal authorship task to create a new block
+ 
+### finalizeBlock(hash: `BlockHash`, justification?: `Justification`): `bool`
+- **jsonrpc**: `engine_finalizeBlock`
+- **interface**: `api.rpc.engine.finalizeBlock`
+- **summary**: Instructs the manual-seal authorship task to finalize a block
 
-_Methods that retrieves payment information, e.g. fee calculations_
+___
+
+
+## payment
  
 ### queryInfo(extrinsic: `Bytes`, at?: `BlockHash`): `RuntimeDispatchInfo`
 - **jsonrpc**: `payment_queryInfo`
@@ -153,8 +160,6 @@ ___
 
 
 ## rpc
-
-_Retrieves information about the RPC endpoints_
  
 ### methods(): `RpcMethods`
 - **jsonrpc**: `rpc_methods`
@@ -165,8 +170,6 @@ ___
 
 
 ## state
-
-_Query of state_
  
 ### call(method: `Text`, data: `Bytes`, at?: `BlockHash`): `Bytes`
 - **jsonrpc**: `state_call`
@@ -247,8 +250,6 @@ ___
 
 
 ## system
-
-_Calls to retrieve system info_
  
 ### chain(): `Text`
 - **jsonrpc**: `system_chain`

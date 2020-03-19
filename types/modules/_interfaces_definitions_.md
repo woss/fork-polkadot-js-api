@@ -6,11 +6,14 @@
 
 ### References
 
+* [account](_interfaces_definitions_.md#account)
 * [attestations](_interfaces_definitions_.md#attestations)
 * [aura](_interfaces_definitions_.md#aura)
+* [author](_interfaces_definitions_.md#author)
 * [authorship](_interfaces_definitions_.md#authorship)
 * [babe](_interfaces_definitions_.md#babe)
 * [balances](_interfaces_definitions_.md#balances)
+* [chain](_interfaces_definitions_.md#chain)
 * [claims](_interfaces_definitions_.md#claims)
 * [collective](_interfaces_definitions_.md#collective)
 * [consensus](_interfaces_definitions_.md#consensus)
@@ -27,12 +30,14 @@
 * [metadata](_interfaces_definitions_.md#metadata)
 * [offences](_interfaces_definitions_.md#offences)
 * [parachains](_interfaces_definitions_.md#parachains)
+* [payment](_interfaces_definitions_.md#payment)
 * [recovery](_interfaces_definitions_.md#recovery)
 * [rpc](_interfaces_definitions_.md#rpc)
 * [runtime](_interfaces_definitions_.md#runtime)
 * [session](_interfaces_definitions_.md#session)
 * [society](_interfaces_definitions_.md#society)
 * [staking](_interfaces_definitions_.md#staking)
+* [state](_interfaces_definitions_.md#state)
 * [system](_interfaces_definitions_.md#system)
 * [treasury](_interfaces_definitions_.md#treasury)
 * [txpayment](_interfaces_definitions_.md#txpayment)
@@ -40,6 +45,12 @@
 * [vesting](_interfaces_definitions_.md#vesting)
 
 ## References
+
+###  account
+
+• **account**:
+
+___
 
 ###  attestations
 
@@ -50,6 +61,12 @@ ___
 ###  aura
 
 • **aura**:
+
+___
+
+###  author
+
+• **author**:
 
 ___
 
@@ -68,6 +85,12 @@ ___
 ###  balances
 
 • **balances**:
+
+___
+
+###  chain
+
+• **chain**:
 
 ___
 
@@ -167,6 +190,12 @@ ___
 
 ___
 
+###  payment
+
+• **payment**:
+
+___
+
 ###  recovery
 
 • **recovery**:
@@ -200,6 +229,12 @@ ___
 ###  staking
 
 • **staking**:
+
+___
+
+###  state
+
+• **state**:
 
 ___
 

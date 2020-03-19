@@ -12,9 +12,9 @@
 
 ###  writeFile
 
-▸ **writeFile**(`dest`: string, `generator`: function): *void*
+▸ **writeFile**(`dest`: string, `generator`: function, `noLog?`: undefined | false | true): *void*
 
-*Defined in [util/file.ts:7](https://github.com/polkadot-js/api/blob/b7af4781ea/packages/typegen/src/util/file.ts#L7)*
+*Defined in [util/file.ts:7](https://github.com/polkadot-js/api/blob/044efbc6de/packages/typegen/src/util/file.ts#L7)*
 
 **Parameters:**
 
@@ -23,5 +23,7 @@
 ▪ **generator**: *function*
 
 ▸ (): *string*
+
+▪`Optional`  **noLog**: *undefined | false | true*
 
 **Returns:** *void*
