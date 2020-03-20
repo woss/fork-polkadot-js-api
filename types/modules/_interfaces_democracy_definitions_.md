@@ -29,4 +29,4 @@
   'Locked6x'
 ]
 
-*Defined in [packages/types/src/interfaces/democracy/definitions.ts:7](https://github.com/polkadot-js/api/blob/3a1634d67f/packages/types/src/interfaces/democracy/definitions.ts#L7)*
+*Defined in [packages/types/src/interfaces/democracy/definitions.ts:7](https://github.com/polkadot-js/api/blob/5867f8ab0c/packages/types/src/interfaces/democracy/definitions.ts#L7)*
