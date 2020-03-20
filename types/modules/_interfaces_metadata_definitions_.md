@@ -14,46 +14,46 @@
 
 ### ▪ **AllHashers**: *object*
 
-*Defined in [packages/types/src/interfaces/metadata/definitions.ts:7](https://github.com/polkadot-js/api/blob/5867f8ab0c/packages/types/src/interfaces/metadata/definitions.ts#L7)*
+*Defined in [packages/types/src/interfaces/metadata/definitions.ts:7](https://github.com/polkadot-js/api/blob/c9dcd51ba6/packages/types/src/interfaces/metadata/definitions.ts#L7)*
 
 ###  Blake2_128
 
 • **Blake2_128**: *null* = null
 
-*Defined in [packages/types/src/interfaces/metadata/definitions.ts:8](https://github.com/polkadot-js/api/blob/5867f8ab0c/packages/types/src/interfaces/metadata/definitions.ts#L8)*
+*Defined in [packages/types/src/interfaces/metadata/definitions.ts:8](https://github.com/polkadot-js/api/blob/c9dcd51ba6/packages/types/src/interfaces/metadata/definitions.ts#L8)*
 
 ###  Blake2_128Concat
 
 • **Blake2_128Concat**: *null* = null
 
-*Defined in [packages/types/src/interfaces/metadata/definitions.ts:10](https://github.com/polkadot-js/api/blob/5867f8ab0c/packages/types/src/interfaces/metadata/definitions.ts#L10)*
+*Defined in [packages/types/src/interfaces/metadata/definitions.ts:10](https://github.com/polkadot-js/api/blob/c9dcd51ba6/packages/types/src/interfaces/metadata/definitions.ts#L10)*
 
 ###  Blake2_256
 
 • **Blake2_256**: *null* = null
 
-*Defined in [packages/types/src/interfaces/metadata/definitions.ts:9](https://github.com/polkadot-js/api/blob/5867f8ab0c/packages/types/src/interfaces/metadata/definitions.ts#L9)*
+*Defined in [packages/types/src/interfaces/metadata/definitions.ts:9](https://github.com/polkadot-js/api/blob/c9dcd51ba6/packages/types/src/interfaces/metadata/definitions.ts#L9)*
 
 ###  Identity
 
 • **Identity**: *null* = null
 
-*Defined in [packages/types/src/interfaces/metadata/definitions.ts:15](https://github.com/polkadot-js/api/blob/5867f8ab0c/packages/types/src/interfaces/metadata/definitions.ts#L15)*
+*Defined in [packages/types/src/interfaces/metadata/definitions.ts:15](https://github.com/polkadot-js/api/blob/c9dcd51ba6/packages/types/src/interfaces/metadata/definitions.ts#L15)*
 
 ###  Twox128
 
 • **Twox128**: *null* = null
 
-*Defined in [packages/types/src/interfaces/metadata/definitions.ts:11](https://github.com/polkadot-js/api/blob/5867f8ab0c/packages/types/src/interfaces/metadata/definitions.ts#L11)*
+*Defined in [packages/types/src/interfaces/metadata/definitions.ts:11](https://github.com/polkadot-js/api/blob/c9dcd51ba6/packages/types/src/interfaces/metadata/definitions.ts#L11)*
 
 ###  Twox256
 
 • **Twox256**: *null* = null
 
-*Defined in [packages/types/src/interfaces/metadata/definitions.ts:12](https://github.com/polkadot-js/api/blob/5867f8ab0c/packages/types/src/interfaces/metadata/definitions.ts#L12)*
+*Defined in [packages/types/src/interfaces/metadata/definitions.ts:12](https://github.com/polkadot-js/api/blob/c9dcd51ba6/packages/types/src/interfaces/metadata/definitions.ts#L12)*
 
 ###  Twox64Concat
 
 • **Twox64Concat**: *null* = null
 
-*Defined in [packages/types/src/interfaces/metadata/definitions.ts:13](https://github.com/polkadot-js/api/blob/5867f8ab0c/packages/types/src/interfaces/metadata/definitions.ts#L13)*
+*Defined in [packages/types/src/interfaces/metadata/definitions.ts:13](https://github.com/polkadot-js/api/blob/c9dcd51ba6/packages/types/src/interfaces/metadata/definitions.ts#L13)*
