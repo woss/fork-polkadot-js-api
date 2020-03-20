@@ -12,6 +12,8 @@ The following sections contain RPC methods that are Remote Calls available by de
 
 - **[engine](#engine)**
 
+- **[offchain](#offchain)**
+
 - **[payment](#payment)**
 
 - **[rpc](#rpc)**
@@ -149,6 +151,21 @@ ___
 ___
 
 
+## offchain
+ 
+### localStorageGet(kind: `StorageKind`, key: `Bytes`): `Option<Bytes>`
+- **jsonrpc**: `offchain_localStorageGet`
+- **interface**: `api.rpc.offchain.localStorageGet`
+- **summary**: Get offchain local storage under given key and prefix
+ 
+### localStorageSet(kind: `StorageKind`, key: `Bytes`, value: `Bytes`): `Null`
+- **jsonrpc**: `offchain_localStorageSet`
+- **interface**: `api.rpc.offchain.localStorageSet`
+- **summary**: Set offchain local storage under given key and prefix
+
+___
+
+
 ## payment
  
 ### queryInfo(extrinsic: `Bytes`, at?: `BlockHash`): `RuntimeDispatchInfo`
@@ -211,6 +228,11 @@ ___
 - **interface**: `api.rpc.state.getMetadata`
 - **summary**: Returns the runtime metadata
  
+### getPairs(prefix: `StorageKey`, at?: `BlockHash`): `Vec<KeyValue>`
+- **jsonrpc**: `state_getPairs`
+- **interface**: `api.rpc.state.getPairs`
+- **summary**: Returns the keys with prefix, leave empty to get all the keys
+ 
 ### getRuntimeVersion(at?: `BlockHash`): `RuntimeVersion`
 - **jsonrpc**: `state_getRuntimeVersion`
 - **interface**: `api.rpc.state.getRuntimeVersion`
@@ -251,6 +273,11 @@ ___
 
 ## system
  
+### addReservedPeer(peer: `Text`): `Text`
+- **jsonrpc**: `system_addReservedPeer`
+- **interface**: `api.rpc.system.addReservedPeer`
+- **summary**: Adds a reserved peer
+ 
 ### chain(): `Text`
 - **jsonrpc**: `system_chain`
 - **interface**: `api.rpc.system.chain`
@@ -271,6 +298,11 @@ ___
 - **interface**: `api.rpc.system.networkState`
 - **summary**: Returns current state of the network
  
+### nodeRoles(): `Vec<NodeRole>`
+- **jsonrpc**: `system_nodeRoles`
+- **interface**: `api.rpc.system.nodeRoles`
+- **summary**: Returns the roles the node is running as
+ 
 ### peers(): `Vec<PeerInfo>`
 - **jsonrpc**: `system_peers`
 - **interface**: `api.rpc.system.peers`
@@ -280,6 +312,11 @@ ___
 - **jsonrpc**: `system_properties`
 - **interface**: `api.rpc.system.properties`
 - **summary**: Get a custom set of properties as a JSON object, defined in the chain spec
+ 
+### removeReservedPeer(peerId: `Text`): `Text`
+- **jsonrpc**: `system_removeReservedPeer`
+- **interface**: `api.rpc.system.removeReservedPeer`
+- **summary**: Remove a reserved peer
  
 ### version(): `Text`
 - **jsonrpc**: `system_version`

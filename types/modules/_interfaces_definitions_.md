@@ -28,6 +28,7 @@
 * [identity](_interfaces_definitions_.md#identity)
 * [imOnline](_interfaces_definitions_.md#imonline)
 * [metadata](_interfaces_definitions_.md#metadata)
+* [offchain](_interfaces_definitions_.md#offchain)
 * [offences](_interfaces_definitions_.md#offences)
 * [parachains](_interfaces_definitions_.md#parachains)
 * [payment](_interfaces_definitions_.md#payment)
@@ -175,6 +176,12 @@ ___
 ###  metadata
 
 • **metadata**:
+
+___
+
+###  offchain
+
+• **offchain**:
 
 ___
 

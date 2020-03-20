@@ -101,6 +101,7 @@
 * ["interfaces/imOnline/definitions"](modules/_interfaces_imonline_definitions_.md)
 * ["interfaces/jsonrpc"](modules/_interfaces_jsonrpc_.md)
 * ["interfaces/metadata/definitions"](modules/_interfaces_metadata_definitions_.md)
+* ["interfaces/offchain/definitions"](modules/_interfaces_offchain_definitions_.md)
 * ["interfaces/offences/definitions"](modules/_interfaces_offences_definitions_.md)
 * ["interfaces/parachains/definitions"](modules/_interfaces_parachains_definitions_.md)
 * ["interfaces/payment/definitions"](modules/_interfaces_payment_definitions_.md)
