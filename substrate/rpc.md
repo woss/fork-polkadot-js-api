@@ -6,6 +6,8 @@ The following sections contain RPC methods that are Remote Calls available by de
 
 - **[author](#author)**
 
+- **[babe](#babe)**
+
 - **[chain](#chain)**
 
 - **[contracts](#contracts)**
@@ -81,6 +83,16 @@ ___
 ___
 
 
+## babe
+ 
+### epochAuthorship(): `HashMap<AuthorityId, EpochAuthorship>`
+- **jsonrpc**: `babe_epochAuthorship`
+- **interface**: `api.rpc.babe.epochAuthorship`
+- **summary**: Returns data about which slots (primary or secondary) can be claimed in the current epoch with the keys in the keystore
+
+___
+
+
 ## chain
  
 ### getBlock(hash?: `BlockHash`): `SignedBlock`
@@ -132,6 +144,11 @@ ___
 - **jsonrpc**: `contracts_getStorage`
 - **interface**: `api.rpc.contracts.getStorage`
 - **summary**: Returns the value under a specified storage key in a contract
+ 
+### rentProjection(address: `AccountId`, at?: `BlockHash`): `Option<BlockNumber>`
+- **jsonrpc**: `contracts_rentProjection`
+- **interface**: `api.rpc.contracts.rentProjection`
+- **summary**: Returns the projected time a given contract will be able to sustain paying its rent
 
 ___
 
