@@ -63,6 +63,5 @@
 * ["technicalCommittee/proposals"](modules/_technicalcommittee_proposals_.md)
 * ["treasury/proposals"](modules/_treasury_proposals_.md)
 * ["type/HeaderExtended"](modules/_type_headerextended_.md)
-* ["type/ReferendumInfoExtended"](modules/_type_referenduminfoextended_.md)
 * ["util/approvalFlagsToBools"](modules/_util_approvalflagstobools_.md)
 * ["util/memo"](modules/_util_memo_.md)
