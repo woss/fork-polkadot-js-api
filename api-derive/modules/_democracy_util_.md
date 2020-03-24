@@ -6,22 +6,59 @@
 
 ### Functions
 
-* [retrieveInfo](_democracy_util_.md#retrieveinfo)
+* [calcVotes](_democracy_util_.md#calcvotes)
+* [compareRationals](_democracy_util_.md#comparerationals)
+* [getStatus](_democracy_util_.md#getstatus)
 
 ## Functions
 
-###  retrieveInfo
+###  calcVotes
 
-▸ **retrieveInfo**(`api`: ApiInterfaceRx, `index`: BN | number, `info`: Option‹ReferendumInfo | ReferendumInfoTo239›): *Observable‹DerivedReferendum | null›*
+▸ **calcVotes**(`sqrtElectorate`: BN, `referendum`: DerivedReferendum, `votes`: DerivedReferendumVote[]): *DerivedReferendumVotes*
 
-*Defined in [packages/api-derive/src/democracy/util.ts:58](https://github.com/polkadot-js/api/blob/8c011cdc86/packages/api-derive/src/democracy/util.ts#L58)*
+*Defined in [packages/api-derive/src/democracy/util.ts:117](https://github.com/polkadot-js/api/blob/602bb1406b/packages/api-derive/src/democracy/util.ts#L117)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`api` | ApiInterfaceRx |
-`index` | BN &#124; number |
+`sqrtElectorate` | BN |
+`referendum` | DerivedReferendum |
+`votes` | DerivedReferendumVote[] |
+
+**Returns:** *DerivedReferendumVotes*
+
+___
+
+###  compareRationals
+
+▸ **compareRationals**(`n1`: BN, `d1`: BN, `n2`: BN, `d2`: BN): *boolean*
+
+*Defined in [packages/api-derive/src/democracy/util.ts:20](https://github.com/polkadot-js/api/blob/602bb1406b/packages/api-derive/src/democracy/util.ts#L20)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`n1` | BN |
+`d1` | BN |
+`n2` | BN |
+`d2` | BN |
+
+**Returns:** *boolean*
+
+___
+
+###  getStatus
+
+▸ **getStatus**(`info`: Option‹ReferendumInfo | ReferendumInfoTo239›): *ReferendumStatus | ReferendumInfoTo239 | null*
+
+*Defined in [packages/api-derive/src/democracy/util.ts:129](https://github.com/polkadot-js/api/blob/602bb1406b/packages/api-derive/src/democracy/util.ts#L129)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
 `info` | Option‹ReferendumInfo &#124; ReferendumInfoTo239› |
 
-**Returns:** *Observable‹DerivedReferendum | null›*
+**Returns:** *ReferendumStatus | ReferendumInfoTo239 | null*
