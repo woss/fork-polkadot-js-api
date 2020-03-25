@@ -14,7 +14,7 @@
 
 ▸ **account**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/account.ts:90](https://github.com/polkadot-js/api/blob/8bf5e51725/packages/api-derive/src/staking/account.ts#L90)*
+*Defined in [packages/api-derive/src/staking/account.ts:90](https://github.com/polkadot-js/api/blob/27cd9b1ca4/packages/api-derive/src/staking/account.ts#L90)*
 
 **`description`** From a stash, retrieve the controllerId and fill in all the relevant staking details
 
