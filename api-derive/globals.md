@@ -25,6 +25,7 @@
 * ["council/proposals"](modules/_council_proposals_.md)
 * ["democracy/proposals"](modules/_democracy_proposals_.md)
 * ["democracy/referendums"](modules/_democracy_referendums_.md)
+* ["democracy/referendumsActive"](modules/_democracy_referendumsactive_.md)
 * ["democracy/util"](modules/_democracy_util_.md)
 * ["elections/info"](modules/_elections_info_.md)
 * ["imOnline/receivedHeartbeats"](modules/_imonline_receivedheartbeats_.md)
