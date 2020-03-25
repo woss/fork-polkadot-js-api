@@ -16,7 +16,7 @@
 
 ▸ **calcVotes**(`sqrtElectorate`: BN, `referendum`: DerivedReferendum, `votes`: DerivedReferendumVote[]): *DerivedReferendumVotes*
 
-*Defined in [packages/api-derive/src/democracy/util.ts:117](https://github.com/polkadot-js/api/blob/a0979a9ce3/packages/api-derive/src/democracy/util.ts#L117)*
+*Defined in [packages/api-derive/src/democracy/util.ts:117](https://github.com/polkadot-js/api/blob/8bf5e51725/packages/api-derive/src/democracy/util.ts#L117)*
 
 **Parameters:**
 
@@ -34,7 +34,7 @@ ___
 
 ▸ **compareRationals**(`n1`: BN, `d1`: BN, `n2`: BN, `d2`: BN): *boolean*
 
-*Defined in [packages/api-derive/src/democracy/util.ts:20](https://github.com/polkadot-js/api/blob/a0979a9ce3/packages/api-derive/src/democracy/util.ts#L20)*
+*Defined in [packages/api-derive/src/democracy/util.ts:20](https://github.com/polkadot-js/api/blob/8bf5e51725/packages/api-derive/src/democracy/util.ts#L20)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ ___
 
 ▸ **getStatus**(`info`: Option‹ReferendumInfo | ReferendumInfoTo239›): *ReferendumStatus | ReferendumInfoTo239 | null*
 
-*Defined in [packages/api-derive/src/democracy/util.ts:129](https://github.com/polkadot-js/api/blob/a0979a9ce3/packages/api-derive/src/democracy/util.ts#L129)*
+*Defined in [packages/api-derive/src/democracy/util.ts:129](https://github.com/polkadot-js/api/blob/8bf5e51725/packages/api-derive/src/democracy/util.ts#L129)*
 
 **Parameters:**
 
