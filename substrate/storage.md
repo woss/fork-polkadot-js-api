@@ -101,11 +101,11 @@ ___
 - **interface**: `api.query.babe.initialized`
 - **summary**:   Temporary value (cleared at block finalization) which is `Some` if per-block initialization has already been called for current block. 
  
-### nextRandomness(): `[u8;32]`
+### nextRandomness(): `Randomness`
 - **interface**: `api.query.babe.nextRandomness`
 - **summary**:   Next epoch randomness. 
  
-### randomness(): `[u8;32]`
+### randomness(): `Randomness`
 - **interface**: `api.query.babe.randomness`
 - **summary**:   The epoch randomness for the *current* epoch. 
 
@@ -121,7 +121,7 @@ ___
 
   Once a segment reaches this length, we begin the next one. We reset all segments and return to `0` at the beginning of every epoch. 
  
-### underConstruction(`u32`): `Vec<[u8;32]>`
+### underConstruction(`u32`): `Vec<RawVRFOutput>`
 - **interface**: `api.query.babe.underConstruction`
 
 ___
@@ -226,10 +226,6 @@ ___
 - **interface**: `api.query.democracy.cancellations`
 - **summary**:   Record of all proposals that have been subject to emergency cancellation. 
  
-### delegations(`AccountId`): `(AccountId,Conviction)`
-- **interface**: `api.query.democracy.delegations`
-- **summary**:   Get the account (and lock periods) to which another account is delegating vote. 
- 
 ### depositOf(`PropIndex`): `Option<(BalanceOf,Vec<AccountId>)>`
 - **interface**: `api.query.democracy.depositOf`
 - **summary**:   Those who have locked a deposit. 
@@ -282,13 +278,9 @@ ___
 - **interface**: `api.query.democracy.referendumInfoOf`
 - **summary**:   Information concerning any given referendum. 
  
-### voteOf(`(ReferendumIndex,AccountId)`): `Vote`
-- **interface**: `api.query.democracy.voteOf`
-- **summary**:   Get the vote in a given referendum of a particular voter. The result is meaningful only if `voters_for` includes the voter when called with the referendum (you'll get the default `Vote` value otherwise). If you don't want to check `voters_for`, then you can also check for simple existence with `VoteOf::contains_key` first. 
- 
-### votersFor(`ReferendumIndex`): `Vec<AccountId>`
-- **interface**: `api.query.democracy.votersFor`
-- **summary**:   Get the voters for the current proposal. 
+### votingOf(`AccountId`): `Voting`
+- **interface**: `api.query.democracy.votingOf`
+- **summary**:   All votes for a particular voter. We store the balance for the number of votes that we have recorded. The second item is the total amount of delegations, that will be added. 
 
 ___
 
@@ -297,7 +289,7 @@ ___
  
 ### candidates(): `Vec<AccountId>`
 - **interface**: `api.query.elections.candidates`
-- **summary**:   The present candidate list. Sorted based on account-id. A current member or a runner can never enter this vector and is always implicitly assumed to be a candidate. 
+- **summary**:   The present candidate list. Sorted based on account-id. A current member or runner-up can never enter this vector and is always implicitly assumed to be a candidate. 
  
 ### electionRounds(): `u32`
 - **interface**: `api.query.elections.electionRounds`
@@ -311,24 +303,14 @@ ___
 - **interface**: `api.query.elections.runnersUp`
 - **summary**:   The current runners_up. Sorted based on low to high merit (worse to best runner). 
  
-### stakeOf(`AccountId`): `BalanceOf`
-- **interface**: `api.query.elections.stakeOf`
-- **summary**:   Locked stake of a voter. 
- 
-### votesOf(`AccountId`): `Vec<AccountId>`
-- **interface**: `api.query.elections.votesOf`
-- **summary**:   Votes of a particular voter, with the round index of the votes. 
+### voting(`AccountId`): `(BalanceOf,Vec<AccountId>)`
+- **interface**: `api.query.elections.voting`
+- **summary**:   Votes and locked stake of a particular voter. 
 
 ___
 
 
 ## grandpa
- 
-### authorities(): `AuthorityList`
-- **interface**: `api.query.grandpa.authorities`
-- **summary**:   DEPRECATED 
-
-  This used to store the current authority set, which has been migrated to the well-known GRANDPA_AUTHORITIES_KEY unhashed key. 
  
 ### currentSetId(): `SetId`
 - **interface**: `api.query.grandpa.currentSetId`
@@ -699,7 +681,7 @@ ___
 - **interface**: `api.query.staking.storageVersion`
 - **summary**:   Storage version of the pallet. 
 
-  This is set to v2.0.0 for new networks. 
+  This is set to v3.0.0 for new networks. 
  
 ### unappliedSlashes(`EraIndex`): `Vec<UnappliedSlash>`
 - **interface**: `api.query.staking.unappliedSlashes`
@@ -766,6 +748,10 @@ ___
   All topic vectors have deterministic storage locations depending on the topic. This allows light-clients to leverage the changes trie storage tracking mechanism and in case of changes fetch the list of events of interest. 
 
   The value has the type `(T::BlockNumber, EventIndex)` because if we used only just the `EventIndex` then in case if the topic has the same contents on the next block no notification will be triggered thus the event might be lost. 
+ 
+### executionPhase(): `Option<Phase>`
+- **interface**: `api.query.system.executionPhase`
+- **summary**:   The execution phase of the block. 
  
 ### extrinsicCount(): `Option<u32>`
 - **interface**: `api.query.system.extrinsicCount`

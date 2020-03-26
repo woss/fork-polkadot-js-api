@@ -125,15 +125,15 @@ ___
 - **interface**: `api.consts.democracy.cooloffPeriod`
 - **summary**:   Period in blocks where an external proposal may not be re-submitted after being vetoed. 
  
-### emergencyVotingPeriod: `T::BlockNumber`
-- **interface**: `api.consts.democracy.emergencyVotingPeriod`
-- **summary**:   Minimum voting period allowed for an emergency referendum. 
- 
 ### enactmentPeriod: `T::BlockNumber`
 - **interface**: `api.consts.democracy.enactmentPeriod`
 - **summary**:   The minimum period of locking and the period between a proposal being approved and enacted. 
 
   It should generally be a little more than the unstake period to ensure that voting stakers have an opportunity to remove themselves from the system in the case where they are on the losing side of a vote. 
+ 
+### fastTrackVotingPeriod: `T::BlockNumber`
+- **interface**: `api.consts.democracy.fastTrackVotingPeriod`
+- **summary**:   Minimum voting period allowed for an emergency referendum. 
  
 ### launchPeriod: `T::BlockNumber`
 - **interface**: `api.consts.democracy.launchPeriod`

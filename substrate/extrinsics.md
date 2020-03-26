@@ -272,6 +272,8 @@ ___
 
   - One DB change.
 
+  - O(d) where d is the items in the dispatch queue.
+
   \# \</weight> 
  
 ### cancelReferendum(ref_index: `Compact<ReferendumIndex>`)
@@ -342,25 +344,29 @@ ___
 
   \# \</weight> 
  
-### delegate(to: `T::AccountId`, conviction: `Conviction`)
+### delegate(to: `T::AccountId`, conviction: `Conviction`, balance: `BalanceOf<T>`)
 - **interface**: `api.tx.democracy.delegate`
-- **summary**:   Delegate vote. 
+- **summary**:   Delegate the voting power (with some given conviction) of the sending account. 
 
-  Currency is locked indefinitely for as long as it's delegated. 
+  The balance delegated is locked for as long as it's delegated, and thereafter for the time appropriate for the conviction's lock period. 
 
-  The dispatch origin of this call must be _Signed_. 
+  The dispatch origin of this call must be _Signed_, and the signing account must either: 
 
-  - `to`: The account to make a delegate of the sender. 
+    - be delegating already; or
 
-  - `conviction`: The conviction that will be attached to the delegated  votes. 
+    - have no voting activity (if there is, then it will need to be removed/consolidated    through `reap_vote` or `unvote`). 
+
+  - `to`: The account whose voting the `target` account's voting power will follow. 
+
+  - `conviction`: The conviction that will be attached to the delegated votes. When the  account is undelegated, the funds will be locked for the corresponding period. 
+
+  - `balance`: The amount of the account's balance to be used in delegating. This must  not be more than the account's current balance. 
 
   Emits `Delegated`. 
 
   \# \<weight>
 
    
-
-  - One extra DB entry.
 
   \# \</weight> 
  
@@ -376,7 +382,7 @@ ___
 
    
 
-  - Depends on size of storage vec `VotersFor` for this referendum.
+  - `O(1)`.
 
   \# \</weight> 
  
@@ -446,7 +452,7 @@ ___
 
   - `proposal_hash`: The hash of the current external proposal. 
 
-  - `voting_period`: The period that is allowed for voting on this proposal. Increased to  `EmergencyVotingPeriod` if too low. 
+  - `voting_period`: The period that is allowed for voting on this proposal. Increased to  `FastTrackVotingPeriod` if too low. 
 
   - `delay`: The number of block after voting has ended in approval and this should be  enacted. This doesn't have a minimum amount. 
 
@@ -478,7 +484,7 @@ ___
 
    
 
-  - Dependent on the size of `encoded_proposal`.
+  - Dependent on the size of `encoded_proposal` and length of dispatch queue.
 
   \# \</weight> 
  
@@ -536,13 +542,79 @@ ___
 
    
 
-  - `O(1)`.
+  - `O(P)`
+
+  - P is the number proposals in the `PublicProps` vec.
 
   - Two DB changes, one DB entry.
 
   \# \</weight> 
  
-### proxyVote(ref_index: `Compact<ReferendumIndex>`, vote: `Vote`)
+### proxyDelegate(to: `T::AccountId`, conviction: `Conviction`, balance: `BalanceOf<T>`)
+- **interface**: `api.tx.democracy.proxyDelegate`
+- **summary**:   Delegate the voting power (with some given conviction) of a proxied account. 
+
+  The balance delegated is locked for as long as it's delegated, and thereafter for the time appropriate for the conviction's lock period. 
+
+  The dispatch origin of this call must be _Signed_, and the signing account must have been set as the proxy account for `target`. 
+
+  - `target`: The account whole voting power shall be delegated and whose balance locked.   This account must either: 
+
+    - be delegating already; or
+
+    - have no voting activity (if there is, then it will need to be removed/consolidated    through `reap_vote` or `unvote`). 
+
+  - `to`: The account whose voting the `target` account's voting power will follow.
+
+  - `conviction`: The conviction that will be attached to the delegated votes. When the  account is undelegated, the funds will be locked for the corresponding period. 
+
+  - `balance`: The amount of the account's balance to be used in delegating. This must  not be more than the account's current balance. 
+
+  Emits `Delegated`. 
+
+  \# \<weight>
+
+   
+
+  \# \</weight> 
+ 
+### proxyRemoveVote(index: `ReferendumIndex`)
+- **interface**: `api.tx.democracy.proxyRemoveVote`
+- **summary**:   Remove a proxied vote for a referendum. 
+
+  Exactly equivalent to `remove_vote` except that it operates on the account that the sender is a proxy for. 
+
+  The dispatch origin of this call must be _Signed_ and the signing account must be a proxy for some other account which has a registered vote for the referendum of `index`. 
+
+  - `index`: The index of referendum of the vote to be removed. 
+
+  \# \<weight>
+
+   
+
+  - `O(R + log R)` where R is the number of referenda that `target` has voted on.
+
+  \# \</weight> 
+ 
+### proxyUndelegate()
+- **interface**: `api.tx.democracy.proxyUndelegate`
+- **summary**:   Undelegate the voting power of a proxied account. 
+
+  Tokens may be unlocked following once an amount of time consistent with the lock period of the conviction with which the delegation was issued. 
+
+  The dispatch origin of this call must be _Signed_ and the signing account must be a proxy for some other account which is currently delegating. 
+
+  Emits `Undelegated`. 
+
+  \# \<weight>
+
+   
+
+  - O(1).
+
+  \# \</weight> 
+ 
+### proxyVote(ref_index: `Compact<ReferendumIndex>`, vote: `AccountVote<BalanceOf<T>>`)
 - **interface**: `api.tx.democracy.proxyVote`
 - **summary**:   Vote in a referendum on behalf of a stash. If `vote.is_aye()`, the vote is to enact the proposal; otherwise it is a vote to keep the status quo. 
 
@@ -582,6 +654,66 @@ ___
 
   \# \</weight> 
  
+### removeOtherVote(target: `T::AccountId`, index: `ReferendumIndex`)
+- **interface**: `api.tx.democracy.removeOtherVote`
+- **summary**:   Remove a vote for a referendum. 
+
+  If the `target` is equal to the signer, then this function is exactly equivalent to `remove_vote`. If not equal to the signer, then the vote must have expired, either because the referendum was cancelled, because the voter lost the referendum or because the conviction period is over. 
+
+  The dispatch origin of this call must be _Signed_. 
+
+  - `target`: The account of the vote to be removed; this account must have voted for   referendum `index`. 
+
+  - `index`: The index of referendum of the vote to be removed.
+
+  \# \<weight>
+
+   
+
+  - `O(R + log R)` where R is the number of referenda that `target` has voted on.
+
+  \# \</weight> 
+ 
+### removeVote(index: `ReferendumIndex`)
+- **interface**: `api.tx.democracy.removeVote`
+- **summary**:   Remove a vote for a referendum. 
+
+  If: 
+
+  - the referendum was cancelled, or
+
+  - the referendum is ongoing, or
+
+  - the referendum has ended such that
+
+    - the vote of the account was in opposition to the result; or
+
+    - there was no conviction to the account's vote; or
+
+    - the account made a split vote...then the vote is removed cleanly and a following call to `unlock` may result in more funds being available. 
+
+  If, however, the referendum has ended and: 
+
+  - it finished corresponding to the vote of the account, and
+
+  - the account made a standard vote with conviction, and
+
+  - the lock period of the conviction is not over...then the lock will be aggregated into the overall account's lock, which may involve 
+
+  *overlocking* (where the two locks are combined into a single lock that is the maximumof both the amount locked and the time is it locked for). 
+
+  The dispatch origin of this call must be _Signed_, and the signer must have a vote registered for referendum `index`. 
+
+  - `index`: The index of referendum of the vote to be removed. 
+
+  \# \<weight>
+
+   
+
+  - `O(R + log R)` where R is the number of referenda that `target` has voted on.
+
+  \# \</weight> 
+ 
 ### second(proposal: `Compact<PropIndex>`)
 - **interface**: `api.tx.democracy.second`
 - **summary**:   Signals agreement with a particular proposal. 
@@ -594,7 +726,9 @@ ___
 
    
 
-  - `O(1)`.
+  - `O(S)`.
+
+  - S is the number of seconds a proposal already has.
 
   - One DB entry.
 
@@ -602,11 +736,11 @@ ___
  
 ### undelegate()
 - **interface**: `api.tx.democracy.undelegate`
-- **summary**:   Undelegate vote. 
+- **summary**:   Undelegate the voting power of the sending account. 
 
-  Must be sent from an account that has called delegate previously. The tokens will be reduced from an indefinite lock to the maximum possible according to the conviction of the prior delegation. 
+  Tokens may be unlocked following once an amount of time consistent with the lock period of the conviction with which the delegation was issued. 
 
-  The dispatch origin of this call must be _Signed_. 
+  The dispatch origin of this call must be _Signed_ and the signing account must be currently delegating. 
 
   Emits `Undelegated`. 
 
@@ -625,8 +759,6 @@ ___
   The dispatch origin of this call must be _Signed_. 
 
   - `target`: The account to remove the lock on. 
-
-  Emits `Unlocked`. 
 
   \# \<weight>
 
@@ -656,9 +788,11 @@ ___
 
   - Performs a binary search on `existing_vetoers` which should not  be very large. 
 
+  - O(log v), v is number of `existing_vetoers`
+
   \# \</weight> 
  
-### vote(ref_index: `Compact<ReferendumIndex>`, vote: `Vote`)
+### vote(ref_index: `Compact<ReferendumIndex>`, vote: `AccountVote<BalanceOf<T>>`)
 - **interface**: `api.tx.democracy.vote`
 - **summary**:   Vote in a referendum. If `vote.is_aye()`, the vote is to enact the proposal; otherwise it is a vote to keep the status quo. 
 
@@ -672,7 +806,9 @@ ___
 
    
 
-  - `O(1)`.
+  - `O(R)`.
+
+  - R is the number of referendums the voter has voted on.
 
   - One DB change, one DB entry.
 
@@ -2314,9 +2450,6 @@ ___
 ### killStorage(keys: `Vec<Key>`)
 - **interface**: `api.tx.system.killStorage`
 - **summary**:   Kill some items from storage. 
- 
-### migrateAccounts(accounts: `Vec<T::AccountId>`)
-- **interface**: `api.tx.system.migrateAccounts`
  
 ### remark(_remark: `Vec<u8>`)
 - **interface**: `api.tx.system.remark`

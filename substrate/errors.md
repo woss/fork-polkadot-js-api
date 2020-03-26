@@ -157,6 +157,9 @@ ___
 ### AlreadyCanceled
 - **summary**:   Cannot cancel the same proposal twice 
  
+### AlreadyDelegating
+- **summary**:   The account is already delegating. 
+ 
 ### AlreadyProxy
 - **summary**:   Already a proxy 
  
@@ -172,17 +175,26 @@ ___
 ### DuplicateProposal
 - **summary**:   Proposal already made 
  
-### Early
-- **summary**:   Too early 
- 
 ### Imminent
 - **summary**:   Imminent 
+ 
+### InstantNotAllowed
+- **summary**:   The instant referendum origin is currently disallowed. 
+ 
+### InsufficientFunds
+- **summary**:   Too high a balance was provided that the account cannot afford. 
  
 ### InvalidHash
 - **summary**:   Invalid hash 
  
 ### NoneWaiting
 - **summary**:   No proposals waiting 
+ 
+### Nonsense
+- **summary**:   Delegation to oneself makes no sense. 
+ 
+### NoPermission
+- **summary**:   The actor has no permission to conduct the action. 
  
 ### NoProposal
 - **summary**:   No external proposal 
@@ -192,6 +204,9 @@ ___
  
 ### NotDelegated
 - **summary**:   Not delegated 
+ 
+### NotDelegating
+- **summary**:   The account is not currently delegating. 
  
 ### NotExpired
 - **summary**:   The lock on the account to be unlocked has not yet expired. 
@@ -211,6 +226,12 @@ ___
 ### NotSimpleMajority
 - **summary**:   Next external proposal not simple majority 
  
+### NotVoter
+- **summary**:   The given account did not vote on the referendum. 
+ 
+### Overflow
+- **summary**:   An unexpected integer overflow occurred. 
+ 
 ### PreimageInvalid
 - **summary**:   Invalid preimage 
  
@@ -226,8 +247,17 @@ ___
 ### ReferendumInvalid
 - **summary**:   Vote given for invalid referendum 
  
+### TooEarly
+- **summary**:   Too early 
+ 
+### Underflow
+- **summary**:   An unexpected integer underflow occurred. 
+ 
 ### ValueLow
 - **summary**:   Value too low 
+ 
+### VotesExist
+- **summary**:   The account currently has votes attached to it and the operation cannot succeed until these are removed, either through `unvote` or `reap_vote`. 
  
 ### WrongOpen
 - **summary**:   A proxy-pairing was attempted to an account that was open to another account. 
