@@ -567,6 +567,42 @@ ___
  
 ### NoUnlockChunk
 - **summary**:   Can not rebond without unlocking chunks. 
+ 
+### PhragmenBogusCompact
+- **summary**:   Error while building the assignment type from the compact. This can happen if an index is invalid, or if the weights _overflow_. 
+ 
+### PhragmenBogusEdge
+- **summary**:   The submitted result has unknown edges that are not among the presented winners. 
+ 
+### PhragmenBogusNomination
+- **summary**:   One of the submitted nominators has an edge to which they have not voted on chain. 
+ 
+### PhragmenBogusNominator
+- **summary**:   One of the submitted nominators is not an active nominator on chain. 
+ 
+### PhragmenBogusScore
+- **summary**:   The claimed score does not match with the one computed from the data. 
+ 
+### PhragmenBogusSelfVote
+- **summary**:   A self vote must only be originated from a validator to ONLY themselves. 
+ 
+### PhragmenBogusWinner
+- **summary**:   One of the submitted winners is not an active candidate on chain (index is out of range in snapshot). 
+ 
+### PhragmenBogusWinnerCount
+- **summary**:   Incorrect number of winners were presented. 
+ 
+### PhragmenEarlySubmission
+- **summary**:   The submitted result is received out of the open window. 
+ 
+### PhragmenSlashedNomination
+- **summary**:   One of the submitted nominators has an edge which is submitted before the last non-zero slash of the target. 
+ 
+### PhragmenWeakSubmission
+- **summary**:   The submitted result is not as good as the one stored on chain. 
+ 
+### SnapshotUnavailable
+- **summary**:   The snapshot data of the current window is missing. 
 
 ___
 

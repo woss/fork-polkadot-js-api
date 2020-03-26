@@ -286,8 +286,8 @@ ___
 
 ## offences
  
-### Offence(`Kind`, `OpaqueTimeSlot`)
-- **summary**:   There is an offence reported of the given `kind` happened at the `session_index` and (kind-specific) time slot. This event is not deposited for duplicate slashes. 
+### Offence(`Kind`, `OpaqueTimeSlot`, `bool`)
+- **summary**:   There is an offence reported of the given `kind` happened at the `session_index` and (kind-specific) time slot. This event is not deposited for duplicate slashes. last element indicates of the offence was applied (true) or queued (false). 
 
 ___
 
@@ -388,6 +388,9 @@ ___
  
 ### Slash(`AccountId`, `Balance`)
 - **summary**:   One validator (and its nominators) has been slashed by the given amount. 
+ 
+### StakingElection(`ElectionCompute`)
+- **summary**:   A new set of stakers was elected with the given computation method. 
  
 ### Unbonded(`AccountId`, `Balance`)
 - **summary**:   An account has unbonded this amount. 

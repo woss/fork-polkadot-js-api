@@ -402,6 +402,10 @@ ___
 - **interface**: `api.query.offences.concurrentReportsIndex`
 - **summary**:   A vector of reports of the same kind that happened at the same time slot. 
  
+### deferredOffences(): `Vec<DeferredOffenceOf>`
+- **interface**: `api.query.offences.deferredOffences`
+- **summary**:   Deferred reports that have been rejected by the offence handler and need to be submitted at a later time. 
+ 
 ### reports(`ReportIdOf`): `Option<OffenceDetails>`
 - **interface**: `api.query.offences.reports`
 - **summary**:   The primary structure that holds all offence records keyed by report identifiers. 
@@ -583,6 +587,10 @@ ___
 - **interface**: `api.query.staking.earliestUnappliedSlash`
 - **summary**:   The earliest era for which we have a pending, unapplied slash. 
  
+### eraElectionStatus(): `ElectionStatus`
+- **interface**: `api.query.staking.eraElectionStatus`
+- **summary**:   Flag to control the execution of the offchain election. When `Open(_)`, we accept solutions to be submitted. 
+ 
 ### erasRewardPoints(`EraIndex`): `EraRewardPoints`
 - **interface**: `api.query.staking.erasRewardPoints`
 - **summary**:   Rewards for the last `HISTORY_DEPTH` eras. If reward hasn't been set or has been removed then 0 reward is returned. 
@@ -629,7 +637,7 @@ ___
  
 ### forceEra(): `Forcing`
 - **interface**: `api.query.staking.forceEra`
-- **summary**:   True if the next session change will be a new era regardless of index. 
+- **summary**:   Mode of era forcing. 
  
 ### historyDepth(): `u32`
 - **interface**: `api.query.staking.historyDepth`
@@ -642,6 +650,10 @@ ___
 ### invulnerables(): `Vec<AccountId>`
 - **interface**: `api.query.staking.invulnerables`
 - **summary**:   Any validators that may never be slashed or forcibly kicked. It's a Vec since they're easy to initialize and the performance hit is minimal (we expect no more than four invulnerables) and restricted to testnets. 
+ 
+### isCurrentSessionFinal(): `bool`
+- **interface**: `api.query.staking.isCurrentSessionFinal`
+- **summary**:   True if the current planned session is final. 
  
 ### ledger(`AccountId`): `Option<StakingLedger>`
 - **interface**: `api.query.staking.ledger`
@@ -663,6 +675,14 @@ ___
 - **interface**: `api.query.staking.payee`
 - **summary**:   Where the reward payment should be made. Keyed by stash. 
  
+### queuedElected(): `Option<ElectionResult>`
+- **interface**: `api.query.staking.queuedElected`
+- **summary**:   The next validator set. At the end of an era, if this is available (potentially from the result of an offchain worker), it is immediately used. Otherwise, the on-chain election is executed. 
+ 
+### queuedScore(): `Option<PhragmenScore>`
+- **interface**: `api.query.staking.queuedScore`
+- **summary**:   The score of the current [`QueuedElected`]. 
+ 
 ### slashingSpans(`AccountId`): `Option<SlashingSpans>`
 - **interface**: `api.query.staking.slashingSpans`
 - **summary**:   Slashing spans for stash accounts. 
@@ -673,13 +693,21 @@ ___
 
   The rest of the slashed value is handled by the `Slash`. 
  
+### snapshotNominators(): `Option<Vec<AccountId>>`
+- **interface**: `api.query.staking.snapshotNominators`
+- **summary**:   Snapshot of nominators at the beginning of the current election window. This should only have a value when [`EraElectionStatus`] == `ElectionStatus::Open(_)`. 
+ 
+### snapshotValidators(): `Option<Vec<AccountId>>`
+- **interface**: `api.query.staking.snapshotValidators`
+- **summary**:   Snapshot of validators at the beginning of the current election window. This should only have a value when [`EraElectionStatus`] == `ElectionStatus::Open(_)`. 
+ 
 ### spanSlash(`(AccountId,SpanIndex)`): `SpanRecord`
 - **interface**: `api.query.staking.spanSlash`
 - **summary**:   Records information about the maximum slash of a stash within a slashing span, as well as how much reward has been paid out. 
  
 ### storageVersion(): `ReleasesStaking`
 - **interface**: `api.query.staking.storageVersion`
-- **summary**:   Storage version of the pallet. 
+- **summary**:   True if network has been upgraded to this version. Storage version of the pallet. 
 
   This is set to v3.0.0 for new networks. 
  
