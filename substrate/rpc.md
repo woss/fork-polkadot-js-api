@@ -270,10 +270,15 @@ ___
 - **interface**: `api.rpc.state.getStorageSize`
 - **summary**: Retrieves the storage size
  
-### queryStorage(keys: `Vec<StorageKey>`, startBlock: `Hash`, at?: `BlockHash`): `Vec<StorageChangeSet>`
+### queryStorage(keys: `Vec<StorageKey>`, fromBlock: `Hash`, toBlock?: `BlockHash`): `Vec<StorageChangeSet>`
 - **jsonrpc**: `state_queryStorage`
 - **interface**: `api.rpc.state.queryStorage`
 - **summary**: Query historical storage entries (by key) starting from a start block
+ 
+### queryStorageAt(keys: `Vec<StorageKey>`, at?: `BlockHash`): `Vec<StorageChangeSet>`
+- **jsonrpc**: `state_queryStorageAt`
+- **interface**: `api.rpc.state.queryStorageAt`
+- **summary**: Query storage entries (by key) starting at block hash given as the second parameter
  
 ### subscribeRuntimeVersion(): `RuntimeVersion`
 - **jsonrpc**: `state_subscribeRuntimeVersion`
