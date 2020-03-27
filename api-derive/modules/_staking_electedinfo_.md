@@ -14,7 +14,7 @@
 
 ▸ **electedInfo**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/electedInfo.ts:14](https://github.com/polkadot-js/api/blob/922cfb8759/packages/api-derive/src/staking/electedInfo.ts#L14)*
+*Defined in [packages/api-derive/src/staking/electedInfo.ts:14](https://github.com/polkadot-js/api/blob/bb14471e60/packages/api-derive/src/staking/electedInfo.ts#L14)*
 
 **Parameters:**
 
@@ -24,4 +24,4 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (): *Observable‹DerivedStakingElected›*
+▸ (): *Observable‹DeriveStakingElected›*
