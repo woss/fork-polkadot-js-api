@@ -52,7 +52,7 @@
 
 *Overrides [BaseWithTx](_base_util_.basewithtx.md).[constructor](_base_util_.basewithtx.md#constructor)*
 
-*Defined in [base/Contract.ts:84](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/api-contract/src/base/Contract.ts#L84)*
+*Defined in [base/Contract.ts:84](https://github.com/polkadot-js/api/blob/922cfb8759/packages/api-contract/src/base/Contract.ts#L84)*
 
 **Parameters:**
 
@@ -73,7 +73,7 @@ Name | Type |
 
 *Inherited from [Base](_base_util_.base.md).[abi](_base_util_.base.md#abi)*
 
-*Defined in [base/util.ts:14](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/api-contract/src/base/util.ts#L14)*
+*Defined in [base/util.ts:14](https://github.com/polkadot-js/api/blob/922cfb8759/packages/api-contract/src/base/util.ts#L14)*
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 • **address**: *Address*
 
-*Defined in [base/Contract.ts:34](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/api-contract/src/base/Contract.ts#L34)*
+*Defined in [base/Contract.ts:34](https://github.com/polkadot-js/api/blob/922cfb8759/packages/api-contract/src/base/Contract.ts#L34)*
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 *Inherited from [Base](_base_util_.base.md).[api](_base_util_.base.md#api)*
 
-*Defined in [base/util.ts:16](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/api-contract/src/base/util.ts#L16)*
+*Defined in [base/util.ts:16](https://github.com/polkadot-js/api/blob/922cfb8759/packages/api-contract/src/base/util.ts#L16)*
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 *Inherited from [Base](_base_util_.base.md).[decorateMethod](_base_util_.base.md#decoratemethod)*
 
-*Defined in [base/util.ts:18](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/api-contract/src/base/util.ts#L18)*
+*Defined in [base/util.ts:18](https://github.com/polkadot-js/api/blob/922cfb8759/packages/api-contract/src/base/util.ts#L18)*
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 *Inherited from [Base](_base_util_.base.md).[registry](_base_util_.base.md#registry)*
 
-*Defined in [base/util.ts:20](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/api-contract/src/base/util.ts#L20)*
+*Defined in [base/util.ts:20](https://github.com/polkadot-js/api/blob/922cfb8759/packages/api-contract/src/base/util.ts#L20)*
 
 ## Accessors
 
@@ -121,7 +121,7 @@ ___
 
 *Inherited from [BaseWithTxAndRpcCall](_base_util_.basewithtxandrpccall.md).[hasRpcContractsCall](_base_util_.basewithtxandrpccall.md#hasrpccontractscall)*
 
-*Defined in [base/util.ts:69](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/api-contract/src/base/util.ts#L69)*
+*Defined in [base/util.ts:69](https://github.com/polkadot-js/api/blob/922cfb8759/packages/api-contract/src/base/util.ts#L69)*
 
 **Returns:** *boolean*
 
@@ -133,7 +133,7 @@ ___
 
 *Inherited from [Base](_base_util_.base.md).[messages](_base_util_.base.md#messages)*
 
-*Defined in [base/util.ts:31](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/api-contract/src/base/util.ts#L31)*
+*Defined in [base/util.ts:31](https://github.com/polkadot-js/api/blob/922cfb8759/packages/api-contract/src/base/util.ts#L31)*
 
 **Returns:** *ContractMessage[]*
 
@@ -143,7 +143,7 @@ ___
 
 ▸ **call**(`as`: "rpc", `message`: string, `value`: BN | number, `gasLimit`: BN | number, ...`params`: any[]): *[ContractCall](../interfaces/_base_contract_.contractcall.md)‹ApiType, "rpc"›*
 
-*Defined in [base/Contract.ts:36](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/api-contract/src/base/Contract.ts#L36)*
+*Defined in [base/Contract.ts:36](https://github.com/polkadot-js/api/blob/922cfb8759/packages/api-contract/src/base/Contract.ts#L36)*
 
 **Parameters:**
 
@@ -159,7 +159,7 @@ Name | Type |
 
 ▸ **call**(`as`: "tx", `message`: string, `value`: BN | number, `gasLimit`: BN | number, ...`params`: any[]): *[ContractCall](../interfaces/_base_contract_.contractcall.md)‹ApiType, "tx"›*
 
-*Defined in [base/Contract.ts:37](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/api-contract/src/base/Contract.ts#L37)*
+*Defined in [base/Contract.ts:37](https://github.com/polkadot-js/api/blob/922cfb8759/packages/api-contract/src/base/Contract.ts#L37)*
 
 **Parameters:**
 
@@ -181,7 +181,7 @@ ___
 
 *Inherited from [Base](_base_util_.base.md).[getMessage](_base_util_.base.md#getmessage)*
 
-*Defined in [base/util.ts:41](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/api-contract/src/base/util.ts#L41)*
+*Defined in [base/util.ts:41](https://github.com/polkadot-js/api/blob/922cfb8759/packages/api-contract/src/base/util.ts#L41)*
 
 **Parameters:**
 
