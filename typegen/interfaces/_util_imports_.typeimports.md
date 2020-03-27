@@ -26,7 +26,7 @@
 
 • **codecTypes**: *TypeExist*
 
-*Defined in [util/imports.ts:22](https://github.com/polkadot-js/api/blob/c472a451a4/packages/typegen/src/util/imports.ts#L22)*
+*Defined in [util/imports.ts:22](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/typegen/src/util/imports.ts#L22)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **definitions**: *object*
 
-*Defined in [util/imports.ts:29](https://github.com/polkadot-js/api/blob/c472a451a4/packages/typegen/src/util/imports.ts#L29)*
+*Defined in [util/imports.ts:29](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/typegen/src/util/imports.ts#L29)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **extrinsicTypes**: *TypeExist*
 
-*Defined in [util/imports.ts:23](https://github.com/polkadot-js/api/blob/c472a451a4/packages/typegen/src/util/imports.ts#L23)*
+*Defined in [util/imports.ts:23](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/typegen/src/util/imports.ts#L23)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **genericTypes**: *TypeExist*
 
-*Defined in [util/imports.ts:24](https://github.com/polkadot-js/api/blob/c472a451a4/packages/typegen/src/util/imports.ts#L24)*
+*Defined in [util/imports.ts:24](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/typegen/src/util/imports.ts#L24)*
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 • **ignoredTypes**: *string[]*
 
-*Defined in [util/imports.ts:25](https://github.com/polkadot-js/api/blob/c472a451a4/packages/typegen/src/util/imports.ts#L25)*
+*Defined in [util/imports.ts:25](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/typegen/src/util/imports.ts#L25)*
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 • **localTypes**: *TypeExistMap*
 
-*Defined in [util/imports.ts:26](https://github.com/polkadot-js/api/blob/c472a451a4/packages/typegen/src/util/imports.ts#L26)*
+*Defined in [util/imports.ts:26](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/typegen/src/util/imports.ts#L26)*
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 • **primitiveTypes**: *TypeExist*
 
-*Defined in [util/imports.ts:27](https://github.com/polkadot-js/api/blob/c472a451a4/packages/typegen/src/util/imports.ts#L27)*
+*Defined in [util/imports.ts:27](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/typegen/src/util/imports.ts#L27)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 • **typeToModule**: *Record‹string, string›*
 
-*Defined in [util/imports.ts:30](https://github.com/polkadot-js/api/blob/c472a451a4/packages/typegen/src/util/imports.ts#L30)*
+*Defined in [util/imports.ts:30](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/typegen/src/util/imports.ts#L30)*
 
 ___
 
@@ -90,4 +90,4 @@ ___
 
 • **typesTypes**: *TypeExist*
 
-*Defined in [util/imports.ts:28](https://github.com/polkadot-js/api/blob/c472a451a4/packages/typegen/src/util/imports.ts#L28)*
+*Defined in [util/imports.ts:28](https://github.com/polkadot-js/api/blob/21a2b5f0b7/packages/typegen/src/util/imports.ts#L28)*
