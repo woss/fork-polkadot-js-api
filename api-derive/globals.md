@@ -26,6 +26,8 @@
 * ["democracy/_referendumInfo"](modules/_democracy__referenduminfo_.md)
 * ["democracy/_referendumVotes"](modules/_democracy__referendumvotes_.md)
 * ["democracy/_referendumsVotes"](modules/_democracy__referendumsvotes_.md)
+* ["democracy/dispatchQueue"](modules/_democracy_dispatchqueue_.md)
+* ["democracy/preimages"](modules/_democracy_preimages_.md)
 * ["democracy/proposals"](modules/_democracy_proposals_.md)
 * ["democracy/referendums"](modules/_democracy_referendums_.md)
 * ["democracy/referendumsActive"](modules/_democracy_referendumsactive_.md)

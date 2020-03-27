@@ -9,6 +9,7 @@
 * [calcVotes](_democracy_util_.md#calcvotes)
 * [compareRationals](_democracy_util_.md#comparerationals)
 * [getStatus](_democracy_util_.md#getstatus)
+* [parseImage](_democracy_util_.md#parseimage)
 
 ## Functions
 
@@ -16,7 +17,7 @@
 
 ▸ **calcVotes**(`sqrtElectorate`: BN, `referendum`: DeriveReferendum, `votes`: DeriveReferendumVote[]): *DeriveReferendumVotes*
 
-*Defined in [packages/api-derive/src/democracy/util.ts:117](https://github.com/polkadot-js/api/blob/bb14471e60/packages/api-derive/src/democracy/util.ts#L117)*
+*Defined in [packages/api-derive/src/democracy/util.ts:119](https://github.com/polkadot-js/api/blob/0d067c9484/packages/api-derive/src/democracy/util.ts#L119)*
 
 **Parameters:**
 
@@ -34,7 +35,7 @@ ___
 
 ▸ **compareRationals**(`n1`: BN, `d1`: BN, `n2`: BN, `d2`: BN): *boolean*
 
-*Defined in [packages/api-derive/src/democracy/util.ts:20](https://github.com/polkadot-js/api/blob/bb14471e60/packages/api-derive/src/democracy/util.ts#L20)*
+*Defined in [packages/api-derive/src/democracy/util.ts:22](https://github.com/polkadot-js/api/blob/0d067c9484/packages/api-derive/src/democracy/util.ts#L22)*
 
 **Parameters:**
 
@@ -53,7 +54,7 @@ ___
 
 ▸ **getStatus**(`info`: Option‹ReferendumInfo | ReferendumInfoTo239›): *ReferendumStatus | ReferendumInfoTo239 | null*
 
-*Defined in [packages/api-derive/src/democracy/util.ts:129](https://github.com/polkadot-js/api/blob/bb14471e60/packages/api-derive/src/democracy/util.ts#L129)*
+*Defined in [packages/api-derive/src/democracy/util.ts:131](https://github.com/polkadot-js/api/blob/0d067c9484/packages/api-derive/src/democracy/util.ts#L131)*
 
 **Parameters:**
 
@@ -62,3 +63,20 @@ Name | Type |
 `info` | Option‹ReferendumInfo &#124; ReferendumInfoTo239› |
 
 **Returns:** *ReferendumStatus | ReferendumInfoTo239 | null*
+
+___
+
+###  parseImage
+
+▸ **parseImage**(`api`: ApiInterfaceRx, `imageOpt`: Option‹ITuple‹[Bytes, AccountId, Balance, BlockNumber]››): *DeriveProposalImage | undefined*
+
+*Defined in [packages/api-derive/src/democracy/util.ts:148](https://github.com/polkadot-js/api/blob/0d067c9484/packages/api-derive/src/democracy/util.ts#L148)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`api` | ApiInterfaceRx |
+`imageOpt` | Option‹ITuple‹[Bytes, AccountId, Balance, BlockNumber]›› |
+
+**Returns:** *DeriveProposalImage | undefined*

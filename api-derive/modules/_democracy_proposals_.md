@@ -4,21 +4,9 @@
 
 ## Index
 
-### Type aliases
-
-* [PreImage](_democracy_proposals_.md#preimage)
-
 ### Functions
 
 * [proposals](_democracy_proposals_.md#proposals)
-
-## Type aliases
-
-###  PreImage
-
-Ƭ **PreImage**: *Option‹ITuple‹[Bytes, AccountId, Balance, BlockNumber]››*
-
-*Defined in [packages/api-derive/src/democracy/proposals.ts:16](https://github.com/polkadot-js/api/blob/bb14471e60/packages/api-derive/src/democracy/proposals.ts#L16)*
 
 ## Functions
 
@@ -26,7 +14,7 @@
 
 ▸ **proposals**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/democracy/proposals.ts:64](https://github.com/polkadot-js/api/blob/bb14471e60/packages/api-derive/src/democracy/proposals.ts#L64)*
+*Defined in [packages/api-derive/src/democracy/proposals.ts:38](https://github.com/polkadot-js/api/blob/0d067c9484/packages/api-derive/src/democracy/proposals.ts#L38)*
 
 **Parameters:**
 
