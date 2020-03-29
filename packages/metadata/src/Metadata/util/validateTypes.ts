@@ -9,7 +9,7 @@ import { getTypeDef } from '@polkadot/types/create';
 import flattenUniq from './flattenUniq';
 
 /** @internal */
-function extractTypes (types: string[]): any[] {
+export function extractTypes (types: string[]): any[] {
   return types.map((type): any => {
     const decoded = getTypeDef(type);
 

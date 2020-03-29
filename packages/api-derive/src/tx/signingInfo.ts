@@ -19,8 +19,9 @@ interface Result {
 
 // default here to 5 min eras, adjusted based on the actual blocktime
 const FALLBACK_PERIOD = new BN(6 * 1000);
-const MAX_FINALITY_LAG = new BN(5);
+const MAX_FINALITY_LAG = new BN(6);
 const MORTAL_PERIOD = new BN(5 * 60 * 1000);
+const ZERO = new BN(0);
 
 function latestNonce (api: ApiInterfaceRx, address: string): Observable<Index> {
   return api.derive.balances.account(address).pipe(
@@ -28,19 +29,21 @@ function latestNonce (api: ApiInterfaceRx, address: string): Observable<Index> {
   );
 }
 
-function signingHeader (api: ApiInterfaceRx): Observable<Header> {
+function signingHeader (api: ApiInterfaceRx): Observable<[Header, BN]> {
   return combineLatest([
     api.rpc.chain.getHeader(),
     api.rpc.chain.getFinalizedHead().pipe(
       switchMap((hash) => api.rpc.chain.getHeader(hash))
     )
   ]).pipe(
-    map(([current, finalized]): Header =>
+    map(([current, finalized]): [Header, BN] => {
+      const lag = current.number.unwrap().sub(finalized.number.unwrap());
+
       // determine the hash to use, current when lag > max, else finalized
-      current.number.unwrap().sub(finalized.number.unwrap()).gt(MAX_FINALITY_LAG)
-        ? current
-        : finalized
-    )
+      return lag.gt(MAX_FINALITY_LAG)
+        ? [current, ZERO]
+        : [finalized, lag];
+    })
   );
 }
 
@@ -55,14 +58,14 @@ export function signingInfo (api: ApiInterfaceRx): (address: string, nonce?: Any
       // if no era (create) or era > 0 (mortal), do block retrieval
       (isUndefined(era) || (isNumber(era) && era > 0))
         ? signingHeader(api)
-        : of(null)
+        : of([null, ZERO] as [null, BN])
     ]).pipe(
-      map(([nonce, header]) => ({
+      map(([nonce, [header, lag]]) => ({
         header,
         nonce,
         mortalLength: MORTAL_PERIOD
           .div(api.consts.babe?.expectedBlockTime || api.consts.timestamp?.minimumPeriod.muln(2) || FALLBACK_PERIOD)
-          .add(MAX_FINALITY_LAG)
+          .add(lag)
           .toNumber()
       }))
     );
