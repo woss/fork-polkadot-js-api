@@ -85,6 +85,7 @@
 * ["interfaces/babe/definitions"](modules/_interfaces_babe_definitions_.md)
 * ["interfaces/balances/definitions"](modules/_interfaces_balances_definitions_.md)
 * ["interfaces/chain/definitions"](modules/_interfaces_chain_definitions_.md)
+* ["interfaces/childstate/definitions"](modules/_interfaces_childstate_definitions_.md)
 * ["interfaces/claims/definitions"](modules/_interfaces_claims_definitions_.md)
 * ["interfaces/collective/definitions"](modules/_interfaces_collective_definitions_.md)
 * ["interfaces/consensus/definitions"](modules/_interfaces_consensus_definitions_.md)

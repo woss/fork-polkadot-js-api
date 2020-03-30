@@ -14,6 +14,7 @@
 * [babe](_interfaces_definitions_.md#babe)
 * [balances](_interfaces_definitions_.md#balances)
 * [chain](_interfaces_definitions_.md#chain)
+* [childstate](_interfaces_definitions_.md#childstate)
 * [claims](_interfaces_definitions_.md#claims)
 * [collective](_interfaces_definitions_.md#collective)
 * [consensus](_interfaces_definitions_.md#consensus)
@@ -92,6 +93,12 @@ ___
 ###  chain
 
 • **chain**:
+
+___
+
+###  childstate
+
+• **childstate**:
 
 ___
 

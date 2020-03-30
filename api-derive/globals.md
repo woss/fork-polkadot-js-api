@@ -23,6 +23,8 @@
 * ["collective/proposals"](modules/_collective_proposals_.md)
 * ["contracts/fees"](modules/_contracts_fees_.md)
 * ["council/proposals"](modules/_council_proposals_.md)
+* ["council/votes"](modules/_council_votes_.md)
+* ["council/votesOf"](modules/_council_votesof_.md)
 * ["democracy/_referendumInfo"](modules/_democracy__referenduminfo_.md)
 * ["democracy/_referendumVotes"](modules/_democracy__referendumvotes_.md)
 * ["democracy/_referendumsVotes"](modules/_democracy__referendumsvotes_.md)

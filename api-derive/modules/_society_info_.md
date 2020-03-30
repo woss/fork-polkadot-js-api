@@ -14,7 +14,7 @@
 
 ▸ **info**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/society/info.ts:20](https://github.com/polkadot-js/api/blob/7b8b4e8078/packages/api-derive/src/society/info.ts#L20)*
+*Defined in [packages/api-derive/src/society/info.ts:20](https://github.com/polkadot-js/api/blob/6aa0d90fc0/packages/api-derive/src/society/info.ts#L20)*
 
 **`description`** Get the overall info for a society
 

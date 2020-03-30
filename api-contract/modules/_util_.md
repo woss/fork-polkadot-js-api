@@ -14,7 +14,7 @@
 
 ▸ **formatData**(`registry`: Registry, `data`: Raw, `__namedParameters`: object): *Codec*
 
-*Defined in [util.ts:9](https://github.com/polkadot-js/api/blob/7b8b4e8078/packages/api-contract/src/util.ts#L9)*
+*Defined in [util.ts:9](https://github.com/polkadot-js/api/blob/6aa0d90fc0/packages/api-contract/src/util.ts#L9)*
 
 **Parameters:**
 

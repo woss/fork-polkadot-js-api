@@ -10,6 +10,8 @@ The following sections contain RPC methods that are Remote Calls available by de
 
 - **[chain](#chain)**
 
+- **[childstate](#childstate)**
+
 - **[contracts](#contracts)**
 
 - **[engine](#engine)**
@@ -129,6 +131,31 @@ ___
 - **jsonrpc**: `chain_subscribeNewHeads`
 - **interface**: `api.rpc.chain.subscribeNewHeads`
 - **summary**: Retrieves the best header via subscription
+
+___
+
+
+## childstate
+ 
+### getKeys(childKey: `PrefixedStorageKey`, prefix: `StorageKey`, at?: `Hash`): `Vec<StorageKey>`
+- **jsonrpc**: `childstate_getKeys`
+- **interface**: `api.rpc.childstate.getKeys`
+- **summary**: Returns the keys with prefix from a child storage, leave empty to get all the keys
+ 
+### getStorage(childKey: `PrefixedStorageKey`, key: `StorageKey`, at?: `Hash`): `Option<StorageData>`
+- **jsonrpc**: `childstate_getStorage`
+- **interface**: `api.rpc.childstate.getStorage`
+- **summary**: Returns a child storage entry at a specific block state
+ 
+### getStorageHash(childKey: `PrefixedStorageKey`, key: `StorageKey`, at?: `Hash`): `Option<Hash>`
+- **jsonrpc**: `childstate_getStorageHash`
+- **interface**: `api.rpc.childstate.getStorageHash`
+- **summary**: Returns the hash of a child storage entry at a block state
+ 
+### getStorageSize(childKey: `PrefixedStorageKey`, key: `StorageKey`, at?: `Hash`): `Option<u64>`
+- **jsonrpc**: `childstate_getStorageSize`
+- **interface**: `api.rpc.childstate.getStorageSize`
+- **summary**: Returns the size of a child storage entry at a block state
 
 ___
 

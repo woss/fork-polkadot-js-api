@@ -14,7 +14,7 @@
 
 ▸ **createClass**<**ApiType**>(`__namedParameters`: object): *Constructor‹SubmittableExtrinsic‹ApiType››*
 
-*Defined in [api/src/submittable/createClass.ts:25](https://github.com/polkadot-js/api/blob/7b8b4e8078/packages/api/src/submittable/createClass.ts#L25)*
+*Defined in [api/src/submittable/createClass.ts:25](https://github.com/polkadot-js/api/blob/6aa0d90fc0/packages/api/src/submittable/createClass.ts#L25)*
 
 **Type parameters:**
 
