@@ -46,6 +46,7 @@
 * ["session/eraProgress"](modules/_session_eraprogress_.md)
 * ["session/indexes"](modules/_session_indexes_.md)
 * ["session/info"](modules/_session_info_.md)
+* ["session/progress"](modules/_session_progress_.md)
 * ["session/sessionProgress"](modules/_session_sessionprogress_.md)
 * ["society/candidates"](modules/_society_candidates_.md)
 * ["society/info"](modules/_society_info_.md)
