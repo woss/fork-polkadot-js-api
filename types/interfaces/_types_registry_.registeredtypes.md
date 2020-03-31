@@ -21,7 +21,7 @@
 
 • **types**? : *[RegistryTypes](../modules/_types_registry_.md#registrytypes)*
 
-*Defined in [packages/types/src/types/registry.ts:89](https://github.com/polkadot-js/api/blob/0bdbf4b7a7/packages/types/src/types/registry.ts#L89)*
+*Defined in [packages/types/src/types/registry.ts:95](https://github.com/polkadot-js/api/blob/39c44bb5aa/packages/types/src/types/registry.ts#L95)*
 
 **`description`** Additional types used by runtime modules. This is necessary if the runtime modules
 uses types not available in the base Substrate runtime.
@@ -30,9 +30,9 @@ ___
 
 ### `Optional` typesAlias
 
-• **typesAlias**? : *Record‹string, OverrideModuleType›*
+• **typesAlias**? : *Record‹string, [OverrideModuleType](../modules/_types_registry_.md#overridemoduletype)›*
 
-*Defined in [packages/types/src/types/registry.ts:93](https://github.com/polkadot-js/api/blob/0bdbf4b7a7/packages/types/src/types/registry.ts#L93)*
+*Defined in [packages/types/src/types/registry.ts:99](https://github.com/polkadot-js/api/blob/39c44bb5aa/packages/types/src/types/registry.ts#L99)*
 
 **`description`** Alias an types, as received via the metadata, to a JS-specific type to avoid conflicts. For instance, you can rename the `Proposal` in the `treasury` module to `TreasuryProposal` as to not have conflicts with the one for democracy.
 
@@ -42,7 +42,7 @@ ___
 
 • **typesChain**? : *Record‹string, [RegistryTypes](../modules/_types_registry_.md#registrytypes)›*
 
-*Defined in [packages/types/src/types/registry.ts:97](https://github.com/polkadot-js/api/blob/0bdbf4b7a7/packages/types/src/types/registry.ts#L97)*
+*Defined in [packages/types/src/types/registry.ts:103](https://github.com/polkadot-js/api/blob/39c44bb5aa/packages/types/src/types/registry.ts#L103)*
 
 **`description`** Additional types that are injected based on the chain we are connecting to. There are keyed by the chain, i.e. `{ 'Kusama CC1': { ... } }`
 
@@ -52,6 +52,6 @@ ___
 
 • **typesSpec**? : *Record‹string, [RegistryTypes](../modules/_types_registry_.md#registrytypes)›*
 
-*Defined in [packages/types/src/types/registry.ts:101](https://github.com/polkadot-js/api/blob/0bdbf4b7a7/packages/types/src/types/registry.ts#L101)*
+*Defined in [packages/types/src/types/registry.ts:107](https://github.com/polkadot-js/api/blob/39c44bb5aa/packages/types/src/types/registry.ts#L107)*
 
 **`description`** Additional types that are injected based on the type of node we are connecting to, as set via specName in the runtime version. There are keyed by the node, i.e. `{ 'edgeware': { ... } }`
