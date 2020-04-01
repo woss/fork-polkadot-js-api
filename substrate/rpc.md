@@ -33,8 +33,8 @@ ___
 ## account
  
 ### nextIndex(accountId: `AccountId`): `Index`
-- **jsonrpc**: `account_nextIndex`
 - **interface**: `api.rpc.account.nextIndex`
+- **jsonrpc**: `account_nextIndex`
 - **summary**: Retrieves the next accountIndex as available on the node
 
 ___
@@ -43,43 +43,43 @@ ___
 ## author
  
 ### hasKey(publicKey: `Bytes`, keyType: `Text`): `bool`
-- **jsonrpc**: `author_hasKey`
 - **interface**: `api.rpc.author.hasKey`
+- **jsonrpc**: `author_hasKey`
 - **summary**: Returns true if the keystore has private keys for the given public key and key type.
  
 ### hasSessionKeys(sessionKeys: `Bytes`): `bool`
-- **jsonrpc**: `author_hasSessionKeys`
 - **interface**: `api.rpc.author.hasSessionKeys`
+- **jsonrpc**: `author_hasSessionKeys`
 - **summary**: Returns true if the keystore has private keys for the given session public keys.
  
 ### insertKey(keyType: `Text`, suri: `Text`, publicKey: `Bytes`): `Bytes`
-- **jsonrpc**: `author_insertKey`
 - **interface**: `api.rpc.author.insertKey`
+- **jsonrpc**: `author_insertKey`
 - **summary**: Insert a key into the keystore.
  
 ### pendingExtrinsics(): `Vec<Extrinsic>`
-- **jsonrpc**: `author_pendingExtrinsics`
 - **interface**: `api.rpc.author.pendingExtrinsics`
+- **jsonrpc**: `author_pendingExtrinsics`
 - **summary**: Returns all pending extrinsics, potentially grouped by sender
  
 ### removeExtrinsic(bytesOrHash: `Vec<ExtrinsicOrHash>`): `Vec<Hash>`
-- **jsonrpc**: `author_removeExtrinsic`
 - **interface**: `api.rpc.author.removeExtrinsic`
+- **jsonrpc**: `author_removeExtrinsic`
 - **summary**: Remove given extrinsic from the pool and temporarily ban it to prevent reimporting
  
 ### rotateKeys(): `Bytes`
-- **jsonrpc**: `author_rotateKeys`
 - **interface**: `api.rpc.author.rotateKeys`
+- **jsonrpc**: `author_rotateKeys`
 - **summary**: Generate new session keys and returns the corresponding public keys
  
 ### submitAndWatchExtrinsic(extrinsic: `Extrinsic`): `ExtrinsicStatus`
-- **jsonrpc**: `author_submitAndWatchExtrinsic`
 - **interface**: `api.rpc.author.submitAndWatchExtrinsic`
+- **jsonrpc**: `author_submitAndWatchExtrinsic`
 - **summary**: Submit and subscribe to watch an extrinsic until unsubscribed
  
 ### submitExtrinsic(extrinsic: `Extrinsic`): `Hash`
-- **jsonrpc**: `author_submitExtrinsic`
 - **interface**: `api.rpc.author.submitExtrinsic`
+- **jsonrpc**: `author_submitExtrinsic`
 - **summary**: Submit a fully formatted extrinsic for block inclusion
 
 ___
@@ -88,8 +88,8 @@ ___
 ## babe
  
 ### epochAuthorship(): `HashMap<AuthorityId, EpochAuthorship>`
-- **jsonrpc**: `babe_epochAuthorship`
 - **interface**: `api.rpc.babe.epochAuthorship`
+- **jsonrpc**: `babe_epochAuthorship`
 - **summary**: Returns data about which slots (primary or secondary) can be claimed in the current epoch with the keys in the keystore
 
 ___
@@ -98,38 +98,38 @@ ___
 ## chain
  
 ### getBlock(hash?: `BlockHash`): `SignedBlock`
-- **jsonrpc**: `chain_getBlock`
 - **interface**: `api.rpc.chain.getBlock`
+- **jsonrpc**: `chain_getBlock`
 - **summary**: Get header and body of a relay chain block
  
 ### getBlockHash(blockNumber?: `BlockNumber`): `BlockHash`
-- **jsonrpc**: `chain_getBlockHash`
 - **interface**: `api.rpc.chain.getBlockHash`
+- **jsonrpc**: `chain_getBlockHash`
 - **summary**: Get the block hash for a specific block
  
 ### getFinalizedHead(): `BlockHash`
-- **jsonrpc**: `chain_getFinalizedHead`
 - **interface**: `api.rpc.chain.getFinalizedHead`
+- **jsonrpc**: `chain_getFinalizedHead`
 - **summary**: Get hash of the last finalized block in the canon chain
  
 ### getHeader(hash?: `BlockHash`): `Header`
-- **jsonrpc**: `chain_getHeader`
 - **interface**: `api.rpc.chain.getHeader`
+- **jsonrpc**: `chain_getHeader`
 - **summary**: Retrieves the header for a specific block
  
 ### subscribeAllHeads(): `Header`
-- **jsonrpc**: `chain_subscribeAllHeads`
 - **interface**: `api.rpc.chain.subscribeAllHeads`
+- **jsonrpc**: `chain_subscribeAllHeads`
 - **summary**: Retrieves the newest header via subscription
  
 ### subscribeFinalizedHeads(): `Header`
-- **jsonrpc**: `chain_subscribeFinalizedHeads`
 - **interface**: `api.rpc.chain.subscribeFinalizedHeads`
+- **jsonrpc**: `chain_subscribeFinalizedHeads`
 - **summary**: Retrieves the best finalized header via subscription
  
 ### subscribeNewHeads(): `Header`
-- **jsonrpc**: `chain_subscribeNewHeads`
 - **interface**: `api.rpc.chain.subscribeNewHeads`
+- **jsonrpc**: `chain_subscribeNewHeads`
 - **summary**: Retrieves the best header via subscription
 
 ___
@@ -138,23 +138,23 @@ ___
 ## childstate
  
 ### getKeys(childKey: `PrefixedStorageKey`, prefix: `StorageKey`, at?: `Hash`): `Vec<StorageKey>`
-- **jsonrpc**: `childstate_getKeys`
 - **interface**: `api.rpc.childstate.getKeys`
+- **jsonrpc**: `childstate_getKeys`
 - **summary**: Returns the keys with prefix from a child storage, leave empty to get all the keys
  
 ### getStorage(childKey: `PrefixedStorageKey`, key: `StorageKey`, at?: `Hash`): `Option<StorageData>`
-- **jsonrpc**: `childstate_getStorage`
 - **interface**: `api.rpc.childstate.getStorage`
+- **jsonrpc**: `childstate_getStorage`
 - **summary**: Returns a child storage entry at a specific block state
  
 ### getStorageHash(childKey: `PrefixedStorageKey`, key: `StorageKey`, at?: `Hash`): `Option<Hash>`
-- **jsonrpc**: `childstate_getStorageHash`
 - **interface**: `api.rpc.childstate.getStorageHash`
+- **jsonrpc**: `childstate_getStorageHash`
 - **summary**: Returns the hash of a child storage entry at a block state
  
 ### getStorageSize(childKey: `PrefixedStorageKey`, key: `StorageKey`, at?: `Hash`): `Option<u64>`
-- **jsonrpc**: `childstate_getStorageSize`
 - **interface**: `api.rpc.childstate.getStorageSize`
+- **jsonrpc**: `childstate_getStorageSize`
 - **summary**: Returns the size of a child storage entry at a block state
 
 ___
@@ -163,18 +163,18 @@ ___
 ## contracts
  
 ### call(callRequest: `ContractCallRequest`, at?: `BlockHash`): `ContractExecResult`
-- **jsonrpc**: `contracts_call`
 - **interface**: `api.rpc.contracts.call`
+- **jsonrpc**: `contracts_call`
 - **summary**: Executes a call to a contract
  
 ### getStorage(address: `AccountId`, key: `H256`, at?: `BlockHash`): `Option<Bytes>`
-- **jsonrpc**: `contracts_getStorage`
 - **interface**: `api.rpc.contracts.getStorage`
+- **jsonrpc**: `contracts_getStorage`
 - **summary**: Returns the value under a specified storage key in a contract
  
 ### rentProjection(address: `AccountId`, at?: `BlockHash`): `Option<BlockNumber>`
-- **jsonrpc**: `contracts_rentProjection`
 - **interface**: `api.rpc.contracts.rentProjection`
+- **jsonrpc**: `contracts_rentProjection`
 - **summary**: Returns the projected time a given contract will be able to sustain paying its rent
 
 ___
@@ -183,13 +183,13 @@ ___
 ## engine
  
 ### createBlock(createEmpty: `bool`, finalize: `bool`, parentHash?: `BlockHash`): `CreatedBlock`
-- **jsonrpc**: `engine_createBlock`
 - **interface**: `api.rpc.engine.createBlock`
+- **jsonrpc**: `engine_createBlock`
 - **summary**: Instructs the manual-seal authorship task to create a new block
  
 ### finalizeBlock(hash: `BlockHash`, justification?: `Justification`): `bool`
-- **jsonrpc**: `engine_finalizeBlock`
 - **interface**: `api.rpc.engine.finalizeBlock`
+- **jsonrpc**: `engine_finalizeBlock`
 - **summary**: Instructs the manual-seal authorship task to finalize a block
 
 ___
@@ -198,13 +198,13 @@ ___
 ## offchain
  
 ### localStorageGet(kind: `StorageKind`, key: `Bytes`): `Option<Bytes>`
-- **jsonrpc**: `offchain_localStorageGet`
 - **interface**: `api.rpc.offchain.localStorageGet`
+- **jsonrpc**: `offchain_localStorageGet`
 - **summary**: Get offchain local storage under given key and prefix
  
 ### localStorageSet(kind: `StorageKind`, key: `Bytes`, value: `Bytes`): `Null`
-- **jsonrpc**: `offchain_localStorageSet`
 - **interface**: `api.rpc.offchain.localStorageSet`
+- **jsonrpc**: `offchain_localStorageSet`
 - **summary**: Set offchain local storage under given key and prefix
 
 ___
@@ -213,8 +213,8 @@ ___
 ## payment
  
 ### queryInfo(extrinsic: `Bytes`, at?: `BlockHash`): `RuntimeDispatchInfo`
-- **jsonrpc**: `payment_queryInfo`
 - **interface**: `api.rpc.payment.queryInfo`
+- **jsonrpc**: `payment_queryInfo`
 - **summary**: Retrieves the fee information for an encoded extrinsic
 
 ___
@@ -223,8 +223,8 @@ ___
 ## rpc
  
 ### methods(): `RpcMethods`
-- **jsonrpc**: `rpc_methods`
 - **interface**: `api.rpc.rpc.methods`
+- **jsonrpc**: `rpc_methods`
 - **summary**: Retrieves the list of RPC methods that are exposed by the node
 
 ___
@@ -233,88 +233,88 @@ ___
 ## state
  
 ### call(method: `Text`, data: `Bytes`, at?: `BlockHash`): `Bytes`
-- **jsonrpc**: `state_call`
 - **interface**: `api.rpc.state.call`
+- **jsonrpc**: `state_call`
 - **summary**: Perform a call to a builtin on the chain
  
 ### getChildKeys(childStorageKey: `StorageKey`, childDefinition: `StorageKey`, childType: `u32`, key: `StorageKey`, at?: `BlockHash`): `Vec<StorageKey>`
-- **jsonrpc**: `state_getChildKeys`
 - **interface**: `api.rpc.state.getChildKeys`
+- **jsonrpc**: `state_getChildKeys`
 - **summary**: Retrieves the keys with prefix of a specific child storage
  
 ### getChildStorage(childStorageKey: `StorageKey`, childDefinition: `StorageKey`, childType: `u32`, key: `StorageKey`, at?: `BlockHash`): `StorageData`
-- **jsonrpc**: `state_getChildStorage`
 - **interface**: `api.rpc.state.getChildStorage`
+- **jsonrpc**: `state_getChildStorage`
 - **summary**: Retrieves the child storage for a key
  
 ### getChildStorageHash(childStorageKey: `StorageKey`, childDefinition: `StorageKey`, childType: `u32`, key: `StorageKey`, at?: `BlockHash`): `Hash`
-- **jsonrpc**: `state_getChildStorageHash`
 - **interface**: `api.rpc.state.getChildStorageHash`
+- **jsonrpc**: `state_getChildStorageHash`
 - **summary**: Retrieves the child storage hash
  
 ### getChildStorageSize(childStorageKey: `StorageKey`, childDefinition: `StorageKey`, childType: `u32`, key: `StorageKey`, at?: `BlockHash`): `u64`
-- **jsonrpc**: `state_getChildStorageSize`
 - **interface**: `api.rpc.state.getChildStorageSize`
+- **jsonrpc**: `state_getChildStorageSize`
 - **summary**: Retrieves the child storage size
  
 ### getKeys(key: `StorageKey`, at?: `BlockHash`): `Vec<StorageKey>`
-- **jsonrpc**: `state_getKeys`
 - **interface**: `api.rpc.state.getKeys`
+- **jsonrpc**: `state_getKeys`
 - **summary**: Retrieves the keys with a certain prefix
  
 ### getKeysPaged(key: `StorageKey`, count: `u32`, startKey?: `StorageKey`, at?: `BlockHash`): `Vec<StorageKey>`
-- **jsonrpc**: `state_getKeysPaged`
 - **interface**: `api.rpc.state.getKeysPaged`
+- **jsonrpc**: `state_getKeysPaged`
 - **summary**: Returns the keys with prefix with pagination support.
  
 ### getMetadata(at?: `BlockHash`): `Metadata`
-- **jsonrpc**: `state_getMetadata`
 - **interface**: `api.rpc.state.getMetadata`
+- **jsonrpc**: `state_getMetadata`
 - **summary**: Returns the runtime metadata
  
 ### getPairs(prefix: `StorageKey`, at?: `BlockHash`): `Vec<KeyValue>`
-- **jsonrpc**: `state_getPairs`
 - **interface**: `api.rpc.state.getPairs`
+- **jsonrpc**: `state_getPairs`
 - **summary**: Returns the keys with prefix, leave empty to get all the keys
  
 ### getRuntimeVersion(at?: `BlockHash`): `RuntimeVersion`
-- **jsonrpc**: `state_getRuntimeVersion`
 - **interface**: `api.rpc.state.getRuntimeVersion`
+- **jsonrpc**: `state_getRuntimeVersion`
 - **summary**: Get the runtime version
  
 ### getStorage(key: `StorageKey`, at?: `BlockHash`): `StorageData`
-- **jsonrpc**: `state_getStorage`
 - **interface**: `api.rpc.state.getStorage`
+- **jsonrpc**: `state_getStorage`
 - **summary**: Retrieves the storage for a key
  
 ### getStorageHash(key: `StorageKey`, at?: `BlockHash`): `Hash`
-- **jsonrpc**: `state_getStorageHash`
 - **interface**: `api.rpc.state.getStorageHash`
+- **jsonrpc**: `state_getStorageHash`
 - **summary**: Retrieves the storage hash
  
 ### getStorageSize(key: `StorageKey`, at?: `BlockHash`): `u64`
-- **jsonrpc**: `state_getStorageSize`
 - **interface**: `api.rpc.state.getStorageSize`
+- **jsonrpc**: `state_getStorageSize`
 - **summary**: Retrieves the storage size
  
 ### queryStorage(keys: `Vec<StorageKey>`, fromBlock: `Hash`, toBlock?: `BlockHash`): `Vec<StorageChangeSet>`
-- **jsonrpc**: `state_queryStorage`
 - **interface**: `api.rpc.state.queryStorage`
+- **jsonrpc**: `state_queryStorage`
 - **summary**: Query historical storage entries (by key) starting from a start block
  
 ### queryStorageAt(keys: `Vec<StorageKey>`, at?: `BlockHash`): `Vec<StorageChangeSet>`
-- **jsonrpc**: `state_queryStorageAt`
 - **interface**: `api.rpc.state.queryStorageAt`
+- **jsonrpc**: `state_queryStorageAt`
 - **summary**: Query storage entries (by key) starting at block hash given as the second parameter
  
 ### subscribeRuntimeVersion(): `RuntimeVersion`
-- **jsonrpc**: `state_subscribeRuntimeVersion`
 - **interface**: `api.rpc.state.subscribeRuntimeVersion`
+- **jsonrpc**: `state_subscribeRuntimeVersion`
 - **summary**: Retrieves the runtime version via subscription
  
 ### subscribeStorage(keys: `Vec<StorageKey>`): `StorageChangeSet`
-- **jsonrpc**: `state_subscribeStorage`
 - **interface**: `api.rpc.state.subscribeStorage`
+- **jsonrpc**: `state_subscribeStorage`
 - **summary**: Subscribes to storage changes for the provided keys
 
 ___
@@ -323,51 +323,51 @@ ___
 ## system
  
 ### addReservedPeer(peer: `Text`): `Text`
-- **jsonrpc**: `system_addReservedPeer`
 - **interface**: `api.rpc.system.addReservedPeer`
+- **jsonrpc**: `system_addReservedPeer`
 - **summary**: Adds a reserved peer
  
 ### chain(): `Text`
-- **jsonrpc**: `system_chain`
 - **interface**: `api.rpc.system.chain`
+- **jsonrpc**: `system_chain`
 - **summary**: Retrieves the chain
  
 ### health(): `Health`
-- **jsonrpc**: `system_health`
 - **interface**: `api.rpc.system.health`
+- **jsonrpc**: `system_health`
 - **summary**: Return health status of the node
  
 ### name(): `Text`
-- **jsonrpc**: `system_name`
 - **interface**: `api.rpc.system.name`
+- **jsonrpc**: `system_name`
 - **summary**: Retrieves the node name
  
 ### networkState(): `NetworkState`
-- **jsonrpc**: `system_networkState`
 - **interface**: `api.rpc.system.networkState`
+- **jsonrpc**: `system_networkState`
 - **summary**: Returns current state of the network
  
 ### nodeRoles(): `Vec<NodeRole>`
-- **jsonrpc**: `system_nodeRoles`
 - **interface**: `api.rpc.system.nodeRoles`
+- **jsonrpc**: `system_nodeRoles`
 - **summary**: Returns the roles the node is running as
  
 ### peers(): `Vec<PeerInfo>`
-- **jsonrpc**: `system_peers`
 - **interface**: `api.rpc.system.peers`
+- **jsonrpc**: `system_peers`
 - **summary**: Returns the currently connected peers
  
 ### properties(): `ChainProperties`
-- **jsonrpc**: `system_properties`
 - **interface**: `api.rpc.system.properties`
+- **jsonrpc**: `system_properties`
 - **summary**: Get a custom set of properties as a JSON object, defined in the chain spec
  
 ### removeReservedPeer(peerId: `Text`): `Text`
-- **jsonrpc**: `system_removeReservedPeer`
 - **interface**: `api.rpc.system.removeReservedPeer`
+- **jsonrpc**: `system_removeReservedPeer`
 - **summary**: Remove a reserved peer
  
 ### version(): `Text`
-- **jsonrpc**: `system_version`
 - **interface**: `api.rpc.system.version`
+- **jsonrpc**: `system_version`
 - **summary**: Retrieves the version of the node
