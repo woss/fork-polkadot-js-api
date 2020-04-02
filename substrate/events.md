@@ -26,6 +26,8 @@ Events are emitted for certain operations on the runtime. The following sections
 
 - **[recovery](#recovery)**
 
+- **[scheduler](#scheduler)**
+
 - **[session](#session)**
 
 - **[society](#society)**
@@ -311,6 +313,15 @@ ___
  
 ### RecoveryVouched(`AccountId`, `AccountId`, `AccountId`)
 - **summary**:   A recovery process for account_1 by account_2 has been vouched for by account_3 
+
+___
+
+
+## scheduler
+ 
+### Dispatched(`TaskAddress<BlockNumber>`, `Option<Vec<u8>>`, `DispatchResult`)
+ 
+### Scheduled(`BlockNumber`)
 
 ___
 

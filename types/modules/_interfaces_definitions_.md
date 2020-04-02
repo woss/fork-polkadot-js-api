@@ -36,6 +36,7 @@
 * [recovery](_interfaces_definitions_.md#recovery)
 * [rpc](_interfaces_definitions_.md#rpc)
 * [runtime](_interfaces_definitions_.md#runtime)
+* [scheduler](_interfaces_definitions_.md#scheduler)
 * [session](_interfaces_definitions_.md#session)
 * [society](_interfaces_definitions_.md#society)
 * [staking](_interfaces_definitions_.md#staking)
@@ -225,6 +226,12 @@ ___
 ###  runtime
 
 • **runtime**:
+
+___
+
+###  scheduler
+
+• **scheduler**:
 
 ___
 

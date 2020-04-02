@@ -14,4 +14,4 @@
 
 • **MAX_FINALITY_LAG**: *BN‹›* = new BN(5)
 
-*Defined in [packages/api-derive/src/tx/constants.ts:7](https://github.com/polkadot-js/api/blob/8213fa7cb9/packages/api-derive/src/tx/constants.ts#L7)*
+*Defined in [packages/api-derive/src/tx/constants.ts:7](https://github.com/polkadot-js/api/blob/69351ceb9e/packages/api-derive/src/tx/constants.ts#L7)*

@@ -32,6 +32,8 @@ The following sections contain Storage methods are part of the default Substrate
 
 - **[recovery](#recovery)**
 
+- **[scheduler](#scheduler)**
+
 - **[session](#session)**
 
 - **[society](#society)**
@@ -230,10 +232,6 @@ ___
 - **interface**: `api.query.democracy.depositOf`
 - **summary**:   Those who have locked a deposit. 
  
-### dispatchQueue(): `Vec<(BlockNumber,Hash,ReferendumIndex)>`
-- **interface**: `api.query.democracy.dispatchQueue`
-- **summary**:   Queue of successful referenda to be dispatched. Stored ordered by block number. 
- 
 ### lastTabledWasExternal(): `bool`
 - **interface**: `api.query.democracy.lastTabledWasExternal`
 - **summary**:   True if the last referendum tabled was submitted externally. False if it was a public proposal. 
@@ -254,7 +252,7 @@ ___
 
   - `PublicProps` is empty.
  
-### preimages(`Hash`): `Option<(Bytes,AccountId,BalanceOf,BlockNumber)>`
+### preimages(`Hash`): `Option<PreimageStatus>`
 - **interface**: `api.query.democracy.preimages`
 - **summary**:   Map of hashes to the proposal preimage, along with who registered it and their deposit. The block number is the block at which it was deposited. 
  
@@ -447,6 +445,19 @@ ___
 ### recoverable(`AccountId`): `Option<RecoveryConfig>`
 - **interface**: `api.query.recovery.recoverable`
 - **summary**:   The set of recoverable accounts and their recovery configuration. 
+
+___
+
+
+## scheduler
+ 
+### agenda(`BlockNumber`): `Vec<Option<Scheduled>>`
+- **interface**: `api.query.scheduler.agenda`
+- **summary**:   Items to be executed, indexed by the block number that they should be executed on. 
+ 
+### lookup(`Bytes`): `Option<TaskAddress>`
+- **interface**: `api.query.scheduler.lookup`
+- **summary**:   Lookup from identity to the block number and index of the task. 
 
 ___
 

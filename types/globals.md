@@ -109,6 +109,7 @@
 * ["interfaces/recovery/definitions"](modules/_interfaces_recovery_definitions_.md)
 * ["interfaces/rpc/definitions"](modules/_interfaces_rpc_definitions_.md)
 * ["interfaces/runtime/definitions"](modules/_interfaces_runtime_definitions_.md)
+* ["interfaces/scheduler/definitions"](modules/_interfaces_scheduler_definitions_.md)
 * ["interfaces/session/definitions"](modules/_interfaces_session_definitions_.md)
 * ["interfaces/society/definitions"](modules/_interfaces_society_definitions_.md)
 * ["interfaces/staking/definitions"](modules/_interfaces_staking_definitions_.md)

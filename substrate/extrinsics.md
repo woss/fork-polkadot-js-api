@@ -386,6 +386,10 @@ ___
 
   \# \</weight> 
  
+### enactProposal(proposal_hash: `T::Hash`, index: `ReferendumIndex`)
+- **interface**: `api.tx.democracy.enactProposal`
+- **summary**:   Enact a proposal from a referendum. For now we just make the weight be the maximum. 
+ 
 ### externalPropose(proposal_hash: `T::Hash`)
 - **interface**: `api.tx.democracy.externalPropose`
 - **summary**:   Schedule a referendum to be tabled once it is legal to schedule an external referendum. 
