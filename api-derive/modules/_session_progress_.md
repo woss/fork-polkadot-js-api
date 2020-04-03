@@ -14,7 +14,7 @@
 
 ▸ **progress**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/session/progress.ts:77](https://github.com/polkadot-js/api/blob/69351ceb9e/packages/api-derive/src/session/progress.ts#L77)*
+*Defined in [packages/api-derive/src/session/progress.ts:77](https://github.com/polkadot-js/api/blob/02d130f0a0/packages/api-derive/src/session/progress.ts#L77)*
 
 **`description`** Retrieves all the session and era query and calculates specific values on it as the length of the session and eras
 
