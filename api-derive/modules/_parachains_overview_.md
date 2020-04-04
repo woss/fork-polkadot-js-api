@@ -14,7 +14,7 @@
 
 ▸ **overview**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/parachains/overview.ts:37](https://github.com/polkadot-js/api/blob/641fe5c380/packages/api-derive/src/parachains/overview.ts#L37)*
+*Defined in [packages/api-derive/src/parachains/overview.ts:37](https://github.com/polkadot-js/api/blob/9ec1cb194a/packages/api-derive/src/parachains/overview.ts#L37)*
 
 **Parameters:**
 

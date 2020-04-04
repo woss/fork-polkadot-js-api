@@ -15,7 +15,7 @@
 
 ▸ **stakerRewards**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerRewards.ts:70](https://github.com/polkadot-js/api/blob/641fe5c380/packages/api-derive/src/staking/stakerRewards.ts#L70)*
+*Defined in [packages/api-derive/src/staking/stakerRewards.ts:149](https://github.com/polkadot-js/api/blob/9ec1cb194a/packages/api-derive/src/staking/stakerRewards.ts#L149)*
 
 **Parameters:**
 
@@ -25,14 +25,14 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (`accountId`: Uint8Array | string, `startEra`: BN | number): *Observable‹DeriveStakerReward[]›*
+▸ (`accountId`: Uint8Array | string, `withActive?`: undefined | false | true): *Observable‹DeriveStakerReward[]›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
 `accountId` | Uint8Array &#124; string |
-`startEra` | BN &#124; number |
+`withActive?` | undefined &#124; false &#124; true |
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 ▸ **stakerRewardsMulti**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/stakerRewards.ts:87](https://github.com/polkadot-js/api/blob/641fe5c380/packages/api-derive/src/staking/stakerRewards.ts#L87)*
+*Defined in [packages/api-derive/src/staking/stakerRewards.ts:164](https://github.com/polkadot-js/api/blob/9ec1cb194a/packages/api-derive/src/staking/stakerRewards.ts#L164)*
 
 **Parameters:**
 
@@ -50,10 +50,11 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (...`params`: [Uint8Array | string, BN | number][]): *Observable‹DeriveStakerReward[][]›*
+▸ (`accountIds`: string | Uint8Array‹›[], `withActive?`: undefined | false | true): *Observable‹DeriveStakerReward[][]›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`...params` | [Uint8Array &#124; string, BN &#124; number][] |
+`accountIds` | string &#124; Uint8Array‹›[] |
+`withActive?` | undefined &#124; false &#124; true |

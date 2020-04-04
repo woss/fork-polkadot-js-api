@@ -15,7 +15,7 @@
 
 ▸ **eraPrefs**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasPrefs.ts:26](https://github.com/polkadot-js/api/blob/641fe5c380/packages/api-derive/src/staking/erasPrefs.ts#L26)*
+*Defined in [packages/api-derive/src/staking/erasPrefs.ts:25](https://github.com/polkadot-js/api/blob/9ec1cb194a/packages/api-derive/src/staking/erasPrefs.ts#L25)*
 
 **Parameters:**
 
@@ -39,7 +39,7 @@ ___
 
 ▸ **erasPrefs**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasPrefs.ts:34](https://github.com/polkadot-js/api/blob/641fe5c380/packages/api-derive/src/staking/erasPrefs.ts#L34)*
+*Defined in [packages/api-derive/src/staking/erasPrefs.ts:33](https://github.com/polkadot-js/api/blob/9ec1cb194a/packages/api-derive/src/staking/erasPrefs.ts#L33)*
 
 **Parameters:**
 
@@ -49,10 +49,10 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (`withActive?`: boolean | BN | number): *Observable‹DeriveEraPrefs[]›*
+▸ (`withActive?`: undefined | false | true): *Observable‹DeriveEraPrefs[]›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`withActive?` | boolean &#124; BN &#124; number |
+`withActive?` | undefined &#124; false &#124; true |

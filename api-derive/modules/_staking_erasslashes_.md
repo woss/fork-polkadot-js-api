@@ -15,7 +15,7 @@
 
 ▸ **eraSlashes**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasSlashes.ts:32](https://github.com/polkadot-js/api/blob/641fe5c380/packages/api-derive/src/staking/erasSlashes.ts#L32)*
+*Defined in [packages/api-derive/src/staking/erasSlashes.ts:31](https://github.com/polkadot-js/api/blob/9ec1cb194a/packages/api-derive/src/staking/erasSlashes.ts#L31)*
 
 **Parameters:**
 
@@ -39,7 +39,7 @@ ___
 
 ▸ **erasSlashes**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasSlashes.ts:43](https://github.com/polkadot-js/api/blob/641fe5c380/packages/api-derive/src/staking/erasSlashes.ts#L43)*
+*Defined in [packages/api-derive/src/staking/erasSlashes.ts:42](https://github.com/polkadot-js/api/blob/9ec1cb194a/packages/api-derive/src/staking/erasSlashes.ts#L42)*
 
 **Parameters:**
 
@@ -49,10 +49,10 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (`withActive?`: boolean | BN | number): *Observable‹DeriveEraSlashes[]›*
+▸ (`withActive?`: undefined | false | true): *Observable‹DeriveEraSlashes[]›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`withActive?` | boolean &#124; BN &#124; number |
+`withActive?` | undefined &#124; false &#124; true |

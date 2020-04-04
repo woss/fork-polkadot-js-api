@@ -14,7 +14,7 @@
 
 ▸ **erasHistoric**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasHistoric.ts:16](https://github.com/polkadot-js/api/blob/641fe5c380/packages/api-derive/src/staking/erasHistoric.ts#L16)*
+*Defined in [packages/api-derive/src/staking/erasHistoric.ts:14](https://github.com/polkadot-js/api/blob/9ec1cb194a/packages/api-derive/src/staking/erasHistoric.ts#L14)*
 
 **Parameters:**
 
@@ -24,10 +24,10 @@ Name | Type |
 
 **Returns:** *function*
 
-▸ (`withActive?`: boolean | BN | number): *Observable‹EraIndex[]›*
+▸ (`withActive?`: undefined | false | true): *Observable‹EraIndex[]›*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`withActive?` | boolean &#124; BN &#124; number |
+`withActive?` | undefined &#124; false &#124; true |
