@@ -14,7 +14,7 @@
 
 ▸ **proposals**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/democracy/proposals.ts:38](https://github.com/polkadot-js/api/blob/9ec1cb194a/packages/api-derive/src/democracy/proposals.ts#L38)*
+*Defined in [packages/api-derive/src/democracy/proposals.ts:38](https://github.com/polkadot-js/api/blob/f95384d9ff/packages/api-derive/src/democracy/proposals.ts#L38)*
 
 **Parameters:**
 
