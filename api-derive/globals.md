@@ -55,6 +55,7 @@
 * ["society/member"](modules/_society_member_.md)
 * ["society/members"](modules/_society_members_.md)
 * ["staking/account"](modules/_staking_account_.md)
+* ["staking/currentPoints"](modules/_staking_currentpoints_.md)
 * ["staking/electedInfo"](modules/_staking_electedinfo_.md)
 * ["staking/erasExposure"](modules/_staking_erasexposure_.md)
 * ["staking/erasHistoric"](modules/_staking_erashistoric_.md)
