@@ -21,7 +21,7 @@
 
 • **data**: *string*
 
-*Defined in [packages/types/src/types/extrinsic.ts:177](https://github.com/polkadot-js/api/blob/f95384d9ff/packages/types/src/types/extrinsic.ts#L177)*
+*Defined in [packages/types/src/types/extrinsic.ts:177](https://github.com/polkadot-js/api/blob/f71211f5dc/packages/types/src/types/extrinsic.ts#L177)*
 
 **`description`** The hex-encoded data for this request
 
@@ -31,6 +31,6 @@ ___
 
 • **type**? : *"bytes" | "payload"*
 
-*Defined in [packages/types/src/types/extrinsic.ts:182](https://github.com/polkadot-js/api/blob/f95384d9ff/packages/types/src/types/extrinsic.ts#L182)*
+*Defined in [packages/types/src/types/extrinsic.ts:182](https://github.com/polkadot-js/api/blob/f71211f5dc/packages/types/src/types/extrinsic.ts#L182)*
 
 **`description`** The type of the contained data
