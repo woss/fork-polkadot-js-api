@@ -14,7 +14,7 @@
 
 ▸ **ownSlashes**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/ownSlashes.ts:13](https://github.com/polkadot-js/api/blob/d80d6f2a06/packages/api-derive/src/staking/ownSlashes.ts#L13)*
+*Defined in [packages/api-derive/src/staking/ownSlashes.ts:13](https://github.com/polkadot-js/api/blob/6d95eb418d/packages/api-derive/src/staking/ownSlashes.ts#L13)*
 
 **Parameters:**
 
