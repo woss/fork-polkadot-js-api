@@ -15,7 +15,7 @@
 
 ▸ **eraExposure**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasExposure.ts:37](https://github.com/polkadot-js/api/blob/b869695e40/packages/api-derive/src/staking/erasExposure.ts#L37)*
+*Defined in [packages/api-derive/src/staking/erasExposure.ts:37](https://github.com/polkadot-js/api/blob/a241bd1c38/packages/api-derive/src/staking/erasExposure.ts#L37)*
 
 **Parameters:**
 
@@ -39,7 +39,7 @@ ___
 
 ▸ **erasExposure**(`api`: ApiInterfaceRx): *function*
 
-*Defined in [packages/api-derive/src/staking/erasExposure.ts:45](https://github.com/polkadot-js/api/blob/b869695e40/packages/api-derive/src/staking/erasExposure.ts#L45)*
+*Defined in [packages/api-derive/src/staking/erasExposure.ts:45](https://github.com/polkadot-js/api/blob/a241bd1c38/packages/api-derive/src/staking/erasExposure.ts#L45)*
 
 **Parameters:**
 
