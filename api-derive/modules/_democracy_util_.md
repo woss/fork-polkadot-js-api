@@ -17,9 +17,9 @@
 
 ###  approxChanges
 
-▸ **approxChanges**(`threshold`: VoteThreshold, `sqrtElectorate`: BN, `votedAye`: BN, `votedNay`: BN, `votedTotal`: BN): *Approx*
+▸ **approxChanges**(`threshold`: VoteThreshold, `sqrtElectorate`: BN, `state`: ApproxState): *Approx*
 
-*Defined in [packages/api-derive/src/democracy/util.ts:102](https://github.com/polkadot-js/api/blob/a241bd1c38/packages/api-derive/src/democracy/util.ts#L102)*
+*Defined in [packages/api-derive/src/democracy/util.ts:110](https://github.com/polkadot-js/api/blob/2b4bd75499/packages/api-derive/src/democracy/util.ts#L110)*
 
 **Parameters:**
 
@@ -27,9 +27,7 @@ Name | Type |
 ------ | ------ |
 `threshold` | VoteThreshold |
 `sqrtElectorate` | BN |
-`votedAye` | BN |
-`votedNay` | BN |
-`votedTotal` | BN |
+`state` | ApproxState |
 
 **Returns:** *Approx*
 
@@ -39,7 +37,7 @@ ___
 
 ▸ **calcPassing**(`threshold`: VoteThreshold, `sqrtElectorate`: BN, `votedAye`: BN, `votedNay`: BN, `votedTotal`: BN): *boolean*
 
-*Defined in [packages/api-derive/src/democracy/util.ts:62](https://github.com/polkadot-js/api/blob/a241bd1c38/packages/api-derive/src/democracy/util.ts#L62)*
+*Defined in [packages/api-derive/src/democracy/util.ts:68](https://github.com/polkadot-js/api/blob/2b4bd75499/packages/api-derive/src/democracy/util.ts#L68)*
 
 **Parameters:**
 
@@ -59,7 +57,7 @@ ___
 
 ▸ **calcVotes**(`sqrtElectorate`: BN, `referendum`: DeriveReferendum, `votes`: DeriveReferendumVote[]): *DeriveReferendumVotes*
 
-*Defined in [packages/api-derive/src/democracy/util.ts:199](https://github.com/polkadot-js/api/blob/a241bd1c38/packages/api-derive/src/democracy/util.ts#L199)*
+*Defined in [packages/api-derive/src/democracy/util.ts:208](https://github.com/polkadot-js/api/blob/2b4bd75499/packages/api-derive/src/democracy/util.ts#L208)*
 
 **Parameters:**
 
@@ -77,7 +75,7 @@ ___
 
 ▸ **compareRationals**(`n1`: BN, `d1`: BN, `n2`: BN, `d2`: BN): *boolean*
 
-*Defined in [packages/api-derive/src/democracy/util.ts:35](https://github.com/polkadot-js/api/blob/a241bd1c38/packages/api-derive/src/democracy/util.ts#L35)*
+*Defined in [packages/api-derive/src/democracy/util.ts:41](https://github.com/polkadot-js/api/blob/2b4bd75499/packages/api-derive/src/democracy/util.ts#L41)*
 
 **Parameters:**
 
@@ -96,7 +94,7 @@ ___
 
 ▸ **getStatus**(`info`: Option‹ReferendumInfo | ReferendumInfoTo239›): *ReferendumStatus | ReferendumInfoTo239 | null*
 
-*Defined in [packages/api-derive/src/democracy/util.ts:211](https://github.com/polkadot-js/api/blob/a241bd1c38/packages/api-derive/src/democracy/util.ts#L211)*
+*Defined in [packages/api-derive/src/democracy/util.ts:220](https://github.com/polkadot-js/api/blob/2b4bd75499/packages/api-derive/src/democracy/util.ts#L220)*
 
 **Parameters:**
 
@@ -112,7 +110,7 @@ ___
 
 ▸ **parseImage**(`api`: ApiInterfaceRx, `imageOpt`: Option‹OldPreimage› | Option‹PreimageStatus›): *DeriveProposalImage | undefined*
 
-*Defined in [packages/api-derive/src/democracy/util.ts:240](https://github.com/polkadot-js/api/blob/a241bd1c38/packages/api-derive/src/democracy/util.ts#L240)*
+*Defined in [packages/api-derive/src/democracy/util.ts:249](https://github.com/polkadot-js/api/blob/2b4bd75499/packages/api-derive/src/democracy/util.ts#L249)*
 
 **Parameters:**
 
