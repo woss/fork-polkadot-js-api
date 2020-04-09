@@ -19,7 +19,7 @@
 
 • **rpc**: *Record‹string, [DefinitionRpc](_types_definitions_.definitionrpc.md) | [DefinitionRpcSub](_types_definitions_.definitionrpcsub.md)›*
 
-*Defined in [packages/types/src/types/definitions.ts:42](https://github.com/polkadot-js/api/blob/6a8e5370b6/packages/types/src/types/definitions.ts#L42)*
+*Defined in [packages/types/src/types/definitions.ts:42](https://github.com/polkadot-js/api/blob/9184268c3d/packages/types/src/types/definitions.ts#L42)*
 
 ___
 
@@ -27,4 +27,4 @@ ___
 
 • **types**: *Record‹string, [DefinitionType](../modules/_types_definitions_.md#definitiontype)›*
 
-*Defined in [packages/types/src/types/definitions.ts:43](https://github.com/polkadot-js/api/blob/6a8e5370b6/packages/types/src/types/definitions.ts#L43)*
+*Defined in [packages/types/src/types/definitions.ts:43](https://github.com/polkadot-js/api/blob/9184268c3d/packages/types/src/types/definitions.ts#L43)*

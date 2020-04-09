@@ -395,7 +395,7 @@ ___
 - **summary**:   An old slashing report from a prior era was discarded because it could not be processed. 
  
 ### Reward(`AccountId`, `Balance`)
-- **summary**:   The staker has been rewarded by this amount. AccountId is controller account. 
+- **summary**:   The staker has been rewarded by this amount. `AccountId` is the stash account. 
  
 ### Slash(`AccountId`, `Balance`)
 - **summary**:   One validator (and its nominators) has been slashed by the given amount. 
@@ -541,17 +541,17 @@ ___
 ### BatchInterrupted(`u32`, `DispatchError`)
 - **summary**:   Batch of dispatches did not complete fully. Index of first failing dispatch given, as well as the error. 
  
-### MultisigApproval(`AccountId`, `Timepoint<BlockNumber>`, `AccountId`)
-- **summary**:   A multisig operation has been approved by someone. First param is the account that is approving, third is the multisig account. 
+### MultisigApproval(`AccountId`, `Timepoint<BlockNumber>`, `AccountId`, `CallHash`)
+- **summary**:   A multisig operation has been approved by someone. First param is the account that is approving, third is the multisig account, fourth is hash of the call. 
  
-### MultisigCancelled(`AccountId`, `Timepoint<BlockNumber>`, `AccountId`)
-- **summary**:   A multisig operation has been cancelled. First param is the account that is cancelling, third is the multisig account. 
+### MultisigCancelled(`AccountId`, `Timepoint<BlockNumber>`, `AccountId`, `CallHash`)
+- **summary**:   A multisig operation has been cancelled. First param is the account that is cancelling, third is the multisig account, fourth is hash of the call. 
  
-### MultisigExecuted(`AccountId`, `Timepoint<BlockNumber>`, `AccountId`, `DispatchResult`)
-- **summary**:   A multisig operation has been executed. First param is the account that is approving, third is the multisig account. 
+### MultisigExecuted(`AccountId`, `Timepoint<BlockNumber>`, `AccountId`, `CallHash`, `DispatchResult`)
+- **summary**:   A multisig operation has been executed. First param is the account that is approving, third is the multisig account, fourth is hash of the call to be executed. 
  
-### NewMultisig(`AccountId`, `AccountId`)
-- **summary**:   A new multisig operation has begun. First param is the account that is approving, second is the multisig account. 
+### NewMultisig(`AccountId`, `AccountId`, `CallHash`)
+- **summary**:   A new multisig operation has begun. First param is the account that is approving, second is the multisig account, third is hash of the call. 
 
 ___
 

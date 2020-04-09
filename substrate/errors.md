@@ -529,8 +529,14 @@ ___
 ### AlreadyBonded
 - **summary**:   Stash is already bonded. 
  
+### AlreadyClaimed
+- **summary**:   Rewards for this era have already been claimed for this validator. 
+ 
 ### AlreadyPaired
 - **summary**:   Controller is already paired. 
+ 
+### CallNotAllowed
+- **summary**:   The call is not allowed at the given time due to restrictions of election period. 
  
 ### DuplicateIndex
 - **summary**:   Duplicate index. 

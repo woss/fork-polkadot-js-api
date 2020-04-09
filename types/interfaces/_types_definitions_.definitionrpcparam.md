@@ -20,7 +20,7 @@
 
 • **isOptional**? : *undefined | false | true*
 
-*Defined in [packages/types/src/types/definitions.ts:17](https://github.com/polkadot-js/api/blob/6a8e5370b6/packages/types/src/types/definitions.ts#L17)*
+*Defined in [packages/types/src/types/definitions.ts:17](https://github.com/polkadot-js/api/blob/9184268c3d/packages/types/src/types/definitions.ts#L17)*
 
 ___
 
@@ -28,7 +28,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [packages/types/src/types/definitions.ts:18](https://github.com/polkadot-js/api/blob/6a8e5370b6/packages/types/src/types/definitions.ts#L18)*
+*Defined in [packages/types/src/types/definitions.ts:18](https://github.com/polkadot-js/api/blob/9184268c3d/packages/types/src/types/definitions.ts#L18)*
 
 ___
 
@@ -36,4 +36,4 @@ ___
 
 • **type**: *[DefinitionTypeType](../modules/_types_definitions_.md#definitiontypetype)*
 
-*Defined in [packages/types/src/types/definitions.ts:19](https://github.com/polkadot-js/api/blob/6a8e5370b6/packages/types/src/types/definitions.ts#L19)*
+*Defined in [packages/types/src/types/definitions.ts:19](https://github.com/polkadot-js/api/blob/9184268c3d/packages/types/src/types/definitions.ts#L19)*

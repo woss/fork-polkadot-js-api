@@ -103,6 +103,12 @@ ___
 - **interface**: `api.query.babe.initialized`
 - **summary**:   Temporary value (cleared at block finalization) which is `Some` if per-block initialization has already been called for current block. 
  
+### lateness(): `BlockNumber`
+- **interface**: `api.query.babe.lateness`
+- **summary**:   How late the current block is compared to its parent. 
+
+  This entry is populated as part of block execution and is cleaned up on block finalization. Querying this storage entry outside of block execution context should always yield zero. 
+ 
 ### nextRandomness(): `Randomness`
 - **interface**: `api.query.babe.nextRandomness`
 - **summary**:   Next epoch randomness. 
@@ -592,7 +598,7 @@ ___
 - **interface**: `api.query.staking.currentEra`
 - **summary**:   The current era index. 
 
-  This is the latest planned era, depending on how session module queues the validator set, it might be active or not. 
+  This is the latest planned era, depending on how the Session pallet queues the validator set, it might be active or not. 
  
 ### earliestUnappliedSlash(): `Option<EraIndex>`
 - **interface**: `api.query.staking.earliestUnappliedSlash`
@@ -618,7 +624,7 @@ ___
 - **interface**: `api.query.staking.erasStakersClipped`
 - **summary**:   Clipped Exposure of validator at era. 
 
-  This is similar to [`ErasStakers`] but number of nominators exposed is reduce to the `T::MaxNominatorRewardedPerValidator` biggest stakers. (Note: the field `total` and `own` of the exposure remains unchanged). This is used to limit the i/o cost for the nominator payout. 
+  This is similar to [`ErasStakers`] but number of nominators exposed is reduced to the `T::MaxNominatorRewardedPerValidator` biggest stakers. (Note: the field `total` and `own` of the exposure remains unchanged). This is used to limit the i/o cost for the nominator payout. 
 
   This is keyed fist by the era index to allow bulk deletion and then the stash account. 
 
@@ -626,7 +632,7 @@ ___
  
 ### erasStartSessionIndex(`EraIndex`): `Option<SessionIndex>`
 - **interface**: `api.query.staking.erasStartSessionIndex`
-- **summary**:   The session index at which the era start for the last `HISTORY_DEPTH` eras 
+- **summary**:   The session index at which the era start for the last `HISTORY_DEPTH` eras. 
  
 ### erasTotalStake(`EraIndex`): `BalanceOf`
 - **interface**: `api.query.staking.erasTotalStake`
@@ -634,7 +640,7 @@ ___
  
 ### erasValidatorPrefs(`EraIndex, AccountId`): `ValidatorPrefs`
 - **interface**: `api.query.staking.erasValidatorPrefs`
-- **summary**:   Similarly to `ErasStakers` this holds the preferences of validators. 
+- **summary**:   Similar to `ErasStakers`, this holds the preferences of validators. 
 
   This is keyed first by the era index to allow bulk deletion and then the stash account. 
 
@@ -652,11 +658,11 @@ ___
  
 ### historyDepth(): `u32`
 - **interface**: `api.query.staking.historyDepth`
-- **summary**:   Number of era to keep in history. 
+- **summary**:   Number of eras to keep in history. 
 
-  Information is kept for eras in `[current_era - history_depth; current_era] 
+  Information is kept for eras in `[current_era - history_depth; current_era]`. 
 
-  Must be more than the number of era delayed by session otherwise. i.e. active era must always be in history. i.e. `active_era > current_era - history_depth` must be guaranteed. 
+  Must be more than the number of eras delayed by session otherwise. I.e. active era must always be in history. I.e. `active_era > current_era - history_depth` must be guaranteed. 
  
 ### invulnerables(): `Vec<AccountId>`
 - **interface**: `api.query.staking.invulnerables`
@@ -664,11 +670,15 @@ ___
  
 ### isCurrentSessionFinal(): `bool`
 - **interface**: `api.query.staking.isCurrentSessionFinal`
-- **summary**:   True if the current planned session is final. 
+- **summary**:   True if the current **planned** session is final. Note that this does not take era forcing into account. 
  
 ### ledger(`AccountId`): `Option<StakingLedger>`
 - **interface**: `api.query.staking.ledger`
 - **summary**:   Map from all (unlocked) "controller" accounts to the info regarding the staking. 
+ 
+### migrateEra(): `Option<EraIndex>`
+- **interface**: `api.query.staking.migrateEra`
+- **summary**:   The era where we migrated from Lazy Payouts to Simple Payouts 
  
 ### minimumValidatorCount(): `u32`
 - **interface**: `api.query.staking.minimumValidatorCount`
