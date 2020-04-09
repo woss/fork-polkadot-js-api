@@ -332,6 +332,11 @@ ___
 - **jsonrpc**: `system_chain`
 - **summary**: Retrieves the chain
  
+### chainType(): `ChainType`
+- **interface**: `api.rpc.system.chainType`
+- **jsonrpc**: `system_chainType`
+- **summary**: Retrieves the chain type
+ 
 ### health(): `Health`
 - **interface**: `api.rpc.system.health`
 - **jsonrpc**: `system_health`
